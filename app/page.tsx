@@ -307,7 +307,10 @@ export default function Home() {
                       <MapPin className="w-3.5 h-3.5" /> {attr.location}
                     </span>
                     <span className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent/10 text-accent text-xs font-extrabold">
-                      <Star className="w-3.5 h-3.5 fill-accent" /> {attr.rating}
+                      <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
+                      <span className="text-green-500 font-extrabold">
+                        {attr.rating}
+                      </span>
                     </span>
                   </div>
                   <h3 className="font-display font-bold text-xl text-primary-dark mb-2 line-clamp-1">{attr.name}</h3>
@@ -559,7 +562,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-1 text-accent">
                     {Array.from({ length: reviews[currentReview].rating }).map((_, i) => (
-                      <Star key={i} className="w-4.5 h-4.5 fill-accent text-accent" />
+                      <Star key={i} className="w-4.5 h-4.5 text-green-500 fill-green-500" />
                     ))}
                   </div>
                   <p className="text-zinc-600 text-sm md:text-base italic leading-relaxed">
