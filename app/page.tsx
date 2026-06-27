@@ -17,6 +17,7 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Calendar as CalendarComponent } from '@/components/ui/calendar';
 import { useCurrency } from '@/lib/CurrencyContext';
+import { Autocomplete, AutocompleteContent, AutocompleteEmpty, AutocompleteInput, AutocompleteItem, AutocompleteList } from '@/components/ui/autocomplete';
 
 export default function Home() {
   const { formatPrice } = useCurrency();
@@ -138,6 +139,7 @@ export default function Home() {
               <div className="flex flex-col text-left px-3 py-1">
                 <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
                   <Compass className="w-3.5 h-3.5 text-primary" /> Destination
+
                 </label>
                 <Select
                   value={searchDest}
@@ -146,16 +148,38 @@ export default function Home() {
                     setSearchAttr(''); // Reset attraction selection on change
                   }}
                 >
-                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-zinc-200 py-1 font-semibold text-zinc-900 rounded-none h-auto p-0 hover:bg-transparent shadow-none">
+                  <SelectTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none">
                     <SelectValue placeholder="All Destinations" />
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
-                    <SelectItem value="all">All Destinations</SelectItem>
+                    <SelectItem value="all" className="text-primary">All Destinations</SelectItem>
                     {destinations.map(d => (
-                      <SelectItem key={d.id} value={d.id}>{d.name}</SelectItem>
+                      <SelectItem key={d.id} value={d.id} className="text-primary">{d.name}</SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
+
+                {/* <Autocomplete items={destinations.map((d) => ({
+                  id: d.id,
+                  value: d.name,
+                }))}>
+                  <div className='flex flex-col items-start gap-2'>
+                    <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
+                      <Compass className="w-3.5 h-3.5 text-primary" /> Destination
+                    </label>
+                    <AutocompleteInput id={'destination'} placeholder='Search Destination' showClear />
+                  </div>
+                  <AutocompleteContent>
+                    <AutocompleteEmpty>No items found.</AutocompleteEmpty>
+                    <AutocompleteList>
+                      {item => (
+                        <AutocompleteItem key={item.id} value={item.value}>
+                          {item.value}
+                        </AutocompleteItem>
+                      )}
+                    </AutocompleteList>
+                  </AutocompleteContent>
+                </Autocomplete> */}
               </div>
 
               {/* Attraction Dropdown */}
@@ -167,7 +191,7 @@ export default function Home() {
                   value={searchAttr}
                   onValueChange={(val) => setSearchAttr(val === "all" ? "" : val || "")}
                 >
-                  <SelectTrigger className="w-full bg-transparent border-0 border-b border-zinc-200 py-1 font-semibold text-zinc-900 rounded-none h-auto p-0 hover:bg-transparent shadow-none">
+                  <SelectTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none">
                     <SelectValue placeholder="All Attractions" />
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
@@ -185,7 +209,7 @@ export default function Home() {
                   <Calendar className="w-3.5 h-3.5 text-primary" /> Travel Date
                 </label>
                 <Popover>
-                  <PopoverTrigger className="w-full bg-transparent border-0 border-b border-zinc-200 py-1 font-semibold text-zinc-900 rounded-none h-auto p-0 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer">
+                  <PopoverTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer">
                     <span className="text-sm">
                       {searchDate ? new Date(searchDate).toLocaleDateString(undefined, { dateStyle: 'medium' }) : 'Pick a date'}
                     </span>
