@@ -271,8 +271,8 @@ export default function TourDetail({ params }: PageProps) {
             <div className="space-y-1">
               <span className="text-zinc-400 font-semibold text-xs uppercase tracking-wider block">Price per guest</span>
               <div className="flex items-baseline gap-1.5">
-                <span className="font-display font-black text-4xl text-primary-dark">{formatPrice(tour.price)}</span>
-                <span className="text-zinc-500 text-xs">{currency} / all-inclusive</span>
+                <span className={`font-display font-black text-primary-dark ${currency === 'IDR' ? 'text-2xl' : 'text-4xl'}`}>{formatPrice(tour.price)}</span>
+                <span className="text-zinc-500 text-xs">/ all-inclusive</span>
               </div>
             </div>
 
@@ -402,7 +402,7 @@ export default function TourDetail({ params }: PageProps) {
       <div className="lg:hidden fixed bottom-0 left-0 right-0 z-30 p-4 bg-white/70 backdrop-blur-lg border-t border-zinc-100/50 flex items-center justify-between shadow-lg">
         <div>
           <span className="text-[10px] text-zinc-400 uppercase tracking-widest block font-medium">Price</span>
-          <span className="text-xl font-display font-extrabold text-primary-dark">
+          <span className={`font-display font-extrabold text-primary-dark ${currency === 'IDR' ? 'text-base' : 'text-xl'}`}>
             {formatPrice(tour.price)} <span className="text-[10px] text-zinc-500 font-normal">/ guest</span>
           </span>
         </div>
