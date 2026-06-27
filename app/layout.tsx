@@ -5,7 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,6 +23,9 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "INDEX-AELI | Indonesia Tour & Attraction Landing Platform",
   description: "Discover the best of Indonesia. Explore breathtaking destinations, unforgettable attractions, and curated tours.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 import { CurrencyProvider } from "@/lib/CurrencyContext";
