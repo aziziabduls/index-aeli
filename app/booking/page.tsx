@@ -5,8 +5,8 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  Compass, Calendar, Users, User, Mail, Phone, MessageSquare, 
+import {
+  Compass, Calendar, Users, User, Mail, Phone, MessageSquare,
   ArrowLeft, ArrowRight, Star, ShieldCheck, CheckCircle2, Ticket, Printer,
   CreditCard, Landmark, QrCode, Lock, Check, Copy
 } from 'lucide-react';
@@ -51,7 +51,7 @@ function BookingFormContent() {
   const [cardName, setCardName] = useState('');
   const [paymentErrors, setPaymentErrors] = useState<Record<string, string>>({});
   const [copied, setCopied] = useState(false);
-  
+
   // Submission/Success modal state
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -80,14 +80,14 @@ function BookingFormContent() {
     const newErrors: Record<string, string> = {};
     if (!travelDate) newErrors.travelDate = 'Travel date is required';
     if (!fullName.trim()) newErrors.fullName = 'Full name is required';
-    
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) {
       newErrors.email = 'Email address is required';
     } else if (!emailRegex.test(email)) {
       newErrors.email = 'Please enter a valid email address';
     }
-    
+
     if (!phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else if (phone.length < 8) {
@@ -102,7 +102,7 @@ function BookingFormContent() {
     if (paymentMethod !== 'card') return true; // Wallet/Transfer are mock interactions
 
     const newErrors: Record<string, string> = {};
-    
+
     // Remove spaces for length check
     const cleanCard = cardNumber.replace(/\s/g, '');
     if (!cleanCard) {
@@ -144,7 +144,7 @@ function BookingFormContent() {
     if (!validateStep2()) return;
 
     setIsSubmitting(true);
-    
+
     // Simulate API request delay for secure payment gateway authorization
     setTimeout(() => {
       const randomId = Math.floor(1000 + Math.random() * 9000);
@@ -188,31 +188,27 @@ function BookingFormContent() {
       <div className="bg-zinc-50 border-b border-zinc-150 py-4">
         <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-center gap-6 md:gap-12">
           <div className="flex items-center gap-2">
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-              currentStep === 1 
-                ? 'bg-primary text-white' 
-                : 'bg-emerald-50 text-emerald-600 border border-emerald-200'
-            }`}>
+            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${currentStep === 1
+              ? 'bg-primary text-white'
+              : 'bg-emerald-50 text-emerald-600 border border-emerald-200'
+              }`}>
               {currentStep > 1 ? <Check className="w-3.5 h-3.5" /> : '1'}
             </span>
-            <span className={`text-xs md:text-sm font-display font-bold ${
-              currentStep === 1 ? 'text-zinc-900' : 'text-zinc-400'
-            }`}>
+            <span className={`text-xs md:text-sm font-display font-bold ${currentStep === 1 ? 'text-zinc-900' : 'text-zinc-400'
+              }`}>
               Traveler Details
             </span>
           </div>
           <div className="w-10 md:w-20 h-px bg-zinc-200" />
           <div className="flex items-center gap-2">
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-              currentStep === 2 
-                ? 'bg-primary text-white font-extrabold' 
-                : 'bg-zinc-200 text-zinc-500'
-            }`}>
+            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${currentStep === 2
+              ? 'bg-primary text-white font-extrabold'
+              : 'bg-zinc-200 text-zinc-500'
+              }`}>
               2
             </span>
-            <span className={`text-xs md:text-sm font-display font-bold ${
-              currentStep === 2 ? 'text-zinc-950 font-extrabold' : 'text-zinc-400'
-            }`}>
+            <span className={`text-xs md:text-sm font-display font-bold ${currentStep === 2 ? 'text-zinc-950 font-extrabold' : 'text-zinc-400'
+              }`}>
               Secure Payment
             </span>
           </div>
@@ -285,9 +281,8 @@ function BookingFormContent() {
                           <Calendar className="w-4 h-4 text-primary" /> Travel Date *
                         </label>
                         <Popover>
-                          <PopoverTrigger className={`w-full h-12 px-4 rounded-xl border flex items-center justify-between text-sm transition-all text-left bg-zinc-50 border-zinc-200 focus:outline-none text-zinc-800 cursor-pointer ${
-                            errors.travelDate ? 'border-rose-500 bg-rose-50/10' : ''
-                          }`}>
+                          <PopoverTrigger className={`w-full h-12 px-4 rounded-xl border flex items-center justify-between text-sm transition-all text-left bg-zinc-50 border-zinc-200 focus:outline-none text-zinc-800 cursor-pointer ${errors.travelDate ? 'border-rose-500 bg-rose-50/10' : ''
+                            }`}>
                             <span>
                               {travelDate ? new Date(travelDate).toLocaleDateString(undefined, { dateStyle: 'medium' }) : 'Select Date'}
                             </span>
@@ -347,9 +342,8 @@ function BookingFormContent() {
                           placeholder="e.g. John Doe"
                           value={fullName}
                           onChange={(e) => setFullName(e.target.value)}
-                          className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${
-                            errors.fullName ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                          } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
+                          className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${errors.fullName ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                            } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
                         />
                         {errors.fullName && (
                           <span className="text-rose-500 text-xs mt-1.5 font-medium">{errors.fullName}</span>
@@ -367,9 +361,8 @@ function BookingFormContent() {
                             placeholder="name@domain.com"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${
-                              errors.email ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                            } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
+                            className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${errors.email ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                              } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
                           />
                           {errors.email && (
                             <span className="text-rose-500 text-xs mt-1.5 font-medium">{errors.email}</span>
@@ -386,9 +379,8 @@ function BookingFormContent() {
                             placeholder="+62 812-3456-7890"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
-                            className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${
-                              errors.phone ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                            } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
+                            className={`w-full h-12 px-4 bg-zinc-50 rounded-xl border ${errors.phone ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                              } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all text-zinc-800`}
                           />
                           {errors.phone && (
                             <span className="text-rose-500 text-xs mt-1.5 font-medium">{errors.phone}</span>
@@ -433,7 +425,7 @@ function BookingFormContent() {
                   transition={{ duration: 0.3 }}
                   className="bg-white border border-zinc-100 rounded-[28px] p-6 md:p-10 shadow-luxury space-y-8"
                 >
-                  <div className="border-b border-zinc-150 pb-4 flex items-center justify-between text-left">
+                  <div className="pb-4 flex items-center justify-between text-left">
                     <div>
                       <h2 className="font-display font-extrabold text-2xl text-primary-dark">
                         Secure Payment
@@ -451,9 +443,9 @@ function BookingFormContent() {
                   <Tabs
                     value={paymentMethod}
                     onValueChange={(val) => setPaymentMethod(val as 'card' | 'wallet' | 'transfer')}
-                    className="w-full space-y-6"
+                    className="w-full space-y-9"
                   >
-                    <TabsList className="grid grid-cols-3 gap-2 border border-zinc-150 p-1 rounded-2xl bg-zinc-50 h-auto w-full bg-transparent">
+                    <TabsList className="grid grid-cols-3 gap-2 rounded-2xl bg-zinc-50 h-auto w-full bg-transparent">
                       <TabsTrigger
                         value="card"
                         className="h-11 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 transition-all cursor-pointer data-active:bg-white data-active:text-zinc-950 data-active:shadow-sm data-active:border-zinc-200/50 text-zinc-500 hover:text-zinc-800 after:hidden"
@@ -538,9 +530,8 @@ function BookingFormContent() {
                                     placeholder="4111 1111 1111 1111"
                                     value={cardNumber}
                                     onChange={(e) => handleCardNumberChange(e.target.value)}
-                                    className={`w-full h-11 pl-10 pr-4 rounded-xl border bg-zinc-50 ${
-                                      paymentErrors.cardNumber ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                                    } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
+                                    className={`w-full h-11 pl-10 pr-4 rounded-xl border bg-zinc-50 ${paymentErrors.cardNumber ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                                      } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
                                   />
                                   <CreditCard className="absolute left-3.5 top-3.5 w-4 h-4 text-zinc-400" />
                                 </div>
@@ -558,9 +549,8 @@ function BookingFormContent() {
                                     placeholder="MM/YY"
                                     value={cardExpiry}
                                     onChange={(e) => handleExpiryChange(e.target.value)}
-                                    className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${
-                                      paymentErrors.cardExpiry ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                                    } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
+                                    className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${paymentErrors.cardExpiry ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                                      } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
                                   />
                                   {paymentErrors.cardExpiry && (
                                     <span className="text-rose-500 text-xs mt-1 font-medium">{paymentErrors.cardExpiry}</span>
@@ -576,9 +566,8 @@ function BookingFormContent() {
                                     maxLength={3}
                                     value={cardCvv}
                                     onChange={(e) => setCardCvv(e.target.value.replace(/\D/g, ''))}
-                                    className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${
-                                      paymentErrors.cardCvv ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                                    } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
+                                    className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${paymentErrors.cardCvv ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                                      } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
                                   />
                                   {paymentErrors.cardCvv && (
                                     <span className="text-rose-500 text-xs mt-1 font-medium">{paymentErrors.cardCvv}</span>
@@ -594,9 +583,8 @@ function BookingFormContent() {
                                   placeholder="YOUR FULL NAME"
                                   value={cardName}
                                   onChange={(e) => setCardName(e.target.value.toUpperCase())}
-                                  className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${
-                                    paymentErrors.cardName ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
-                                  } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
+                                  className={`w-full h-11 px-4 rounded-xl border bg-zinc-50 ${paymentErrors.cardName ? 'border-rose-500 bg-rose-50/10' : 'border-zinc-200'
+                                    } focus:outline-none focus-visible:border-primary focus-visible:bg-white text-sm transition-all font-semibold text-zinc-800`}
                                 />
                                 {paymentErrors.cardName && (
                                   <span className="text-rose-500 text-xs mt-1 font-medium">{paymentErrors.cardName}</span>
@@ -616,7 +604,7 @@ function BookingFormContent() {
                           >
                             <div className="bg-zinc-50 rounded-2xl border border-zinc-150 p-6 flex flex-col items-center max-w-[320px] mx-auto space-y-4">
                               <span className="text-xs font-bold text-zinc-500 uppercase tracking-widest">QRIS Digital Payment</span>
-                              
+
                               {/* Mock QR Code Graphic */}
                               <div className="relative w-48 h-48 bg-white border border-zinc-200 p-2 rounded-xl flex items-center justify-center shadow-inner">
                                 <div className="w-full h-full relative opacity-85">
@@ -695,36 +683,36 @@ function BookingFormContent() {
                         </TabsContent>
                       </AnimatePresence>
 
-                    {/* Submit and Navigation Action Buttons */}
-                    <div className="pt-6 border-t border-zinc-150 flex flex-col sm:flex-row gap-4">
-                      <button
-                        type="button"
-                        onClick={() => setCurrentStep(1)}
-                        className="h-14 px-8 border border-zinc-200 hover:bg-zinc-50 text-zinc-700 font-display font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer order-2 sm:order-1 text-sm shadow-sm"
-                      >
-                        <ArrowLeft className="w-4 h-4" />
-                        <span>Back to Details</span>
-                      </button>
-                      <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="flex-1 h-14 bg-primary hover:bg-primary-light disabled:bg-primary-dark/50 text-white font-display font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer order-1 sm:order-2 text-sm shadow-md hover:-translate-y-0.5 active:translate-y-0"
-                      >
-                        {isSubmitting ? (
-                          <div className="flex items-center gap-2">
-                            <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                            <span>Processing Secured Payment...</span>
-                          </div>
-                        ) : (
-                          <>
-                            <ShieldCheck className="w-4.5 h-4.5" />
-                            <span>Authorize Secure Payment & Book</span>
-                          </>
-                        )}
-                      </button>
-                    </div>
-                  </form>
-                </Tabs>
+                      {/* Submit and Navigation Action Buttons */}
+                      <div className="pt-6 border-t border-zinc-150 flex flex-col sm:flex-row gap-4">
+                        <button
+                          type="button"
+                          onClick={() => setCurrentStep(1)}
+                          className="h-14 px-8 border border-zinc-200 hover:bg-zinc-50 text-zinc-700 font-display font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer order-2 sm:order-1 text-sm shadow-sm"
+                        >
+                          <ArrowLeft className="w-4 h-4" />
+                          <span>Back to Details</span>
+                        </button>
+                        <button
+                          type="submit"
+                          disabled={isSubmitting}
+                          className="flex-1 h-14 bg-primary hover:bg-primary-light disabled:bg-primary-dark/50 text-white font-display font-bold rounded-full flex items-center justify-center gap-2 transition-all cursor-pointer order-1 sm:order-2 text-sm shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                        >
+                          {isSubmitting ? (
+                            <div className="flex items-center gap-2">
+                              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                              <span>Processing Secured Payment...</span>
+                            </div>
+                          ) : (
+                            <>
+                              <ShieldCheck className="w-4.5 h-4.5" />
+                              <span>Authorize Secure Payment & Book</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                    </form>
+                  </Tabs>
                 </motion.div>
               )}
             </AnimatePresence>
