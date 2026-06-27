@@ -4,9 +4,9 @@ import { use } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { 
-  Compass, MapPin, Calendar, Star, CloudSun, Clock, Info, 
-  ArrowLeft, ArrowRight, Image as ImageIcon, Map 
+import {
+  Compass, MapPin, Calendar, Star, CloudSun, Clock, Info,
+  ArrowLeft, ArrowRight, Image as ImageIcon, Map
 } from 'lucide-react';
 import { destinations, attractions } from '@/data/tourismData';
 import { GlassCard } from '@/components/ui/GlassCard';
@@ -55,7 +55,7 @@ export default function DestinationDetail({ params }: PageProps) {
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
-          
+
           <h1 className="font-display font-extrabold text-4xl md:text-6xl tracking-tight mb-4">
             {destination.name}
           </h1>
@@ -145,9 +145,8 @@ export default function DestinationDetail({ params }: PageProps) {
                 key={idx}
                 animation="scaleIn"
                 delay={idx * 0.05}
-                className={`relative overflow-hidden rounded-[20px] shadow-sm hover:shadow-md transition-all group ${
-                  idx === 0 ? 'col-span-2 row-span-2 aspect-[4/3] md:aspect-auto' : 'aspect-square'
-                }`}
+                className={`relative overflow-hidden rounded-[20px] shadow-sm hover:shadow-md transition-all group ${idx === 0 ? 'col-span-2 row-span-2 aspect-[4/3] md:aspect-auto' : 'aspect-square'
+                  }`}
               >
                 <Image
                   src={img}
@@ -193,7 +192,7 @@ export default function DestinationDetail({ params }: PageProps) {
         <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-8">
           Popular Attractions in {destination.name}
         </h2>
-        
+
         {destAttractions.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {destAttractions.map((attr, idx) => (
@@ -212,7 +211,11 @@ export default function DestinationDetail({ params }: PageProps) {
                       <MapPin className="w-3.5 h-3.5" /> {attr.location}
                     </span>
                     <span className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent/10 text-accent text-xs font-extrabold">
-                      <Star className="w-3.5 h-3.5 fill-accent" /> {attr.rating}
+                      {/* <Star className="w-3.5 h-3.5 fill-accent" /> {attr.rating} */}
+                      <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
+                      <span className="text-green-500 font-extrabold">
+                        {attr.rating}
+                      </span>
                     </span>
                   </div>
                   <h3 className="font-display font-bold text-lg text-primary-dark mb-2 line-clamp-1">{attr.name}</h3>

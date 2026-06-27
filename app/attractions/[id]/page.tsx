@@ -4,9 +4,9 @@ import { use } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { 
-  Compass, MapPin, Calendar, Star, Clock, Info, 
-  ArrowLeft, ArrowRight, ShieldCheck, HelpCircle 
+import {
+  Compass, MapPin, Calendar, Star, Clock, Info,
+  ArrowLeft, ArrowRight, ShieldCheck, HelpCircle
 } from 'lucide-react';
 import { destinations, attractions, tours } from '@/data/tourismData';
 import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
@@ -29,7 +29,7 @@ export default function AttractionDetail({ params }: PageProps) {
 
   // Get destination info
   const destination = destinations.find(d => d.id === attraction.destinationId);
-  
+
   // Available tours for this attraction
   const availableTours = tours.filter(t => t.attractionId === attrId);
 
@@ -73,11 +73,11 @@ export default function AttractionDetail({ params }: PageProps) {
               </Link>
             )}
           </div>
-          
+
           <h1 className="font-display font-extrabold text-3xl md:text-5xl tracking-tight mb-3">
             {attraction.name}
           </h1>
-          
+
           <div className="flex flex-wrap items-center gap-4 text-xs md:text-sm text-zinc-200">
             <span className="flex items-center gap-1">
               <MapPin className="w-4 h-4 text-secondary-light" /> {attraction.location}
@@ -141,7 +141,7 @@ export default function AttractionDetail({ params }: PageProps) {
           {/* Attraction Metadata */}
           <AnimatedContainer animation="slideInRight" className="bg-white border border-zinc-100 rounded-[24px] p-8 shadow-luxury space-y-6">
             <h3 className="font-display font-bold text-lg text-primary-dark border-b border-zinc-100 pb-4">Practical Information</h3>
-            
+
             <div className="space-y-4 text-sm">
               <div>
                 <span className="text-zinc-400 font-semibold text-xs uppercase tracking-wider block mb-1">Opening Hours</span>
@@ -193,7 +193,7 @@ export default function AttractionDetail({ params }: PageProps) {
         <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-8">
           Available Tours for {attraction.name}
         </h2>
-        
+
         {availableTours.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {availableTours.map((tour) => (
@@ -211,12 +211,12 @@ export default function AttractionDetail({ params }: PageProps) {
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  
+
                   {/* Category Tag */}
                   <span className="absolute top-4 left-4 px-3 py-1 bg-white/95 backdrop-blur-md text-primary-dark text-xs font-extrabold uppercase tracking-wider rounded-lg shadow-sm">
                     {tour.category}
                   </span>
-                  
+
                   {/* Duration */}
                   <span className="absolute bottom-4 left-4 flex items-center gap-1.5 text-white text-xs font-semibold">
                     <Clock className="w-3.5 h-3.5" /> {tour.duration}
@@ -231,7 +231,11 @@ export default function AttractionDetail({ params }: PageProps) {
                         {destination?.name || 'Indonesia'}
                       </span>
                       <div className="flex items-center gap-1 text-accent font-bold text-xs">
-                        <Star className="w-3.5 h-3.5 fill-accent" /> {tour.rating}
+                        {/* <Star className="w-3.5 h-3.5 fill-accent" /> {tour.rating} */}
+                        <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
+                        <span className="text-green-500 font-extrabold">
+                          {tour.rating}
+                        </span>
                         <span className="text-zinc-400 font-normal">({tour.reviewsCount})</span>
                       </div>
                     </div>
