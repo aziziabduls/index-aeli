@@ -404,7 +404,8 @@ export default function Home() {
                           {destinations.find(d => d.id === tour.destinationId)?.name || 'Indonesia'}
                         </span>
                         <div className="flex items-center gap-1 text-accent font-bold text-xs">
-                          <Star className="w-3.5 h-3.5 fill-accent" /> {tour.rating}
+                          <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
+                          <span className="text-green-500 font-extrabold">{tour.rating}</span>
                           <span className="text-zinc-400 font-normal">({tour.reviewsCount})</span>
                         </div>
                       </div>
