@@ -96,7 +96,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center pt-16 sm:pt-0">
           {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -111,7 +111,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-tight sm:leading-none tracking-tight mb-6"
+            className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
           >
             Discover the Best <br />
             of <span className="text-secondary-light bg-gradient-to-r from-secondary-light to-accent bg-clip-text">Indonesia</span>
@@ -121,7 +121,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-zinc-300 text-base sm:text-xl max-w-2xl mb-12 font-medium leading-relaxed"
+            className="text-zinc-300 text-[13px] sm:text-xl max-w-2xl mb-4 sm:mb-16 font-medium leading-relaxed"
           >
             Explore breathtaking destinations, unforgettable attractions, and curated premium tours. Your luxury tropical gateway awaits.
           </motion.p>
