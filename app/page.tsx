@@ -232,7 +232,8 @@ export default function Home() {
         </div>
 
         {/* Scrollable Row */}
-        <div className="flex gap-6 overflow-x-auto pb-6 no-scrollbar snap-x scroll-smooth">
+        {/* disable scroll y */}
+        <div className="flex gap-6 overflow-x-auto pb-6 no-scrollbar snap-x scroll-smooth overflow-y-hidden">
           {destinations.map((dest, index) => (
             <motion.div
               key={dest.id}
