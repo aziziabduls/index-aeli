@@ -63,7 +63,7 @@ export function Navbar() {
                 }`}>
                 INDEX-<span className={isScrolled ? 'text-primary font-extrabold' : 'text-white font-extrabold'}>AELI</span>
               </span>
-              <span className={`text-[9px] uppercase hidden sm:block tracking-[0.22em] font-semibold mt-1 leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-400' : 'text-white/60'
+              <span className={`text-[9px] uppercase hidden sm:block tracking-[0.22em] font-semibold mt-1 leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-800' : 'text-white/60'
                 }`}>
                 INDONESIA TOUR PLATFORM
               </span>

@@ -48,7 +48,7 @@ export default function TourDetail({ params }: PageProps) {
   return (
     <div className="w-full relative bg-luxury-bg min-h-screen pb-24">
       {/* Spacer for sticky header */}
-      <div className="h-26 bg-primary-dark" />
+      <div className="h-24 bg-primary-dark" />
 
       {/* 1. TOUR GALLERY / BANNER */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 pt-8">

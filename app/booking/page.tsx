@@ -182,7 +182,7 @@ function BookingFormContent() {
   return (
     <div className="w-full relative">
       {/* Spacer for sticky header */}
-      <div className="h-20 bg-primary-dark" />
+      <div className="h-24 bg-primary-dark" />
 
       {/* Progress Indicator */}
       <div className="bg-zinc-50 border-b border-zinc-150 py-4">
