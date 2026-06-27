@@ -49,11 +49,14 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300 ${isScrolled
+            {/* <div className={`w-10 h-10 rounded-full flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300 ${isScrolled
               ? 'bg-primary text-white'
               : 'bg-white text-zinc-950'
               }`}>
               <Compass className="w-5 h-5" />
+            </div> */}
+            <div className='bg-white rounded-full p-1 item-center'>
+              <img src="/logo-aeli.png" alt="logo" width={40} height={40} className={isScrolled ? 'text-zinc-900' : 'text-white'} />
             </div>
             <div className="flex flex-col">
               <span className={`font-display font-bold text-lg md:text-xl tracking-tight leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-900' : 'text-white'

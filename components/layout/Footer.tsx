@@ -54,8 +54,11 @@ export function Footer() {
         {/* About Brand */}
         <div className="space-y-5">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-white shadow-sm">
+            {/* <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-white shadow-sm">
               <Compass className="w-5 h-5 text-primary" />
+            </div> */}
+            <div className='bg-white rounded-full p-1 item-center'>
+              <img src="/logo-aeli.png" alt="logo" width={40} height={40} />
             </div>
             <span className="font-display font-bold text-xl tracking-tight text-white leading-none">
               INDEX<span className=" font-extrabold">-AELI</span>

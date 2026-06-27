@@ -48,7 +48,7 @@ export default function TourDetail({ params }: PageProps) {
   return (
     <div className="w-full relative bg-luxury-bg min-h-screen pb-24">
       {/* Spacer for sticky header */}
-      <div className="h-20 bg-primary-dark" />
+      <div className="h-26 bg-primary-dark" />
 
       {/* 1. TOUR GALLERY / BANNER */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 pt-8">
@@ -74,9 +74,8 @@ export default function TourDetail({ params }: PageProps) {
         {/* Gallery Grid */}
         <div className={tourImages.length > 1 ? "grid grid-cols-1 lg:grid-cols-3 gap-6" : "w-full"}>
           {/* Main Large Image */}
-          <div className={`${
-            tourImages.length > 1 ? "lg:col-span-2" : "w-full"
-          } relative aspect-[16/10] md:aspect-[21/9] rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
+          <div className={`${tourImages.length > 1 ? "lg:col-span-2" : "w-full"
+            } relative aspect-[16/10] md:aspect-[21/9] rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
             <Image
               src={tourImages[activeImageIdx]}
               alt={tour.name}
@@ -95,9 +94,8 @@ export default function TourDetail({ params }: PageProps) {
                 <button
                   key={idx}
                   onClick={() => setActiveImageIdx(idx)}
-                  className={`relative aspect-[16/10] w-[120px] lg:w-full rounded-xl overflow-hidden flex-shrink-0 border-2 cursor-pointer transition-all ${
-                    activeImageIdx === idx ? 'border-primary shadow-md scale-98' : 'border-transparent opacity-75 hover:opacity-100'
-                  }`}
+                  className={`relative aspect-[16/10] w-[120px] lg:w-full rounded-xl overflow-hidden flex-shrink-0 border-2 cursor-pointer transition-all ${activeImageIdx === idx ? 'border-primary shadow-md scale-98' : 'border-transparent opacity-75 hover:opacity-100'
+                    }`}
                 >
                   <Image
                     src={img}
