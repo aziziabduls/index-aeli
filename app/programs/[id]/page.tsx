@@ -320,7 +320,7 @@ export default function TourDetail({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 3. RELATED TOURS */}
+      {/* 3. RELATED PROGRAMS */}
       {relatedTours.length > 0 && (
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
           <h2 className="font-display font-bold text-2xl text-primary-dark mb-8">

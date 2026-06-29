@@ -188,7 +188,7 @@ export default function AttractionDetail({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 3. AVAILABLE TOURS */}
+      {/* 3. AVAILABLE PROGRAMS */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
         <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-8">
           Available Programs for {attraction.name}

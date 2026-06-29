@@ -73,7 +73,7 @@ export function Footer() {
             </span>
           </div>
           <p className="text-sm text-zinc-400 leading-relaxed">
-            INDEX-AELI is Indonesia's premier tourism landing platform. We connect worldwide travelers with curated premium tours and unforgettable tropical attractions across the Indonesian archipelago.
+            INDEX-AELI is Indonesia's premier tourism landing platform. We connect worldwide travelers with curated premium program and unforgettable tropical attractions across the Indonesian archipelago.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-zinc-300" aria-label="Instagram">
@@ -110,7 +110,7 @@ export function Footer() {
               <Link href="/#attractions" className="hover:text-primary-light transition-colors">Top Attractions</Link>
             </li>
             <li>
-              <Link href="/#tours" className="hover:text-primary-light transition-colors">Curated Tours</Link>
+              <Link href="/#program" className="hover:text-primary-light transition-colors">Curated Programs</Link>
             </li>
             <li>
               <Link href="/#about" className="hover:text-primary-light transition-colors">About INDEX-AELI</Link>
