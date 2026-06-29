@@ -517,7 +517,7 @@ export default function Home() {
               },
               {
                 icon: LucideLeafyGreen,
-                title: 'Sustain for better future',
+                title: 'Sustain For Better Future',
                 desc: 'Protect the environment and support local communities through responsible tourism. We partner with eco-conscious operators, minimize waste, and promote conservation efforts to ensure your journey contributes to a sustainable future for Indonesia’s natural treasures.'
               }
             ].map((feature, idx) => {
