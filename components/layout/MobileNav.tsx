@@ -17,7 +17,7 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
     { label: 'Home', path: '/', icon: Home },
     { label: 'Destinations', path: '/#destinations', icon: Compass },
     { label: 'Attractions', path: '/#attractions', icon: Map },
-    { label: 'Tours', path: '/#tours', icon: BookOpen },
+    { label: 'Programs', path: '/#program', icon: BookOpen },
     { label: 'About', path: '/#about', icon: BookOpen },
     { label: 'Contact', path: '/#contact', icon: Phone }
   ];
@@ -45,7 +45,7 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
           >
             {/* Grab Handle */}
             <div className="w-12 h-1 bg-zinc-200 rounded-full mx-auto my-3 flex-shrink-0" />
-            
+
             {/* Header */}
             <div className="flex items-center justify-between px-6 pb-4 border-b border-zinc-100">
               <span className="font-display font-semibold text-lg text-primary-dark">Menu</span>
@@ -71,11 +71,10 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
                       key={item.label}
                       href={item.path}
                       onClick={onClose}
-                      className={`flex items-center justify-between p-4 rounded-2xl transition-all ${
-                        isActive
+                      className={`flex items-center justify-between p-4 rounded-2xl transition-all ${isActive
                           ? 'bg-primary/10 text-primary font-semibold'
                           : 'text-zinc-600 hover:bg-zinc-50'
-                      }`}
+                        }`}
                     >
                       <div className="flex items-center gap-3.5">
                         <div className={`p-2 rounded-xl ${isActive ? 'bg-primary/20 text-primary' : 'bg-zinc-50 text-zinc-400'}`}>
