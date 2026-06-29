@@ -59,7 +59,8 @@ export function Navbar() {
             <div className='rounded-[8px] p-1 item-center'>
               <img src="/logo_index.png" alt="logo" width={100} height={100} className={isScrolled ? 'text-zinc-900' : 'text-white'} />
             </div>
-            <div className="flex flex-col">
+            {/* hide on mobile view */}
+            <div className="flex flex-col hidden md:block">
               <span className={`font-display font-bold text-lg md:text-xl tracking-tight leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-900' : 'text-white'
                 }`}>
                 INDEX
