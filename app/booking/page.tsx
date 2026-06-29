@@ -10,7 +10,7 @@ import {
   ArrowLeft, ArrowRight, Star, ShieldCheck, CheckCircle2, Ticket, Printer,
   CreditCard, Landmark, QrCode, Lock, Check, Copy
 } from 'lucide-react';
-import { tours } from '@/data/tourismData';
+import { programs } from '@/data/tourismData';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -25,11 +25,11 @@ function BookingFormContent() {
   const { formatPrice, currency } = useCurrency();
   const searchParams = useSearchParams();
   const router = useRouter();
-  const tourIdParam = searchParams.get('tourId');
+  const tourIdParam = searchParams.get('programId');
 
-  // Selected tour state
-  const [selectedTourId, setSelectedTourId] = useState(tourIdParam || tours[0]?.id || '');
-  const selectedTour = tours.find(t => t.id === selectedTourId) || tours[0];
+  // Selected program state
+  const [selectedTourId, setSelectedTourId] = useState(tourIdParam || programs[0]?.id || '');
+  const selectedTour = programs.find(t => t.id === selectedTourId) || programs[0];
 
   // Step state: 1 = Details, 2 = Payment
   const [currentStep, setCurrentStep] = useState(1);
@@ -57,7 +57,7 @@ function BookingFormContent() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [bookingRef, setBookingRef] = useState('');
 
-  // Update selected tour if query param changes
+  // Update selected program if query param changes
   useEffect(() => {
     if (tourIdParam) {
       setSelectedTourId(tourIdParam);
@@ -221,7 +221,7 @@ function BookingFormContent() {
             if (currentStep === 2) {
               setCurrentStep(1);
             } else {
-              router.push(selectedTour ? `/tours/${selectedTour.id}` : '/');
+              router.push(selectedTour ? `/programs/${selectedTour.id}` : '/');
             }
           }}
           className="inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-primary transition-colors bg-white border border-zinc-200 px-4 py-2 rounded-full mb-8 shadow-sm cursor-pointer"
@@ -254,7 +254,7 @@ function BookingFormContent() {
                   </div>
 
                   <form onSubmit={handleNextStep} className="space-y-6">
-                    {/* Tour Selection */}
+                    {/* Program Selection */}
                     <div className="flex flex-col text-left">
                       <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-2">
                         <Compass className="w-4 h-4 text-primary" /> Select Attraction Experience *
@@ -267,7 +267,7 @@ function BookingFormContent() {
                           <SelectValue placeholder="Select an experience" />
                         </SelectTrigger>
                         <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
-                          {tours.map(t => (
+                          {programs.map(t => (
                             <SelectItem key={t.id} value={t.id}>{t.name} ({formatPrice(t.price)}/person)</SelectItem>
                           ))}
                         </SelectContent>
@@ -725,7 +725,7 @@ function BookingFormContent() {
                 Booking Summary
               </h3>
 
-              {/* Selected Tour Preview */}
+              {/* Selected Program Preview */}
               {selectedTour && (
                 <div className="space-y-4">
                   <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden shadow-sm">
@@ -824,7 +824,7 @@ function BookingFormContent() {
 
             <div className="grid grid-cols-2 gap-4 text-xs">
               <div>
-                <span className="text-zinc-400 font-semibold block mb-0.5">Tour Name</span>
+                <span className="text-zinc-400 font-semibold block mb-0.5">Program Name</span>
                 <span className="font-bold text-zinc-800 line-clamp-1">{selectedTour?.name}</span>
               </div>
               <div>

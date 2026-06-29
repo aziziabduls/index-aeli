@@ -33,7 +33,7 @@ export function Navbar() {
     { label: 'Home', path: '/' },
     { label: 'Destinations', path: '/#destinations' },
     { label: 'Attractions', path: '/#attractions' },
-    { label: 'Tours', path: '/#tours' },
+    { label: 'Programs', path: '/#program' },
     { label: 'About', path: '/#about' },
     { label: 'Contact', path: '/#contact' }
   ];
@@ -55,17 +55,20 @@ export function Navbar() {
               }`}>
               <Compass className="w-5 h-5" />
             </div> */}
-            <div className='bg-white rounded-full p-1 item-center'>
-              <img src="/logo-aeli.png" alt="logo" width={40} height={40} className={isScrolled ? 'text-zinc-900' : 'text-white'} />
+            {/* <div className={`backdrop-blur-sm rounded-[8px] p-1 item-center ${isScrolled ? 'bg-black/10' : 'bg-white/20'}`}> */}
+            <div className='rounded-[8px] p-1 item-center'>
+              <img src="/logo_index.png" alt="logo" width={100} height={100} className={isScrolled ? 'text-zinc-900' : 'text-white'} />
             </div>
             <div className="flex flex-col">
               <span className={`font-display font-bold text-lg md:text-xl tracking-tight leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-900' : 'text-white'
                 }`}>
-                INDEX-<span className={isScrolled ? 'text-primary font-extrabold' : 'text-white font-extrabold'}>AELI</span>
+                INDEX
+                <span className='font-display font-medium text-sm md:text-md tracking-tight'>by</span>
+                <span className={isScrolled ? 'text-primary font-extrabold' : 'text-white font-extrabold'}>AELI</span>
               </span>
-              <span className={`text-[9px] uppercase hidden sm:block tracking-[0.22em] font-semibold mt-1 leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-800' : 'text-white/60'
+              <span className={`text-[12px] hidden sm:block font-semibold mt-1 leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-800' : 'text-white/60'
                 }`}>
-                INDONESIA TOUR PLATFORM
+                Indonesia Destination-Based Exploration
               </span>
             </div>
           </Link>

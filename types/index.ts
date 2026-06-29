@@ -43,7 +43,7 @@ export interface ItineraryItem {
   activities: string[];
 }
 
-export interface Tour {
+export interface Program {
   id: string;
   name: string;
   slug: string;
@@ -55,7 +55,7 @@ export interface Tour {
   price: number;
   rating: number;
   reviewsCount: number;
-  category: 'Adventure' | 'Cultural' | 'Wellness' | 'Nature' | 'Luxury';
+  category: 'Nature and Eco-Tourism' | 'Cultural Immersion' | 'Culinary Journey' | 'Community and Social Impact' | 'Adventure and Challenge';
   highlights: string[];
   included: string[];
   excluded: string[];
@@ -74,7 +74,7 @@ export interface Review {
 }
 
 export interface BookingDetails {
-  tourId: string;
+  programId: string;
   travelDate: string;
   guests: number;
   name: string;

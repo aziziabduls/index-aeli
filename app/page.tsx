@@ -6,9 +6,14 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Compass, MapPin, Calendar, Star, Search, Clock, Award, ShieldCheck,
-  ChevronLeft, ChevronRight, CheckCircle, ArrowRight, Sparkles
+  ChevronLeft, ChevronRight, CheckCircle, ArrowRight, Sparkles,
+  Map,
+  Group,
+  GroupIcon,
+  Users,
+  LucideLeafyGreen
 } from 'lucide-react';
-import { destinations, attractions, tours, reviews } from '@/data/tourismData';
+import { destinations, attractions, programs, reviews } from '@/data/tourismData';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { Button, buttonVariants } from '@/components/ui/button';
@@ -25,12 +30,12 @@ export default function Home() {
   const [searchDest, setSearchDest] = useState('');
   const [searchAttr, setSearchAttr] = useState('');
   const [searchDate, setSearchDate] = useState('');
-  const [filteredTours, setFilteredTours] = useState(tours.slice(0, 6));
+  const [filteredTours, setFilteredTours] = useState(programs.slice(0, 6));
   const [hasSearched, setHasSearched] = useState(false);
 
   // Category State
   const [activeCategory, setActiveCategory] = useState('All');
-  const categories = ['All', 'Adventure', 'Cultural', 'Wellness', 'Nature', 'Luxury'];
+  const categories = ['All', 'Nature and Eco-Tourism', 'Cultural Immersion', 'Culinary Journey', 'Community and Social Impact', 'Adventure and Challenge'];
 
   // Testimonials Slider State
   const [currentReview, setCurrentReview] = useState(0);
@@ -42,7 +47,7 @@ export default function Home() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    let results = tours;
+    let results = programs;
 
     if (searchDest) {
       results = results.filter(t => t.destinationId === searchDest);
@@ -54,8 +59,8 @@ export default function Home() {
     setFilteredTours(results);
     setHasSearched(true);
 
-    // Smooth scroll down to tours section
-    const toursSection = document.getElementById('tours');
+    // Smooth scroll down to programs section
+    const toursSection = document.getElementById('programs');
     if (toursSection) {
       toursSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -65,9 +70,9 @@ export default function Home() {
     setActiveCategory(cat);
     setHasSearched(false);
     if (cat === 'All') {
-      setFilteredTours(tours.slice(0, 6));
+      setFilteredTours(programs.slice(0, 6));
     } else {
-      setFilteredTours(tours.filter(t => t.category === cat));
+      setFilteredTours(programs.filter(t => t.category === cat));
     }
   };
 
@@ -105,7 +110,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 text-sm font-semibold tracking-wider text-secondary-light uppercase"
           >
             <Sparkles className="w-4 h-4 text-accent" />
-            <span>Indonesia Tour & Attraction Landing Platform</span>
+            <span>Indonesia Program & Attraction Landing Platform</span>
           </motion.div> */}
 
           <motion.h1
@@ -114,8 +119,11 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
           >
-            Discover the Best <br />
-            of <span className="text-secondary-light bg-gradient-to-r from-secondary-light to-accent bg-clip-text">Indonesia</span>
+            EXPLORE EVERY DESTINATION
+            <br />
+            <span className="text-secondary-light bg-gradient-to-r from-secondary-light to-accent bg-clip-text">
+              EXPERIENCE THE REAL INDONESIA!
+            </span>
           </motion.h1>
 
           <motion.p
@@ -124,7 +132,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-zinc-300 text-[13px] sm:text-xl max-w-2xl mb-4 sm:mb-16 font-medium leading-relaxed"
           >
-            Explore breathtaking destinations, unforgettable attractions, and curated premium tours. Your luxury tropical gateway awaits.
+            {/* Explore breathtaking destinations, unforgettable attractions, and curated premium programs. Your luxury tropical gateway awaits. */}
+            Bukan Sekadar Perjalanan. Ini Adalah Petualangan Bermakna.
           </motion.p>
 
           {/* FLOATING SEARCH CARD */}
@@ -233,7 +242,7 @@ export default function Home() {
                   className="w-full flex items-center justify-center gap-2"
                 >
                   <Search className="w-5 h-5" />
-                  <span>Search Tours</span>
+                  <span>Search Programs</span>
                 </Button>
               </div>
             </form>
@@ -344,7 +353,7 @@ export default function Home() {
                     href={`/attractions/${attr.id}`}
                     className="inline-flex items-center justify-center w-full h-11 border border-primary/20 hover:border-primary hover:bg-primary/5 text-primary text-sm font-semibold rounded-xl transition-all"
                   >
-                    View Details & Tours
+                    View Details & Program
                   </Link>
                 </GlassCard>
               </AnimatedContainer>
@@ -353,12 +362,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. POPULAR TOURS */}
-      <section id="tours" className="py-24 max-w-7xl mx-auto px-6 md:px-8">
+      {/* 4. POPULAR Program */}
+      <section id="program" className="py-24 max-w-7xl mx-auto px-6 md:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-primary mb-2 block">Curated Journeys</span>
           <h2 className="font-display font-extrabold text-3xl md:text-5xl text-primary-dark mb-4">
-            Best Selling Popular Tours
+            Best Selling Popular Program
           </h2>
           <p className="text-zinc-500">
             Hand-picked itineraries designed by local experts to provide immersive, unforgettable travel memories.
@@ -371,12 +380,12 @@ export default function Home() {
           onValueChange={(val) => handleCategoryChange(val)}
           className="w-full flex flex-col items-center mb-10"
         >
-          <TabsList variant="line" className="gap-2 overflow-x-auto pb-2 no-scrollbar max-w-full justify-start md:justify-center p-0 h-auto">
+          <TabsList variant="line" className="gap-2 overflow-x-auto pb-2 no-scrollbar max-w-full justify-start md:justify-center p-0 h-auto flex-nowrap">
             {categories.map((cat) => (
               <TabsTrigger
                 key={cat}
                 value={cat}
-                className="px-6 py-2.5 rounded-full font-display font-semibold text-sm cursor-pointer border border-zinc-200 transition-all data-active:bg-primary data-active:text-primary-light data-active:shadow-md data-active:shadow-primary/25 bg-zinc-100 hover:bg-zinc-200/70 text-zinc-600 after:hidden"
+                className="px-6 py-2.5 rounded-full font-display font-semibold text-sm cursor-pointer border border-zinc-200 transition-all data-active:bg-primary data-active:text-primary-light data-active:shadow-md data-active:shadow-primary/25 bg-zinc-100 hover:bg-zinc-200/70 text-zinc-600 after:hidden whitespace-nowrap flex-shrink-0"
               >
                 {cat}
               </TabsTrigger>
@@ -384,7 +393,7 @@ export default function Home() {
           </TabsList>
         </Tabs>
 
-        {/* Tours Grid */}
+        {/* Programs Grid */}
         <AnimatePresence mode="wait">
           {filteredTours.length > 0 ? (
             <motion.div
@@ -394,17 +403,17 @@ export default function Home() {
               exit={{ opacity: 0, y: 20 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {filteredTours.map((tour) => (
+              {filteredTours.map((program) => (
                 <motion.div
                   layout
-                  key={tour.id}
+                  key={program.id}
                   className="bg-white rounded-[24px] overflow-hidden shadow-luxury border border-zinc-100/50 hover:shadow-luxury-hover hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full"
                 >
-                  {/* Tour Image */}
+                  {/* Program Image */}
                   <div className="relative aspect-[16/11] overflow-hidden">
                     <Image
-                      src={tour.image}
-                      alt={tour.name}
+                      src={program.image}
+                      alt={program.name}
                       fill
                       className="object-cover"
                     />
@@ -412,33 +421,33 @@ export default function Home() {
 
                     {/* Category Tag */}
                     <span className="absolute top-4 left-4 px-3 py-1 bg-white/95 backdrop-blur-md text-primary-dark text-xs font-extrabold uppercase tracking-wider rounded-lg shadow-sm">
-                      {tour.category}
+                      {program.category}
                     </span>
 
                     {/* Duration */}
                     <span className="absolute bottom-4 left-4 flex items-center gap-1.5 text-white text-xs font-semibold">
-                      <Clock className="w-3.5 h-3.5" /> {tour.duration}
+                      <Clock className="w-3.5 h-3.5" /> {program.duration}
                     </span>
                   </div>
 
-                  {/* Tour Details */}
+                  {/* Program Details */}
                   <div className="p-6 flex-grow flex flex-col justify-between">
                     <div>
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-[11px] font-bold text-zinc-400 uppercase tracking-widest">
-                          {destinations.find(d => d.id === tour.destinationId)?.name || 'Indonesia'}
+                          {destinations.find(d => d.id === program.destinationId)?.name || 'Indonesia'}
                         </span>
                         <div className="flex items-center gap-1 text-accent font-bold text-xs">
                           <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
-                          <span className="text-green-500 font-extrabold">{tour.rating}</span>
-                          <span className="text-zinc-400 font-normal">({tour.reviewsCount})</span>
+                          <span className="text-green-500 font-extrabold">{program.rating}</span>
+                          <span className="text-zinc-400 font-normal">({program.reviewsCount})</span>
                         </div>
                       </div>
                       <h3 className="font-display font-bold text-lg text-primary-dark mb-2 line-clamp-2 hover:text-primary transition-colors">
-                        <Link href={`/tours/${tour.id}`}>{tour.name}</Link>
+                        <Link href={`/programs/${program.id}`}>{program.name}</Link>
                       </h3>
                       <p className="text-zinc-500 text-xs leading-relaxed line-clamp-2 mb-6">
-                        {tour.description}
+                        {program.description}
                       </p>
                     </div>
 
@@ -446,17 +455,17 @@ export default function Home() {
                       <div>
                         <span className="text-[10px] text-zinc-400 uppercase tracking-widest block">Start from</span>
                         <span className="text-xl font-display font-extrabold text-primary-dark">
-                          {formatPrice(tour.price)} <span className="text-xs font-normal text-zinc-500">/ person</span>
+                          {formatPrice(program.price)} <span className="text-xs font-normal text-zinc-500">/ person</span>
                         </span>
                       </div>
                       <Link
-                        href={`/tours/${tour.id}`}
+                        href={`/programs/${program.id}`}
                         className={buttonVariants({
                           variant: "cobalt",
                           className: "h-11 px-5 text-xs flex items-center justify-center gap-1.5"
                         })}
                       >
-                        <span>Book Tour</span>
+                        <span>Book Program</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
                     </div>
@@ -467,7 +476,7 @@ export default function Home() {
           ) : (
             <div className="text-center py-16 bg-zinc-50 rounded-3xl border border-zinc-100">
               <Compass className="w-12 h-12 text-zinc-300 mx-auto mb-4 animate-bounce" />
-              <h3 className="font-display font-semibold text-lg text-zinc-800">No tours matching your filter</h3>
+              <h3 className="font-display font-semibold text-lg text-zinc-800">No programs matching your filter</h3>
               <p className="text-zinc-500 text-sm mt-1">Please try a different category or search term.</p>
             </div>
           )}
@@ -484,31 +493,32 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-secondary mb-2 block">Our Credentials</span>
             <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white">
-              Why Travel with INDEX-AELI?
+              {/* Why Travel with INDEX-AELI? */}
+              A World of Wonders Awaits
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
+                icon: Map,
+                title: 'Discover Hidden Gems',
+                desc: 'Explore Indonesia’s untouched corners and secret spots, far from the usual tourist trails.'
+              },
+              {
                 icon: Compass,
-                title: 'Hand-picked Local Experts',
-                desc: 'All itineraries are curated and led by accredited native guides who know the island secrets.'
+                title: 'Explore Unique Experiences',
+                desc: 'Authentic adventures curated to showcase Indonesia’s rich culture and vibrant nature.'
               },
               {
-                icon: Award,
-                title: 'Premium Hospitality Floor',
-                desc: 'A luxury-focused approach to travel, ensuring the best boutique stays and Yacht cruise access.'
+                icon: Users,
+                title: 'Connect Local Cultures',
+                desc: 'Support local communities through tourism. We champion homestays, local guides, and community-based enterprises to ensure your trip gives back directly to the people and places you visit. Experience genuine hospitality and preserve Indonesia’s cultural heritage together.'
               },
               {
-                icon: ShieldCheck,
-                title: 'Secure & Flexible Booking',
-                desc: 'We support instant refunds and up to 24 hours prior booking updates without any penalties.'
-              },
-              {
-                icon: CheckCircle,
-                title: '100% Verified Reviews',
-                desc: 'Every single traveler testimonial and photo gallery is submitted by real booking customers.'
+                icon: LucideLeafyGreen,
+                title: 'Sustain for better future',
+                desc: 'Protect the environment and support local communities through responsible tourism. We partner with eco-conscious operators, minimize waste, and promote conservation efforts to ensure your journey contributes to a sustainable future for Indonesia’s natural treasures.'
               }
             ].map((feature, idx) => {
               const Icon = feature.icon;
@@ -523,7 +533,7 @@ export default function Home() {
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="font-display font-bold text-lg text-white mb-3">{feature.title}</h3>
-                  <p className="text-zinc-400 text-sm leading-relaxed">{feature.desc}</p>
+                  <p className="text-zinc-300 text-sm leading-relaxed">{feature.desc}</p>
                 </AnimatedContainer>
               );
             })}
@@ -536,7 +546,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
           {[
             { value: '10K+', label: 'Happy Travelers' },
-            { value: '500+', label: 'Luxury Tours' },
+            { value: '500+', label: 'Luxury Programs' },
             { value: '120+', label: 'Unique Destinations' }
           ].map((stat, index) => (
             <AnimatedContainer
@@ -631,7 +641,7 @@ export default function Home() {
             Ready to Begin Your Tropical Odyssey?
           </h2>
           <p className="text-zinc-200 text-base md:text-lg mb-8 max-w-xl mx-auto font-medium">
-            Contact us today for custom private tours, premium villa retreats, or group event planning across Indonesia.
+            Contact us today for custom private programs, premium villa retreats, or group event planning across Indonesia.
           </p>
           <Link
             href="/booking"

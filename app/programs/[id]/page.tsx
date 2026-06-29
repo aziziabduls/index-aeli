@@ -8,7 +8,7 @@ import {
   Compass, MapPin, Calendar, Star, Clock, Info, Check, X,
   ArrowLeft, ArrowRight, ShieldCheck, Map, Users, ChevronDown, ChevronUp
 } from 'lucide-react';
-import { destinations, attractions, tours } from '@/data/tourismData';
+import { destinations, attractions, programs } from '@/data/tourismData';
 import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { buttonVariants } from '@/components/ui/button';
@@ -22,28 +22,28 @@ interface PageProps {
 export default function TourDetail({ params }: PageProps) {
   const { formatPrice, currency } = useCurrency();
   const resolvedParams = use(params);
-  const tourId = resolvedParams.id;
-  const tour = tours.find(t => t.id === tourId);
+  const programId = resolvedParams.id;
+  const program = programs.find(t => t.id === programId);
 
-  if (!tour) {
+  if (!program) {
     return notFound();
   }
 
   // Get destination & attraction info
-  const destination = destinations.find(d => d.id === tour.destinationId);
-  const attraction = attractions.find(a => a.id === tour.attractionId);
+  const destination = destinations.find(d => d.id === program.destinationId);
+  const attraction = attractions.find(a => a.id === program.attractionId);
 
   // Itinerary timeline expand/collapse state
   const [activeDays, setActiveDays] = useState<string[]>(['day-0']);
 
-  // Related tours (same destination, excluding itself)
-  const relatedTours = tours.filter(
-    t => t.destinationId === tour.destinationId && t.id !== tour.id
+  // Related programs (same destination, excluding itself)
+  const relatedTours = programs.filter(
+    t => t.destinationId === program.destinationId && t.id !== program.id
   ).slice(0, 3);
 
   // Image Slider State
   const [activeImageIdx, setActiveImageIdx] = useState(0);
-  const tourImages = Array.from(new Set([tour.image, ...(tour.gallery || [])])).filter(Boolean);
+  const tourImages = Array.from(new Set([program.image, ...(program.gallery || [])])).filter(Boolean);
 
   return (
     <div className="w-full relative bg-luxury-bg min-h-screen pb-24">
@@ -68,7 +68,7 @@ export default function TourDetail({ params }: PageProps) {
               <ArrowRight className="w-3 h-3 text-zinc-300" />
             </>
           )}
-          <span className="text-zinc-800 font-semibold line-clamp-1">{tour.name}</span>
+          <span className="text-zinc-800 font-semibold line-clamp-1">{program.name}</span>
         </div>
 
         {/* Gallery Grid */}
@@ -78,7 +78,7 @@ export default function TourDetail({ params }: PageProps) {
             } relative aspect-[16/10] md:aspect-[21/9] rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
             <Image
               src={tourImages[activeImageIdx]}
-              alt={tour.name}
+              alt={program.name}
               fill
               priority
               className="object-cover"
@@ -99,7 +99,7 @@ export default function TourDetail({ params }: PageProps) {
                 >
                   <Image
                     src={img}
-                    alt={`${tour.name} thumbnail ${idx + 1}`}
+                    alt={`${program.name} thumbnail ${idx + 1}`}
                     fill
                     sizes="200px"
                     className="object-cover"
@@ -118,10 +118,10 @@ export default function TourDetail({ params }: PageProps) {
           <div className="space-y-4">
             <div className="flex flex-wrap items-center gap-3">
               <span className="px-3 py-1 bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider rounded-lg">
-                {tour.category}
+                {program.category}
               </span>
               <span className="flex items-center gap-1 text-xs text-zinc-500 font-semibold">
-                <Clock className="w-4 h-4 text-primary" /> {tour.duration}
+                <Clock className="w-4 h-4 text-primary" /> {program.duration}
               </span>
               <span className="flex items-center gap-1.5 text-xs text-zinc-500 font-semibold">
                 <Users className="w-4 h-4 text-primary" /> Max 8 Guests
@@ -129,7 +129,7 @@ export default function TourDetail({ params }: PageProps) {
             </div>
 
             <h1 className="font-display font-extrabold text-2xl md:text-4xl text-primary-dark leading-tight">
-              {tour.name}
+              {program.name}
             </h1>
 
             <div className="flex items-center gap-2">
@@ -137,31 +137,31 @@ export default function TourDetail({ params }: PageProps) {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className={`w-4.5 h-4.5 ${i < Math.floor(tour.rating) ? 'fill-green-500' : 'text-zinc-300'
+                    className={`w-4.5 h-4.5 ${i < Math.floor(program.rating) ? 'fill-green-500' : 'text-zinc-300'
                       }`}
                   />
                 ))}
               </div>
-              <span className="text-zinc-900 font-extrabold text-sm">{tour.rating}</span>
-              <span className="text-zinc-400 text-xs font-semibold">({tour.reviewsCount} reviews)</span>
+              <span className="text-zinc-900 font-extrabold text-sm">{program.rating}</span>
+              <span className="text-zinc-400 text-xs font-semibold">({program.reviewsCount} reviews)</span>
             </div>
           </div>
 
           {/* Description */}
           <div className="space-y-3">
-            <h2 className="font-display font-bold text-xl md:text-2xl text-primary-dark">Tour Overview</h2>
+            <h2 className="font-display font-bold text-xl md:text-2xl text-primary-dark">Program Overview</h2>
             <p className="text-zinc-600 text-sm md:text-base leading-relaxed">
-              {tour.description}
+              {program.description}
             </p>
           </div>
 
           {/* Highlights */}
           <div className="bg-white border border-zinc-100 rounded-[24px] p-6 md:p-8 shadow-luxury space-y-5">
             <h3 className="font-display font-bold text-lg text-primary-dark flex items-center gap-2">
-              <Compass className="w-5 h-5 text-primary animate-spin-slow" /> Tour Highlights
+              <Compass className="w-5 h-5 text-primary animate-spin-slow" /> Program Highlights
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {tour.highlights.map((h, i) => (
+              {program.highlights.map((h, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div className="p-1 rounded-full bg-secondary/10 text-primary flex-shrink-0 mt-0.5">
                     <Check className="w-4 h-4" />
@@ -180,7 +180,7 @@ export default function TourDetail({ params }: PageProps) {
                 What's Included
               </h4>
               <ul className="space-y-3.5">
-                {tour.included.map((inc, i) => (
+                {program.included.map((inc, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs md:text-sm text-zinc-600">
                     <Check className="w-4.5 h-4.5 text-primary flex-shrink-0 mt-0.5" />
                     <span>{inc}</span>
@@ -195,7 +195,7 @@ export default function TourDetail({ params }: PageProps) {
                 What's Excluded
               </h4>
               <ul className="space-y-3.5">
-                {tour.excluded.map((exc, i) => (
+                {program.excluded.map((exc, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-xs md:text-sm text-zinc-600">
                     <X className="w-4.5 h-4.5 text-rose-500 flex-shrink-0 mt-0.5" />
                     <span>{exc}</span>
@@ -211,7 +211,7 @@ export default function TourDetail({ params }: PageProps) {
 
             <div className="relative pl-6 border-l-2 border-primary/20 space-y-4 ml-3">
               <Accordion multiple value={activeDays} onValueChange={setActiveDays} className="w-full space-y-6">
-                {tour.itinerary.map((day, idx) => {
+                {program.itinerary.map((day, idx) => {
                   const isOpen = activeDays.includes(`day-${idx}`);
                   return (
                     <AccordionItem key={idx} value={`day-${idx}`} className="relative border-b-0">
@@ -251,7 +251,7 @@ export default function TourDetail({ params }: PageProps) {
                 <MapPin className="w-8 h-8" />
               </div>
               <div className="space-y-1 text-center md:text-left flex-1">
-                <h4 className="font-semibold text-sm text-zinc-900">{tour.meetingPoint}</h4>
+                <h4 className="font-semibold text-sm text-zinc-900">{program.meetingPoint}</h4>
                 <p className="text-zinc-500 text-xs leading-relaxed">
                   Detailed coordinates and pickup times will be sent immediately inside your secure confirmation email after booking is completed.
                 </p>
@@ -269,7 +269,7 @@ export default function TourDetail({ params }: PageProps) {
             <div className="space-y-1">
               <span className="text-zinc-400 font-semibold text-xs uppercase tracking-wider block">Price per guest</span>
               <div className="flex items-baseline gap-1.5">
-                <span className={`font-display font-black text-primary-dark ${currency === 'IDR' ? 'text-2xl' : 'text-4xl'}`}>{formatPrice(tour.price)}</span>
+                <span className={`font-display font-black text-primary-dark ${currency === 'IDR' ? 'text-2xl' : 'text-4xl'}`}>{formatPrice(program.price)}</span>
                 <span className="text-zinc-500 text-xs">/ all-inclusive</span>
               </div>
             </div>
@@ -290,7 +290,7 @@ export default function TourDetail({ params }: PageProps) {
             </div>
 
             <Link
-              href={`/booking?tourId=${tour.id}`}
+              href={`/booking?programId=${program.id}`}
               className={buttonVariants({
                 variant: "cobalt",
                 className: "w-full h-14 flex items-center justify-center gap-2"
@@ -313,7 +313,7 @@ export default function TourDetail({ params }: PageProps) {
             <div className="space-y-1">
               <h4 className="font-display font-bold text-sm text-primary-dark">INDEX-AELI Guarantee</h4>
               <p className="text-zinc-500 text-xs leading-relaxed">
-                If the tour gets cancelled due to bad tropical weather, we provide 100% instant cash refund or re-scheduling.
+                If the program gets cancelled due to bad tropical weather, we provide 100% instant cash refund or re-scheduling.
               </p>
             </div>
           </div>
@@ -324,7 +324,7 @@ export default function TourDetail({ params }: PageProps) {
       {relatedTours.length > 0 && (
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
           <h2 className="font-display font-bold text-2xl text-primary-dark mb-8">
-            Recommended Related Tours
+            Recommended Related Programs
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {relatedTours.map((relTour) => (
@@ -333,7 +333,7 @@ export default function TourDetail({ params }: PageProps) {
                 animation="fadeInUp"
                 className="bg-white rounded-[24px] overflow-hidden shadow-luxury border border-zinc-100/50 hover:shadow-luxury-hover hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full"
               >
-                {/* Tour Image */}
+                {/* Program Image */}
                 <div className="relative aspect-[16/11] overflow-hidden">
                   <Image
                     src={relTour.image}
@@ -354,7 +354,7 @@ export default function TourDetail({ params }: PageProps) {
                   </span>
                 </div>
 
-                {/* Tour Details */}
+                {/* Program Details */}
                 <div className="p-6 flex-grow flex flex-col justify-between">
                   <div>
                     <div className="flex items-center justify-between mb-2">
@@ -370,7 +370,7 @@ export default function TourDetail({ params }: PageProps) {
                       </div>
                     </div>
                     <h3 className="font-display font-bold text-base text-primary-dark mb-2 line-clamp-2 hover:text-primary transition-colors">
-                      <Link href={`/tours/${relTour.id}`}>{relTour.name}</Link>
+                      <Link href={`/programs/${relTour.id}`}>{relTour.name}</Link>
                     </h3>
                   </div>
 
@@ -382,13 +382,13 @@ export default function TourDetail({ params }: PageProps) {
                       </span>
                     </div>
                     <Link
-                      href={`/tours/${relTour.id}`}
+                      href={`/programs/${relTour.id}`}
                       className={buttonVariants({
                         variant: "cobalt",
                         className: "h-10 px-4 text-xs flex items-center justify-center gap-1.5"
                       })}
                     >
-                      <span>Book Tour</span>
+                      <span>Book Program</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -404,11 +404,11 @@ export default function TourDetail({ params }: PageProps) {
         <div>
           <span className="text-[10px] text-zinc-400 uppercase tracking-widest block font-medium">Price</span>
           <span className={`font-display font-extrabold text-primary-dark ${currency === 'IDR' ? 'text-base' : 'text-xl'}`}>
-            {formatPrice(tour.price)} <span className="text-[10px] text-zinc-500 font-normal">/ guest</span>
+            {formatPrice(program.price)} <span className="text-[10px] text-zinc-500 font-normal">/ guest</span>
           </span>
         </div>
         <Link
-          href={`/booking?tourId=${tour.id}`}
+          href={`/booking?programId=${program.id}`}
           className={buttonVariants({
             variant: "cobalt",
             className: "h-12 px-6 text-sm flex items-center justify-center gap-1.5"

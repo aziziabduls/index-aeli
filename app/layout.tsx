@@ -21,8 +21,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "INDEX-AELI | Indonesia Tour & Attraction Landing Platform",
-  description: "Discover the best of Indonesia. Explore breathtaking destinations, unforgettable attractions, and curated tours.",
+  title: "INDEX by AELI | Explore Popular Destinations",
+  description: " Explore Popular Destinations Experience the rich diversity of Indonesia across our top featured regional hotspots.",
   icons: {
     icon: [
       { url: "/favicon.ico?v=2", sizes: "any" },

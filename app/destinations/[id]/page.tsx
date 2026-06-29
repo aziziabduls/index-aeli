@@ -227,7 +227,7 @@ export default function DestinationDetail({ params }: PageProps) {
                       className: "w-full h-10 border-marketing-btn text-marketing-btn hover:bg-zinc-50 rounded-full font-bold text-xs flex items-center justify-center gap-1.5"
                     })}
                   >
-                    <span>View Tours & Info</span>
+                    <span>View Programs & Info</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </GlassCard>

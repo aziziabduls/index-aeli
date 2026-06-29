@@ -1,4 +1,4 @@
-import { Destination, Attraction, Tour, Review } from '../types';
+import { Destination, Attraction, Program, Review } from '../types';
 
 export const destinations: Destination[] = [
   {
@@ -542,18 +542,18 @@ export const attractions: Attraction[] = [
     rating: 4.4,
     history: 'A Whiskey-class submarine launched in Vladivostok in 1952, it was active in the Indonesian Navy until 1989, participating in the historic West Irian campaign.',
     openingHours: '08:00 AM - 09:00 PM',
-    facilities: ['Guided Submarine Tour', 'Video Room', 'Riverside Cafe', 'Playground', 'Souvenir Area'],
+    facilities: ['Guided Submarine Program', 'Video Room', 'Riverside Cafe', 'Playground', 'Souvenir Area'],
     gallery: ['https://images.unsplash.com/photo-1611637576109-b6f76185ec9b?auto=format&fit=crop&w=800&q=80']
   }
 ];
 
-// Let's generate 40 Tours distributed among destinations (average ~6 tours per destination)
-export const tours: Tour[] = [
-  // Bali Tours (7)
+// Let's generate 40 Programs distributed among destinations (average ~6 programs per destination)
+export const programs: Program[] = [
+  // Bali Programs (7)
   {
-    id: 'bali-sunset-temple-tour',
-    name: 'Tanah Lot Sunset & Cultural Temple Tour',
-    slug: 'bali-sunset-temple-tour',
+    id: 'bali-sunset-temple-program',
+    name: 'Tanah Lot Sunset & Cultural Temple Program',
+    slug: 'bali-sunset-temple-program',
     destinationId: 'bali',
     attractionId: 'tanah-lot',
     image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
@@ -562,7 +562,7 @@ export const tours: Tour[] = [
     price: 735000,
     rating: 4.8,
     reviewsCount: 312,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Private hotel pickup', 'Skip-the-line entrance tickets', 'Expert Balinese historian guide', 'Sunset photo spots'],
     included: ['Air-conditioned transport', 'Entrance fees', 'Local mineral water', 'Sarong rental'],
     excluded: ['Dinner costs', 'Personal expenses', 'Guide tips'],
@@ -590,9 +590,9 @@ export const tours: Tour[] = [
     price: 585000,
     rating: 4.7,
     reviewsCount: 185,
-    category: 'Nature',
+    category: 'Nature and Eco-Tourism',
     highlights: ['Interact with macaque monkeys', 'Scenic jungle swings', 'Batik and woodcarving workshops', 'Organic plantation lunch'],
-    included: ['Private SUV Transport', 'All admission tickets', 'Local tour driver', 'Traditional Indonesian lunch'],
+    included: ['Private SUV Transport', 'All admission tickets', 'Local program driver', 'Traditional Indonesian lunch'],
     excluded: ['Jungle swing fee (optional)', 'Souvenirs', 'Drinks'],
     meetingPoint: 'Ubud central hotels or Denpasar meeting point',
     itinerary: [
@@ -615,7 +615,7 @@ export const tours: Tour[] = [
     price: 1185000,
     rating: 4.9,
     reviewsCount: 428,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Uluwatu Cliff Sunset views', 'Folk Kecak dance tickets', 'Candlelit dinner on beach sand', 'Fresh Jimbaran seafood platter'],
     included: ['Roundtrip hotel shuttle', 'Temple admissions', 'Kecak Dance seat reservation', 'Gourmet seafood dinner'],
     excluded: ['Alcoholic beverages', 'Personal tips'],
@@ -640,7 +640,7 @@ export const tours: Tour[] = [
     price: 435000,
     rating: 4.6,
     reviewsCount: 154,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Scenic terrace trekking', 'High-adrenaline jungle swing', 'Insta-famous photo spots', 'Coconut water refreshment'],
     included: ['Entrance fees', 'Swing ticket', 'Safety harness', 'Mineral water', 'Local trekking guide'],
     excluded: ['Hotel transport (optional extra)', 'Lunch', 'Gratuities'],
@@ -654,7 +654,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'nusa-penida-snorkeling',
-    name: 'Nusa Penida East Coast Snorkeling & Beach Tour',
+    name: 'Nusa Penida East Coast Snorkeling & Beach Program',
     slug: 'nusa-penida-snorkeling',
     destinationId: 'bali',
     attractionId: 'nusa-penida',
@@ -664,7 +664,7 @@ export const tours: Tour[] = [
     price: 1425000,
     rating: 4.9,
     reviewsCount: 267,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Swim with Manta Rays', 'Fast boat roundtrip tickets', 'T-rex shape Kelingking Beach viewpoint', 'Broken Beach & Angel Billabong'],
     included: ['Fast boat ticket', 'Snorkeling equipment', 'Boat captain & guide', 'Indonesian lunch buffet', 'Air-conditioned island car'],
     excluded: ['Manta Ray conservation contribution ($2)', 'Personal souvenirs'],
@@ -689,9 +689,9 @@ export const tours: Tour[] = [
     price: 2385000,
     rating: 4.9,
     reviewsCount: 94,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Sailing on premium catamaran', 'Unlimited banana boat & kayaking', 'Beach club pool access', 'BBQ lunch buffet'],
-    included: ['Hotel transfers', 'Sailing cruise', 'Snorkeling tour', 'BBQ Buffet lunch', 'Wine & beer on return sail'],
+    included: ['Hotel transfers', 'Sailing cruise', 'Snorkeling program', 'BBQ Buffet lunch', 'Wine & beer on return sail'],
     excluded: ['Premium spirits', 'Spa treatments'],
     meetingPoint: 'Benoa Harbor Yacht Terminal',
     itinerary: [
@@ -714,7 +714,7 @@ export const tours: Tour[] = [
     price: 975000,
     rating: 4.8,
     reviewsCount: 112,
-    category: 'Wellness',
+    category: 'Community and Social Impact',
     highlights: ['Melukat Water purification ritual', 'Private yoga instructor', 'Jungle-facing shala session', 'Healthy vegan lunch'],
     included: ['All ceremonial offerings & sarongs', 'Yoga mat & instructor', 'Organic cold-pressed juice', 'Transports'],
     excluded: ['Spa tips'],
@@ -727,10 +727,10 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Jakarta Tours (5)
+  // Jakarta Programs (5)
   {
     id: 'jakarta-historical-batavia',
-    name: 'Old Batavia Colonial Walking Tour',
+    name: 'Old Batavia Colonial Walking Program',
     slug: 'jakarta-historical-batavia',
     destinationId: 'jakarta',
     attractionId: 'kota-tua',
@@ -740,7 +740,7 @@ export const tours: Tour[] = [
     price: 375000,
     rating: 4.6,
     reviewsCount: 89,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Fatahillah Square history', 'Vintage colonial bicycle ride', 'Fascinating Dutch canal walks', 'Coffee stop at historic Cafe Batavia'],
     included: ['Local historian guide', 'Museum entrance fees', 'Bicycle & helmet rental', 'Traditional snack platter'],
     excluded: ['Lunch', 'Tips'],
@@ -764,21 +764,21 @@ export const tours: Tour[] = [
     price: 525000,
     rating: 4.5,
     reviewsCount: 76,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Go up Monas observation deck', 'Visit Southeast Asia\'s largest mosque', 'See Jakarta Cathedral', 'Private air-conditioned transit'],
-    included: ['Transport with driver', 'All entrance tickets', 'Istiqlal mosque tour guide', 'Water'],
+    included: ['Transport with driver', 'All entrance tickets', 'Istiqlal mosque program guide', 'Water'],
     excluded: ['Meals'],
     meetingPoint: 'Hotel Lobby (Central/South Jakarta)',
     itinerary: [
       { title: '09:00 AM - National Monument Monas', activities: ['Visit Independence Museum inside basement', 'Lift up to 115m high observation deck for city views'] },
-      { title: '11:30 AM - Interfaith Landmark Tour', activities: ['Guided tour of Istiqlal Mosque', 'Walk across street to historic Gothic Jakarta Cathedral'] },
+      { title: '11:30 AM - Interfaith Landmark Program', activities: ['Guided program of Istiqlal Mosque', 'Walk across street to historic Gothic Jakarta Cathedral'] },
       { title: '01:30 PM - City Drive & Modern Landmarks', activities: ['Drive through Sudirman-Thamrin financial district', 'Return to hotel'] }
     ],
     gallery: ['https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80']
   },
   {
     id: 'jakarta-taman-mini-culture',
-    name: 'Taman Mini Indonesia Cultural Heritage Tour',
+    name: 'Taman Mini Indonesia Cultural Heritage Program',
     slug: 'jakarta-taman-mini-culture',
     destinationId: 'jakarta',
     attractionId: 'taman-mini',
@@ -788,7 +788,7 @@ export const tours: Tour[] = [
     price: 675000,
     rating: 4.7,
     reviewsCount: 104,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Explore 38 provincial pavilions', 'Ride cable car over miniature Indonesia', 'Museum of Indonesia tickets', 'Sundanese lunch'],
     included: ['Private vehicle transit', 'Entry tickets & cable car ticket', 'Provincial guide explanation', 'Indonesian lunch'],
     excluded: ['Additional museum tickets (optional)'],
@@ -803,7 +803,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'jakarta-foodie-street-adventure',
-    name: 'Jakarta Culinary Night Street Food Tour',
+    name: 'Jakarta Culinary Night Street Food Program',
     slug: 'jakarta-foodie-street-adventure',
     destinationId: 'jakarta',
     attractionId: 'kota-tua',
@@ -813,15 +813,15 @@ export const tours: Tour[] = [
     price: 450000,
     rating: 4.8,
     reviewsCount: 145,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Eat iconic Betawi Kerak Telor', 'Visit lively street markets', 'Try sweet chocolate-cheese Martabak', 'Travel by local motorized Bajaj'],
-    included: ['All food samples (8+ dishes)', 'Local culinary guide', 'Mineral water', 'Bajaj transport during tour'],
+    included: ['All food samples (8+ dishes)', 'Local culinary guide', 'Mineral water', 'Bajaj transport during program'],
     excluded: ['Alcoholic drinks', 'Personal medication'],
     meetingPoint: 'Menteng Central Park',
     itinerary: [
       { title: '06:00 PM - Meeting & Bajaj ride', activities: ['Meet foodie guide', 'Board three-wheeled gas-powered Bajaj', 'Drive to street food market'] },
       { title: '06:30 PM - Savory Bites', activities: ['Sample charcoal-grilled chicken satay with rich peanut sauce', 'Taste Kerak Telor (spiced egg and coconut pancake)'] },
-      { title: '08:30 PM - Sweet Martabak & Coffee', activities: ['Watch vendors prepare Martabak Manis', 'Taste traditional Java coffee', 'Conclude tour'] }
+      { title: '08:30 PM - Sweet Martabak & Coffee', activities: ['Watch vendors prepare Martabak Manis', 'Taste traditional Java coffee', 'Conclude program'] }
     ],
     gallery: ['https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80']
   },
@@ -837,7 +837,7 @@ export const tours: Tour[] = [
     price: 3735000,
     rating: 4.9,
     reviewsCount: 32,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Personal shopping guide/stylist', 'VIP lounge access at Grand Indonesia', 'Fine-dining French-Indonesian dinner', 'Luxury Mercedes-Benz S-Class transit'],
     included: ['Mercedes limousine service', 'Personal shopper assistant', 'Premium afternoon high tea', 'Multi-course fine dining menu'],
     excluded: ['Shopping purchases', 'Alcoholic wines'],
@@ -851,10 +851,10 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Yogyakarta Tours (6)
+  // Yogyakarta Programs (6)
   {
     id: 'yogyakarta-borobudur-sunrise',
-    name: 'Borobudur Sunrise & Village Cycling Tour',
+    name: 'Borobudur Sunrise & Village Cycling Program',
     slug: 'yogyakarta-borobudur-sunrise',
     destinationId: 'yogyakarta',
     attractionId: 'borobudur',
@@ -864,15 +864,15 @@ export const tours: Tour[] = [
     price: 1275000,
     rating: 5.0,
     reviewsCount: 567,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Breathtaking sunrise viewpoint', 'Guided climb of Borobudur temple', 'Bicycle ride through local Javanese villages', 'Traditional Javanese breakfast'],
-    included: ['AC minivan transfers', 'All entry tickets', 'Javanese bicycle rental', 'Guided temple tour', 'Buffet breakfast'],
+    included: ['AC minivan transfers', 'All entry tickets', 'Javanese bicycle rental', 'Guided temple program', 'Buffet breakfast'],
     excluded: ['Climb-up temple special ticket ($25 supplement, must book in advance)', 'Lunch', 'Tips'],
     meetingPoint: 'Hotel lobby (Yogyakarta city center) at 03:30 AM',
     itinerary: [
       { title: '03:30 AM - Early Morning Pickup', activities: ['Drive through Javanese countryside under stars'] },
       { title: '04:45 AM - Sunrise Punthuk Setumbu', activities: ['Walk up hill deck', 'Watch sun rise behind Mount Merapi, illuminating mist around Borobudur temple'] },
-      { title: '06:30 AM - Borobudur Exploration', activities: ['Tour the massive stupa platforms', 'Inspect relief carvings of Buddha life'] },
+      { title: '06:30 AM - Borobudur Exploration', activities: ['Program the massive stupa platforms', 'Inspect relief carvings of Buddha life'] },
       { title: '09:00 AM - Rural Village Cycling', activities: ['Ride vintage bicycles through rural houses', 'Visit local tofu makers and clay pottery craftsmen', 'Enjoy traditional lunch and return'] }
     ],
     gallery: [
@@ -892,14 +892,14 @@ export const tours: Tour[] = [
     price: 1035000,
     rating: 4.9,
     reviewsCount: 294,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Explore Prambanan temple compound', 'Sunset photos of high stone spires', 'Premium seats for Ramayana Ballet', 'Open-air buffet dinner'],
     included: ['Hotel pickups', 'All entry fees', 'VIP theater ticket', 'Javanese buffet dinner'],
     excluded: ['Personal beverages', 'Guide gratuities'],
     meetingPoint: 'Yogyakarta hotels',
     itinerary: [
       { title: '01:30 PM - Afternoon Pickup', activities: ['Drive to Prambanan plains east of Yogyakarta'] },
-      { title: '02:30 PM - Candi Sewu & Prambanan tour', activities: ['Explore neighboring Buddhist Sewu temple', 'Walk central Shiva temple at Prambanan', 'Learn mythological prince Bandung Bondowoso legend'] },
+      { title: '02:30 PM - Candi Sewu & Prambanan program', activities: ['Explore neighboring Buddhist Sewu temple', 'Walk central Shiva temple at Prambanan', 'Learn mythological prince Bandung Bondowoso legend'] },
       { title: '05:30 PM - Sunset & Dinner', activities: ['Photograph spires against orange sky', 'Dine at Prambanan Garden Restaurant overlooking floodlit temples'] },
       { title: '07:30 PM - Ramayana Ballet Performance', activities: ['Watch performance of 200 dancers depicting Prince Rama rescuing Princess Shinta', 'Return to hotel'] }
     ],
@@ -917,13 +917,13 @@ export const tours: Tour[] = [
     price: 585000,
     rating: 4.7,
     reviewsCount: 167,
-    category: 'Cultural',
-    highlights: ['Guided Royal Palace tour', 'Taman Sari underground pool tunnels', 'Make-your-own-batik class', 'Traditional horse cart ride (Andong)'],
+    category: 'Cultural Immersion',
+    highlights: ['Guided Royal Palace program', 'Taman Sari underground pool tunnels', 'Make-your-own-batik class', 'Traditional horse cart ride (Andong)'],
     included: ['Entrance fees', 'Batik master class & materials', 'Local museum guide', 'Traditional Javanese lunch'],
     excluded: ['Drinks', 'Tips'],
     meetingPoint: 'Keraton Main Gate clock tower',
     itinerary: [
-      { title: '08:30 AM - Sultan Palace Tour', activities: ['Explore historical royal quarters', 'Observe court relics, antique weapons, and royal gifts'] },
+      { title: '08:30 AM - Sultan Palace Program', activities: ['Explore historical royal quarters', 'Observe court relics, antique weapons, and royal gifts'] },
       { title: '10:30 AM - Taman Sari Water Castle', activities: ['Walk private royal bathing pools', 'Walk the underground mosques and escape tunnels'] },
       { title: '12:00 PM - Batik Workshop & Lunch', activities: ['Paint wax patterns (malam) on cloth using copper pen (canting)', 'Eat local Gudeg (jackfruit stew) for lunch', 'Take home your batik masterpiece'] }
     ],
@@ -941,7 +941,7 @@ export const tours: Tour[] = [
     price: 675000,
     rating: 4.8,
     reviewsCount: 228,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Vintage open 4x4 Jeep ride', 'Explore volcano lava paths', 'Visit Kaliadem underground bunker', 'Volcano ruins museum entry'],
     included: ['Roundtrip hotel transport', 'Private 4x4 Jeep with driver', 'Safety helmet', 'All park fees', 'Bottled water'],
     excluded: ['Personal masks', 'Lunch'],
@@ -965,7 +965,7 @@ export const tours: Tour[] = [
     price: 1650000,
     rating: 4.9,
     reviewsCount: 145,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Rappel down into Jomblang cave', 'Witness the celestial "Light of Heaven"', 'Float on inner tubes through cave rivers', 'Local traditional lunch'],
     included: ['Private vehicle transit', 'Caving equipment & instructors', 'Rappelling crew', 'Tube rental & life jacket', 'Indonesian lunch box'],
     excluded: ['Gratuities'],
@@ -979,7 +979,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'yogyakarta-royal-palace-luxury-royal-dinner',
-    name: 'Yogyakarta VIP Royal Palace Tour & Exclusive Sultan Dinner',
+    name: 'Yogyakarta VIP Royal Palace Program & Exclusive Sultan Dinner',
     slug: 'yogyakarta-royal-palace-luxury-royal-dinner',
     destinationId: 'yogyakarta',
     attractionId: 'keraton-yogyakarta',
@@ -989,23 +989,23 @@ export const tours: Tour[] = [
     price: 2985000,
     rating: 4.9,
     reviewsCount: 18,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['VIP royal palace access', 'Gamelan musical welcome', 'Sultan-cuisine banquet dinner', 'Exclusive palace souvenir gift'],
     included: ['Hotel limousine transfer', 'Royal palace permit fees', 'Private royal guide', 'Multi-course banquet meal', 'Cultural dance show'],
     excluded: ['Tips'],
     meetingPoint: 'Five-star hotel pickup in Yogyakarta',
     itinerary: [
       { title: '05:00 PM - Palace Limousine Transfer', activities: ['Board private executive vehicle to Keraton'] },
-      { title: '05:30 PM - VIP After-Hours Tour', activities: ['Guided tour of royal chambers and private archives', 'Gamelan musical performance welcome'] },
+      { title: '05:30 PM - VIP After-Hours Program', activities: ['Guided program of royal chambers and private archives', 'Gamelan musical performance welcome'] },
       { title: '07:00 PM - Royal Banquet Feast', activities: ['Dine inside historical royal pavilion', 'Sample traditional slow-cooked beef and desserts reserved for royal families'] }
     ],
     gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Bandung Tours (5)
+  // Bandung Programs (5)
   {
     id: 'bandung-volcano-lembang',
-    name: 'Tangkuban Perahu Volcano & Hot Springs Day Tour',
+    name: 'Tangkuban Perahu Volcano & Hot Springs Day Program',
     slug: 'bandung-volcano-lembang',
     destinationId: 'bandung',
     attractionId: 'tangkoeban-perahoe',
@@ -1015,7 +1015,7 @@ export const tours: Tour[] = [
     price: 825000,
     rating: 4.5,
     reviewsCount: 198,
-    category: 'Nature',
+    category: 'Nature and Eco-Tourism',
     highlights: ['Walk Tangkuban Perahu crater edge', 'Bathe in Ciater volcanic mineral pools', 'Civet coffee Luwak tasting session', 'Visit strawberry farms'],
     included: ['Minivan transport', 'All park admissions & hot spring entry', 'Local guide driver', 'Sundanese lunch platter'],
     excluded: ['Volcano guide tip', 'Strawberry picking costs'],
@@ -1029,7 +1029,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'bandung-kawah-putih-tea-lake',
-    name: 'Ciwidey Kawah Putih Crater Lake & Tea Estate Tour',
+    name: 'Ciwidey Kawah Putih Crater Lake & Tea Estate Program',
     slug: 'bandung-kawah-putih-tea-lake',
     destinationId: 'bandung',
     attractionId: 'kawah-putih',
@@ -1039,7 +1039,7 @@ export const tours: Tour[] = [
     price: 735000,
     rating: 4.7,
     reviewsCount: 142,
-    category: 'Nature',
+    category: 'Nature and Eco-Tourism',
     highlights: ['Surreal volcanic green lake views', 'Walk Rancabali tea estate bridges', 'Dine at Phinisi Boat Restaurant', 'Private transport from Bandung'],
     included: ['Transport with driver', 'Kawah Putih tickets & shuttle', 'Tea estate access', 'Lakeside lunch'],
     excluded: ['Suspension bridge ticket supplement ($2)'],
@@ -1063,7 +1063,7 @@ export const tours: Tour[] = [
     price: 525000,
     rating: 4.6,
     reviewsCount: 88,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Scenic lakeside dining cottages', 'Traditional Sundanese live music', 'Row wooden boats on lake', 'Eco-friendly bamboo walks'],
     included: ['All admission tickets', 'Lakeside cottage table reservation', 'Wooden boat ride ticket', 'Lunch credit voucher'],
     excluded: ['Shopping purchases', 'Hotel pickup (optional supplement)'],
@@ -1087,7 +1087,7 @@ export const tours: Tour[] = [
     price: 375000,
     rating: 4.4,
     reviewsCount: 65,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Visit top Riau factory outlets', 'Shop premium local fashion brands', 'Dine at vintage Dutch colonial cafes', 'Private driver during shopping'],
     included: ['Private car with driver', 'Parking fees', 'Mineral water', 'Discount coupons'],
     excluded: ['Shopping purchases', 'Meals'],
@@ -1111,7 +1111,7 @@ export const tours: Tour[] = [
     price: 2025000,
     rating: 4.8,
     reviewsCount: 42,
-    category: 'Wellness',
+    category: 'Community and Social Impact',
     highlights: ['Private tea master walk', 'Volcanic clay body scrub', 'Highland mineral pool soak', 'Private massage suite'],
     included: ['Private Mercedes-Benz shuttle', 'Tea estate permit & guide', '120-minute spa package', 'Traditional herbal tea & snacks'],
     excluded: ['Meals', 'Tips'],
@@ -1124,10 +1124,10 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Lombok Tours (6)
+  // Lombok Programs (6)
   {
     id: 'lombok-gili-snorkeling-boat',
-    name: 'Gili Islands 3-Island Private Snorkeling Boat Tour',
+    name: 'Gili Islands 3-Island Private Snorkeling Boat Program',
     slug: 'lombok-gili-snorkeling-boat',
     destinationId: 'lombok',
     attractionId: 'gili-islands',
@@ -1137,7 +1137,7 @@ export const tours: Tour[] = [
     price: 975000,
     rating: 4.9,
     reviewsCount: 312,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Private glass-bottom boat', 'Snorkel Gili Meno underwater statues', 'Swim with green sea turtles', 'Beach exploration at Gili Air'],
     included: ['Private boat charter', 'All snorkeling gear & life jackets', 'Underwater GoPro photo files', 'Pickups from Lombok mainland', 'Local boat captain & guide'],
     excluded: ['Lunch expenses at Gili beach restaurant'],
@@ -1162,7 +1162,7 @@ export const tours: Tour[] = [
     price: 2775000,
     rating: 4.8,
     reviewsCount: 174,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Camp at Senaru Crater Rim (2641m)', 'Sunset views over clouds and Bali', 'Porters carry all tents and food', 'Hearty meals prepared by campfire'],
     included: ['National Park entry permits & insurance', 'Local mountain guide & porters', 'Camping equipment (tent, sleeping bags, mattress)', '5 campfire meals', 'Water', 'Minivan transfers'],
     excluded: ['Trekking shoes and jackets', 'Tipping guide & porters ($15 recommendation)'],
@@ -1185,7 +1185,7 @@ export const tours: Tour[] = [
     price: 585000,
     rating: 4.7,
     reviewsCount: 115,
-    category: 'Nature',
+    category: 'Nature and Eco-Tourism',
     highlights: ['Hike lush jungle paths', 'Walk under water bridge tunnels', 'Swim under Tiu Kelep waterfall', 'Monkey spotting in canopy'],
     included: ['Local forest guide', 'All entrance tickets', 'Indonesian lunch box', 'Minivan transfer from Senggigi'],
     excluded: ['Tips'],
@@ -1199,7 +1199,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'lombok-culture-kuta-beach',
-    name: 'Sade Sasak Village & South Lombok Beach Tour',
+    name: 'Sade Sasak Village & South Lombok Beach Program',
     slug: 'lombok-culture-kuta-beach',
     destinationId: 'lombok',
     attractionId: 'gili-islands',
@@ -1209,13 +1209,13 @@ export const tours: Tour[] = [
     price: 525000,
     rating: 4.6,
     reviewsCount: 96,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Explore historical Sasak village', 'Hand-weaving batik demonstration', 'Visit white-sand Tanjung Aan Beach', 'See modern Mandalika GP Circuit'],
     included: ['Transport with driver', 'Local village guide', 'Entrance tickets', 'Lunch'],
     excluded: ['Shopping purchases'],
     meetingPoint: 'Lombok Airport / hotel pickup',
     itinerary: [
-      { title: '09:00 AM - Sade Sasak Village', activities: ['Tour the clay-dung floors, bamboo walls, and thatch roofs', 'Observe tribal weaving crafts'] },
+      { title: '09:00 AM - Sade Sasak Village', activities: ['Program the clay-dung floors, bamboo walls, and thatch roofs', 'Observe tribal weaving crafts'] },
       { title: '11:30 AM - Tanjung Aan Beach & lunch', activities: ['Relax on fine white sand, climb Merese Hill for panoramic views', 'Enjoy grilled local seafood lunch'] },
       { title: '02:30 PM - Mandalika Circuit photo', activities: ['Photo session outside MotoGP street circuit', 'Return to hotel'] }
     ],
@@ -1233,7 +1233,7 @@ export const tours: Tour[] = [
     price: 2835000,
     rating: 4.9,
     reviewsCount: 28,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Private yacht charter', 'Champagne toast at sunset', 'Snorkeling with sea turtles', 'Gourmet seafood platter on board'],
     included: ['Private yacht, captain & crew', 'Gourmet appetizers and fresh seafood', '1 bottle of French Champagne', 'Snorkeling masks', 'Hotel pickup'],
     excluded: ['Extra bottles of spirits'],
@@ -1257,7 +1257,7 @@ export const tours: Tour[] = [
     price: 735000,
     rating: 4.7,
     reviewsCount: 54,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['1-on-1 surf instruction', 'Gentle beginner waves', 'Surfboard rental included', 'Action photos of your ride'],
     included: ['Surfboard and rash guard', 'Certified instructor', 'Mineral water', 'Beach lounge chairs', 'Roundtrip transport'],
     excluded: ['Lunch', 'Sunscreen'],
@@ -1270,10 +1270,10 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Labuan Bajo Tours (6)
+  // Labuan Bajo Programs (6)
   {
     id: 'komodo-dragon-speedboat',
-    name: 'Komodo Island Speedboat 1-Day VIP Tour',
+    name: 'Komodo Island Speedboat 1-Day VIP Program',
     slug: 'komodo-dragon-speedboat',
     destinationId: 'labuan-bajo',
     attractionId: 'komodo-island',
@@ -1283,9 +1283,9 @@ export const tours: Tour[] = [
     price: 1875000,
     rating: 5.0,
     reviewsCount: 412,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['VIP shared speedboat', 'Hike Padar island viewpoint', 'Trek with Komodo dragon rangers', 'Relax on Pink Beach sand', 'Snorkel with manta rays'],
-    included: ['Speedboat cruise', 'English tour host', 'Snorkeling equipment', 'Bento lunch box & fresh fruits', 'Labuan Bajo hotel transfers'],
+    included: ['Speedboat cruise', 'English program host', 'Snorkeling equipment', 'Bento lunch box & fresh fruits', 'Labuan Bajo hotel transfers'],
     excluded: ['Komodo National Park entrance fees ($30/person cash cash, paid at park ranger station)'],
     meetingPoint: 'Labuan Bajo Public Harbor Gate',
     itinerary: [
@@ -1313,7 +1313,7 @@ export const tours: Tour[] = [
     price: 9750000,
     rating: 5.0,
     reviewsCount: 38,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Sailing on premium wooden Phinisi', 'Stay in air-conditioned state cabins', 'Private dining with personal chef', 'Island beach excursions'],
     included: ['VIP airport pickup', '3 days accommodation on yacht', 'All chef meals and beverages', 'Private snorkeling boat & guide', 'All national park entry tickets & ranger fees'],
     excluded: ['Alcoholic wines & spirits', 'Massage treatments'],
@@ -1340,7 +1340,7 @@ export const tours: Tour[] = [
     price: 675000,
     rating: 4.6,
     reviewsCount: 54,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Trek Flores rainforest hills', 'Sandstone canyon climbing', 'Swim in deep forest springs', 'Indonesian lunch at local village'],
     included: ['Transport from hotel', 'Forest park entry tickets', 'Jungle guide', 'Lunch box', 'Mineral water'],
     excluded: ['Tips'],
@@ -1364,7 +1364,7 @@ export const tours: Tour[] = [
     price: 1485000,
     rating: 4.9,
     reviewsCount: 84,
-    category: 'Nature',
+    category: 'Nature and Eco-Tourism',
     highlights: ['Private boat cruise', 'Unforgettable sunrise on Padar summit', 'Secluded morning on Pink Beach', 'Gourmet breakfast box'],
     included: ['Private boat charter', 'All entry fees', 'Breakfast box with hot coffee/tea', 'English speaking host'],
     excluded: ['National Park fees ($30)'],
@@ -1387,7 +1387,7 @@ export const tours: Tour[] = [
     price: 2625000,
     rating: 4.9,
     reviewsCount: 22,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Private beach setup', 'Personal butler and chef', 'Grilled lobster feast', 'Sunset sail from Komodo'],
     included: ['Speedboat transfer', 'Luxury beach mat & tent setup', 'Full BBQ seafood dinner', 'Chilled white wine bottle', 'All permits'],
     excluded: ['Tips'],
@@ -1411,7 +1411,7 @@ export const tours: Tour[] = [
     price: 1800000,
     rating: 4.9,
     reviewsCount: 62,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['2 drift dives in Komodo', 'High chance of Manta Ray sightings', 'Professional PADI Divemaster guides', 'Custom dive catamaran boat'],
     included: ['2 tanks and weights', 'Full dive gear rental', 'Certified Divemaster (max 1:4 ratio)', 'Lunch and snacks on board'],
     excluded: ['National Park dive permit fee ($35)'],
@@ -1425,10 +1425,10 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80']
   },
 
-  // Surabaya Tours (6)
+  // Surabaya Programs (6)
   {
     id: 'surabaya-historical-sightseeing',
-    name: 'Surabaya Heritage Colonial & Museum Tour',
+    name: 'Surabaya Heritage Colonial & Museum Program',
     slug: 'surabaya-historical-sightseeing',
     destinationId: 'surabaya',
     attractionId: 'house-of-sampoerna',
@@ -1438,21 +1438,21 @@ export const tours: Tour[] = [
     price: 435000,
     rating: 4.5,
     reviewsCount: 54,
-    category: 'Cultural',
-    highlights: ['Watch live clove cigarette rolling', 'Tour inside KRI Pasopati Submarine', 'Visit historic Heroes Monument', 'Air-conditioned transport'],
-    included: ['Transport with driver', 'All museum entry fees', 'Local tour guide', 'Traditional East Javanese lunch (Rujak Cingur)'],
+    category: 'Cultural Immersion',
+    highlights: ['Watch live clove cigarette rolling', 'Program inside KRI Pasopati Submarine', 'Visit historic Heroes Monument', 'Air-conditioned transport'],
+    included: ['Transport with driver', 'All museum entry fees', 'Local program guide', 'Traditional East Javanese lunch (Rujak Cingur)'],
     excluded: ['Personal tips'],
     meetingPoint: 'Surabaya hotels pickup',
     itinerary: [
       { title: '09:00 AM - House of Sampoerna', activities: ['Explore colonial architecture, view the tobacco museum, watch workers roll 300 cigarettes per hour'] },
-      { title: '11:30 AM - Submarine Monument', activities: ['Enter the authentic Russian Whiskey-class submarine, tour the torpedo and engine rooms'] },
+      { title: '11:30 AM - Submarine Monument', activities: ['Enter the authentic Russian Whiskey-class submarine, program the torpedo and engine rooms'] },
       { title: '01:00 PM - Local Lunch & Heroes Monument', activities: ['Eat authentic Surabaya peanut salad', 'Visit the war museum under the giant monuments spire'] }
     ],
     gallery: ['https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80']
   },
   {
     id: 'surabaya-suramadu-madura-culture',
-    name: 'Suramadu Bridge & Madura Island Day Tour',
+    name: 'Suramadu Bridge & Madura Island Day Program',
     slug: 'surabaya-suramadu-madura-culture',
     destinationId: 'surabaya',
     attractionId: 'suramadu-bridge',
@@ -1462,7 +1462,7 @@ export const tours: Tour[] = [
     price: 735000,
     rating: 4.6,
     reviewsCount: 78,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Cross Indonesia\'s longest bridge', 'See white limestone cliffs of Jaddih', 'Visit Bangkalan traditional batik village', 'Feast on authentic Madura Duck Satay'],
     included: ['Private car & bridge tolls', 'Entrance fees', 'Traditional lunch platter', 'English guide driver'],
     excluded: ['Gratuities'],
@@ -1477,7 +1477,7 @@ export const tours: Tour[] = [
   },
   {
     id: 'surabaya-bromo-midnight-sunrise',
-    name: 'Mount Bromo Volcano Sunrise Midnight Tour',
+    name: 'Mount Bromo Volcano Sunrise Midnight Program',
     slug: 'surabaya-bromo-midnight-sunrise',
     destinationId: 'surabaya',
     attractionId: 'suramadu-bridge',
@@ -1487,7 +1487,7 @@ export const tours: Tour[] = [
     price: 1650000,
     rating: 4.9,
     reviewsCount: 345,
-    category: 'Adventure',
+    category: 'Adventure and Challenge',
     highlights: ['Midnight departure from Surabaya', 'Bromo sunrise view from Penanjakan', 'Climb volcanic active crater steps', 'Cross the Sea of Sand in 4x4 Jeep'],
     included: ['Private SUV transfer from Surabaya', 'Shared 4x4 Jeep in Bromo', 'National park entrance fees', 'Warm breakfast', 'Local Bromo guide'],
     excluded: ['Horse ride on Sea of Sand ($10, optional)', 'Personal winter jackets'],
@@ -1502,9 +1502,9 @@ export const tours: Tour[] = [
     gallery: ['https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80']
   },
   {
-    id: 'surabaya-foodie-culinary-tour',
+    id: 'surabaya-foodie-culinary-program',
     name: 'Surabaya Legendary Night Food Crawl',
-    slug: 'surabaya-foodie-culinary-tour',
+    slug: 'surabaya-foodie-culinary-program',
     destinationId: 'surabaya',
     attractionId: 'house-of-sampoerna',
     image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
@@ -1513,7 +1513,7 @@ export const tours: Tour[] = [
     price: 375000,
     rating: 4.7,
     reviewsCount: 68,
-    category: 'Cultural',
+    category: 'Cultural Immersion',
     highlights: ['Try legendary Rawon black soup', 'Taste authentic street food stalls', 'Sample local ginger drinks (Wedang)', 'Experienced food guide'],
     included: ['All food & drink tastings (7+ items)', 'Local culinary guide', 'Minivan transfers between spots'],
     excluded: ['Gratuities'],
@@ -1537,7 +1537,7 @@ export const tours: Tour[] = [
     price: 4485000,
     rating: 4.9,
     reviewsCount: 12,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Private yacht charter', 'Sail under Suramadu Bridge at sunset', 'Gourmet Japanese-Indonesian fusion dinner', 'Chilled mocktails and wine'],
     included: ['Yacht rental, captain & crew', 'Gourmet dinner & drinks', 'All harbor permits', 'Limousine pickup'],
     excluded: ['Tips'],
@@ -1560,7 +1560,7 @@ export const tours: Tour[] = [
     price: 2235000,
     rating: 4.7,
     reviewsCount: 24,
-    category: 'Luxury',
+    category: 'Culinary Journey',
     highlights: ['Play at 18-hole championship course', 'VIP private cart and premium caddy service', 'Access to exclusive Clubhouse locker & restaurant', 'High-end Taylormade club sets'],
     included: ['18-hole green fees', 'Private buggy/cart', 'Professional caddy service', 'Taylormade club set rental', 'Executive lunch at clubhouse'],
     excluded: ['Caddy tips ($15 recommendation)'],
@@ -1589,7 +1589,7 @@ export const reviews: Review[] = [
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80',
     country: 'Japan',
     rating: 5,
-    text: 'The Borobudur sunrise tour was majestic. The guide spoke perfect Japanese and took us to spots away from the crowd. 10/10 highly recommend!'
+    text: 'The Borobudur sunrise program was majestic. The guide spoke perfect Japanese and took us to spots away from the crowd. 10/10 highly recommend!'
   },
   {
     id: '3',

@@ -8,7 +8,7 @@ import {
   Compass, MapPin, Calendar, Star, Clock, Info,
   ArrowLeft, ArrowRight, ShieldCheck, HelpCircle
 } from 'lucide-react';
-import { destinations, attractions, tours } from '@/data/tourismData';
+import { destinations, attractions, programs } from '@/data/tourismData';
 import { AnimatedContainer } from '@/components/ui/AnimatedContainer';
 import { buttonVariants } from '@/components/ui/button';
 import { useCurrency } from '@/lib/CurrencyContext';
@@ -30,8 +30,8 @@ export default function AttractionDetail({ params }: PageProps) {
   // Get destination info
   const destination = destinations.find(d => d.id === attraction.destinationId);
 
-  // Available tours for this attraction
-  const availableTours = tours.filter(t => t.attractionId === attrId);
+  // Available programs for this attraction
+  const availableTours = programs.filter(t => t.attractionId === attrId);
 
   // Nearby attractions in the same destination (excluding itself)
   const nearbyAttractions = attractions.filter(
@@ -191,22 +191,22 @@ export default function AttractionDetail({ params }: PageProps) {
       {/* 3. AVAILABLE TOURS */}
       <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
         <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-8">
-          Available Tours for {attraction.name}
+          Available Programs for {attraction.name}
         </h2>
 
         {availableTours.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {availableTours.map((tour) => (
+            {availableTours.map((program) => (
               <AnimatedContainer
-                key={tour.id}
+                key={program.id}
                 animation="fadeInUp"
                 className="bg-white rounded-[24px] overflow-hidden shadow-luxury border border-zinc-100/50 hover:shadow-luxury-hover hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full"
               >
-                {/* Tour Image */}
+                {/* Program Image */}
                 <div className="relative aspect-[16/11] overflow-hidden">
                   <Image
-                    src={tour.image}
-                    alt={tour.name}
+                    src={program.image}
+                    alt={program.name}
                     fill
                     className="object-cover"
                   />
@@ -214,16 +214,16 @@ export default function AttractionDetail({ params }: PageProps) {
 
                   {/* Category Tag */}
                   <span className="absolute top-4 left-4 px-3 py-1 bg-white/95 backdrop-blur-md text-primary-dark text-xs font-extrabold uppercase tracking-wider rounded-lg shadow-sm">
-                    {tour.category}
+                    {program.category}
                   </span>
 
                   {/* Duration */}
                   <span className="absolute bottom-4 left-4 flex items-center gap-1.5 text-white text-xs font-semibold">
-                    <Clock className="w-3.5 h-3.5" /> {tour.duration}
+                    <Clock className="w-3.5 h-3.5" /> {program.duration}
                   </span>
                 </div>
 
-                {/* Tour Details */}
+                {/* Program Details */}
                 <div className="p-6 flex-grow flex flex-col justify-between">
                   <div>
                     <div className="flex items-center justify-between mb-2">
@@ -231,16 +231,16 @@ export default function AttractionDetail({ params }: PageProps) {
                         {destination?.name || 'Indonesia'}
                       </span>
                       <div className="flex items-center gap-1 text-accent font-bold text-xs">
-                        {/* <Star className="w-3.5 h-3.5 fill-accent" /> {tour.rating} */}
+                        {/* <Star className="w-3.5 h-3.5 fill-accent" /> {program.rating} */}
                         <Star className="w-3.5 h-3.5 text-green-500 fill-green-500" />
                         <span className="text-green-500 font-extrabold">
-                          {tour.rating}
+                          {program.rating}
                         </span>
-                        <span className="text-zinc-400 font-normal">({tour.reviewsCount})</span>
+                        <span className="text-zinc-400 font-normal">({program.reviewsCount})</span>
                       </div>
                     </div>
                     <h3 className="font-display font-bold text-base text-primary-dark mb-2 line-clamp-2 hover:text-primary transition-colors">
-                      <Link href={`/tours/${tour.id}`}>{tour.name}</Link>
+                      <Link href={`/programs/${program.id}`}>{program.name}</Link>
                     </h3>
                   </div>
 
@@ -248,17 +248,17 @@ export default function AttractionDetail({ params }: PageProps) {
                     <div>
                       <span className="text-[10px] text-zinc-400 uppercase tracking-widest block">Start from</span>
                       <span className="text-lg font-display font-extrabold text-primary-dark">
-                        {formatPrice(tour.price)} <span className="text-xs font-normal text-zinc-500">/ person</span>
+                        {formatPrice(program.price)} <span className="text-xs font-normal text-zinc-500">/ person</span>
                       </span>
                     </div>
                     <Link
-                      href={`/tours/${tour.id}`}
+                      href={`/programs/${program.id}`}
                       className={buttonVariants({
                         variant: "cobalt",
                         className: "h-10 px-4 text-xs flex items-center justify-center gap-1.5"
                       })}
                     >
-                      <span>Book Tour</span>
+                      <span>Book Program</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
@@ -269,8 +269,8 @@ export default function AttractionDetail({ params }: PageProps) {
         ) : (
           <div className="text-center py-12 bg-white rounded-3xl border border-zinc-100">
             <Compass className="w-10 h-10 text-zinc-300 mx-auto mb-3" />
-            <h3 className="font-semibold text-zinc-800 text-base">No tours currently scheduled</h3>
-            <p className="text-zinc-500 text-xs mt-1">Please explore other attractions for custom tour packages.</p>
+            <h3 className="font-semibold text-zinc-800 text-base">No programs currently scheduled</h3>
+            <p className="text-zinc-500 text-xs mt-1">Please explore other attractions for custom program packages.</p>
           </div>
         )}
       </section>

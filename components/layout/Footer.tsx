@@ -57,11 +57,19 @@ export function Footer() {
             {/* <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-white shadow-sm">
               <Compass className="w-5 h-5 text-primary" />
             </div> */}
-            <div className='bg-white rounded-full p-1 item-center'>
+            {/* <div className='bg-white rounded-full p-1 item-center'>
               <img src="/logo-aeli.png" alt="logo" width={40} height={40} />
+            </div> */}
+            <div className='backdrop-blur-sm rounded-[8px] p-1 item-center'>
+              <img src="/logo_index.png" alt="logo" width={100} height={100} />
             </div>
-            <span className="font-display font-bold text-xl tracking-tight text-white leading-none">
+            {/* <span className="font-display font-bold text-xl tracking-tight text-white leading-none">
               INDEX<span className=" font-extrabold">-AELI</span>
+            </span> */}
+            <span className={`font-display font-bold text-lg md:text-xl tracking-tight leading-none transition-colors duration-300`}>
+              INDEX
+              <span className='font-display font-medium text-sm md:text-md tracking-tight'>by</span>
+              <span className='text-white font-extrabold'>AELI</span>
             </span>
           </div>
           <p className="text-sm text-zinc-400 leading-relaxed">
