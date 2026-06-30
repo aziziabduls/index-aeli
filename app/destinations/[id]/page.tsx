@@ -221,7 +221,7 @@ export default function DestinationDetail({ params }: PageProps) {
                   <h3 className="font-display font-bold text-lg text-primary-dark mb-2 line-clamp-1">{attr.name}</h3>
                   <p className="text-zinc-600 text-xs leading-relaxed mb-5 line-clamp-2">{attr.description}</p>
                   <Link
-                    href={`/attractions/${attr.id}`}
+                    href={`/experience/${attr.id}`}
                     className={buttonVariants({
                       variant: "outline",
                       className: "w-full h-10 border-marketing-btn text-marketing-btn hover:bg-zinc-50 rounded-full font-bold text-xs flex items-center justify-center gap-1.5"

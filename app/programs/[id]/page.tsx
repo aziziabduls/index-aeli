@@ -64,7 +64,7 @@ export default function TourDetail({ params }: PageProps) {
           )}
           {attraction && (
             <>
-              <Link href={`/attractions/${attraction.id}`} className="hover:text-primary transition-colors">{attraction.name}</Link>
+              <Link href={`/experience/${attraction.id}`} className="hover:text-primary transition-colors">{attraction.name}</Link>
               <ArrowRight className="w-3 h-3 text-zinc-300" />
             </>
           )}
@@ -75,7 +75,7 @@ export default function TourDetail({ params }: PageProps) {
         <div className={tourImages.length > 1 ? "grid grid-cols-1 lg:grid-cols-3 gap-6" : "w-full"}>
           {/* Main Large Image */}
           <div className={`${tourImages.length > 1 ? "lg:col-span-2" : "w-full"
-            } relative rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
+            } relative aspect-[16/10] md:aspect-[21/9] rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
             <Image
               src={tourImages[activeImageIdx]}
               alt={program.name}
@@ -320,7 +320,7 @@ export default function TourDetail({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 3. RELATED PROGRAMS */}
+      {/* 3. RELATED TOURS */}
       {relatedTours.length > 0 && (
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
           <h2 className="font-display font-bold text-2xl text-primary-dark mb-8">

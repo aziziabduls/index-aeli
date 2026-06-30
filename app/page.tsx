@@ -101,12 +101,14 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white flex flex-col items-center pt-16 pb-16 sm:-pb-16 sm:pt-20 sm:pb-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white flex flex-col items-center pt-6 pb-16 sm:-pb-6 sm:pt-20 sm:pb-32">
+
+          {/* title */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display italic font-extrabold text-4xl sm:text-4xl md:text-5xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
+            className="font-display italic font-extrabold text-4xl sm:text-4xl md:text-5xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8 mt-40"
           >
             EXPLORE EVERY DESTINATION
             <br />
@@ -129,7 +131,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-full max-w-4xl glass-effect p-6 rounded-[50px] shadow-2xl text-zinc-800 backdrop-blur-sm"
+            className="w-full max-w-4xl glass-effect p-6 rounded-[50px] shadow-2xl text-zinc-800 backdrop-blur-sm mt-10 sm:mt-20 md:mt-40"
           >
             <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
               {/* Destination Dropdown */}
@@ -167,10 +169,10 @@ export default function Home() {
                   onValueChange={(val) => setSearchAttr(val === "all" ? "" : val || "")}
                 >
                   <SelectTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none">
-                    <SelectValue placeholder="All Attractions" />
+                    <SelectValue placeholder="All Experience" />
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
-                    <SelectItem value="all">All Attractions</SelectItem>
+                    <SelectItem value="all">All Experience </SelectItem>
                     {searchAttractions.map(a => (
                       <SelectItem key={a.id} value={a.id}>{a.name}</SelectItem>
                     ))}
@@ -221,37 +223,50 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.9 }}
             className="w-full max-w-4xl"
           >
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mt-24 hidden md:grid">
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-600/80 text-white backdrop-blur-xl rounded-full mb-3 border-2 border-white">
-                  <MapPinned className="w-10 h-10" />
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-5 hidden md:grid">
+              {/* Discover - Sky Blue */}
+              <div className="flex flex-col items-center group cursor-pointer p-6 rounded-2xl border border-transparent hover:border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all duration-300 hover:shadow-[0_0_30px_rgba(56,189,248,0.15)]">
+                <div className="flex items-center justify-center w-16 h-16 bg-sky-500/10 text-sky-400 backdrop-blur-xl rounded-full mb-4 border border-sky-500/20 shadow-lg shadow-sky-500/5 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:bg-sky-500/20 group-hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]">
+                  <MapPinned className="w-8 h-8" />
                 </div>
-                <h3 className="text-[32px] font-extrabold mb-2 text-blue-600/80 uppercase">Discover</h3>
-                <p className="text-center text-md">Hidden Gems Across Indonesia</p>
+                <div className="flex flex-col items-center transition-transform duration-300 group-hover:rotate-2">
+                  <h3 className="text-[32px] font-extrabold mb-2 text-white uppercase tracking-wide transition-colors duration-300 group-hover:text-sky-300">Discover</h3>
+                  <p className="text-center text-sm text-zinc-300 font-medium transition-colors duration-300 group-hover:text-white">Hidden Gems Across Indonesia</p>
+                </div>
               </div>
 
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-16 h-16 bg-primary-dark backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
-                  <CompassIcon className="w-10 h-10" />
+              {/* Explore - Amber/Gold */}
+              <div className="flex flex-col items-center group cursor-pointer p-6 rounded-2xl border border-transparent hover:border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all duration-300 hover:shadow-[0_0_30px_rgba(251,191,36,0.15)]">
+                <div className="flex items-center justify-center w-16 h-16 bg-amber-500/10 text-amber-400 backdrop-blur-xl rounded-full mb-4 border border-amber-500/20 shadow-lg shadow-amber-500/5 transition-all duration-300 group-hover:-rotate-12 group-hover:scale-110 group-hover:bg-amber-500/20 group-hover:shadow-[0_0_25px_rgba(251,191,36,0.5)]">
+                  <CompassIcon className="w-8 h-8" />
                 </div>
-                <h3 className="text-[32px] font-extrabold mb-2 text-primary-dark/90 uppercase">Explore</h3>
-                <p className="text-center text-md">Hidden Gems Across Indonesia</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-600/80 backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
-                  <Users className="w-10 h-10" />
+                <div className="flex flex-col items-center transition-transform duration-300 group-hover:-rotate-2">
+                  <h3 className="text-[32px] font-extrabold mb-2 text-white uppercase tracking-wide transition-colors duration-300 group-hover:text-amber-300">Explore</h3>
+                  <p className="text-center text-sm text-zinc-300 font-medium transition-colors duration-300 group-hover:text-white">Hidden Gems Across Indonesia</p>
                 </div>
-                <h3 className="text-[32px] font-extrabold mb-2 text-blue-600/80 uppercase">Connect</h3>
-                <p className="text-center text-md">Local Culture and Community</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-16 h-16 bg-green-700/80 backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
-                  <Trees className="w-10 h-10" />
-                </div>
-                <h3 className="text-[32px] font-extrabold mb-2 text-green-700/80 uppercase">Sustain</h3>
-                <p className="text-center text-md">For a Better Future Together</p>
               </div>
 
+              {/* Connect - Indigo */}
+              <div className="flex flex-col items-center group cursor-pointer p-6 rounded-2xl border border-transparent hover:border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.15)]">
+                <div className="flex items-center justify-center w-16 h-16 bg-indigo-500/10 text-indigo-400 backdrop-blur-xl rounded-full mb-4 border border-indigo-500/20 shadow-lg shadow-indigo-500/5 transition-all duration-300 group-hover:rotate-12 group-hover:scale-110 group-hover:bg-indigo-500/20 group-hover:shadow-[0_0_25px_rgba(99,102,241,0.5)]">
+                  <Users className="w-8 h-8" />
+                </div>
+                <div className="flex flex-col items-center transition-transform duration-300 group-hover:rotate-2">
+                  <h3 className="text-[32px] font-extrabold mb-2 text-white uppercase tracking-wide transition-colors duration-300 group-hover:text-indigo-300">Connect</h3>
+                  <p className="text-center text-sm text-zinc-300 font-medium transition-colors duration-300 group-hover:text-white">Local Culture and Community</p>
+                </div>
+              </div>
+
+              {/* Sustain - Emerald Green */}
+              <div className="flex flex-col items-center group cursor-pointer p-6 rounded-2xl border border-transparent hover:border-white/10 hover:bg-white/5 hover:backdrop-blur-md transition-all duration-300 hover:shadow-[0_0_30px_rgba(52,211,153,0.15)]">
+                <div className="flex items-center justify-center w-16 h-16 bg-emerald-500/10 text-emerald-400 backdrop-blur-xl rounded-full mb-4 border border-emerald-500/20 shadow-lg shadow-emerald-500/5 transition-all duration-300 group-hover:-rotate-12 group-hover:scale-110 group-hover:bg-emerald-500/20 group-hover:shadow-[0_0_25px_rgba(52,211,153,0.5)]">
+                  <Trees className="w-8 h-8" />
+                </div>
+                <div className="flex flex-col items-center transition-transform duration-300 group-hover:-rotate-2">
+                  <h3 className="text-[32px] font-extrabold mb-2 text-white uppercase tracking-wide transition-colors duration-300 group-hover:text-emerald-300">Sustain</h3>
+                  <p className="text-center text-sm text-zinc-300 font-medium transition-colors duration-300 group-hover:text-white">For a Better Future Together</p>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -298,7 +313,7 @@ export default function Home() {
                   {/* Content Over the Image */}
                   <div className="absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end text-white">
                     <span className="text-xs uppercase tracking-widest text-secondary-light font-bold mb-1">
-                      {dest.attractionCount} Attractions
+                      {dest.attractionCount} Experience
                     </span>
                     <h3 className="font-display font-bold text-2xl mb-3">{dest.name}</h3>
                     <p className="text-zinc-300 text-xs line-clamp-2 mb-4 leading-relaxed font-light">
@@ -316,13 +331,13 @@ export default function Home() {
       </section>
 
       {/* 3. TOP ATTRACTIONS */}
-      <section id="attractions" className="py-24 bg-white/50 border-y border-zinc-100">
+      <section id="experience" className="py-24 bg-white/50 border-y border-zinc-100">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
             <AnimatedContainer animation="slideInLeft">
-              <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-primary mb-2 block">Iconic Landmarks</span>
+              <span className="text-xs uppercase tracking-[0.2em] font-extrabold text-primary mb-2 block">Iconic Experience</span>
               <h2 className="font-display font-extrabold text-3xl md:text-5xl text-primary-dark">
-                Must-Visit Top Attractions
+                Must-Visit Top Experience
               </h2>
             </AnimatedContainer>
             <AnimatedContainer animation="fadeIn" delay={0.2} className="mt-4 md:mt-0 text-zinc-500 max-w-sm">
@@ -357,7 +372,7 @@ export default function Home() {
                   <h3 className="font-display font-bold text-xl text-primary-dark mb-2 line-clamp-1">{attr.name}</h3>
                   <p className="text-zinc-600 text-sm leading-relaxed mb-5 line-clamp-2">{attr.description}</p>
                   <Link
-                    href={`/attractions/${attr.id}`}
+                    href={`/experience/${attr.id}`}
                     className="inline-flex items-center justify-center w-full h-11 border border-primary/20 hover:border-primary hover:bg-primary/5 text-primary text-sm font-semibold rounded-xl transition-all"
                   >
                     View Details & Program

@@ -100,7 +100,7 @@ export default function AttractionDetail({ params }: PageProps) {
         <div className="lg:col-span-2 space-y-12">
           {/* Overview */}
           <AnimatedContainer animation="fadeInUp">
-            <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-4">About this Attraction</h2>
+            <h2 className="font-display font-bold text-2xl md:text-3xl text-primary-dark mb-4">About this Experience</h2>
             <p className="text-zinc-600 text-base leading-relaxed">
               {attraction.description}
             </p>
@@ -279,7 +279,7 @@ export default function AttractionDetail({ params }: PageProps) {
       {nearbyAttractions.length > 0 && (
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 border-t border-zinc-100">
           <h2 className="font-display font-bold text-xl md:text-2xl text-primary-dark mb-6">
-            Other Attractions in {destination?.name}
+            Other Experiences in {destination?.name}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {nearbyAttractions.map((nearby) => (
