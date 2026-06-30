@@ -101,27 +101,27 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white flex flex-col items-center pt-6 pb-16 sm:-pb-6 sm:pt-20 sm:pb-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center justify-end md:justify-center w-full h-full pt-20 pb-10 md:pb-0 md:pt-0">
 
           {/* title */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display italic font-extrabold text-4xl sm:text-4xl md:text-5xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8 mt-40"
+            className="font-display italic font-extrabold text-2xl sm:text-4xl md:text-5xl leading-tight sm:leading-none tracking-tight mb-4 sm:mb-6 mt-16 sm:mt-20 md:mt-0"
           >
             EXPLORE EVERY DESTINATION
             <br />
             {/* larger than font-extrabold */}
-            <span className="text-4xl sm:text-6xl md:text-7xl">EXPERIENCE THE REAL</span> <br />
-            <p className="text-5xl sm:text-7xl md:text-8xl">INDONESIA!</p>
+            <span className="text-3xl sm:text-5xl md:text-7xl">EXPERIENCE THE REAL</span> <br />
+            <span className="text-4xl sm:text-6xl md:text-8xl block mt-1">INDONESIA!</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="font-display italic text-2 xl sm:text-2xl md:text-2xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
+            className="font-display italic text-sm sm:text-xl md:text-2xl leading-normal tracking-wide mb-4 sm:mb-6"
           >
             Bukan Sekadar Perjalanan. Ini Adalah Petualangan Bermakna.
           </motion.p>
@@ -131,14 +131,13 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-full max-w-4xl glass-effect p-6 rounded-[50px] shadow-2xl text-zinc-800 backdrop-blur-sm mt-10 sm:mt-20 md:mt-40"
+            className="w-full max-w-4xl glass-effect p-4 sm:p-6 md:p-8 rounded-3xl sm:rounded-[50px] shadow-2xl text-zinc-800 backdrop-blur-sm mt-4 sm:mt-8"
           >
-            <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+            <form onSubmit={handleSearch} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 items-end">
               {/* Destination Dropdown */}
-              <div className="flex flex-col text-left px-3 py-1">
-                <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
+              <div className="flex flex-col text-left px-2 py-1">
+                <label className="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
                   <Compass className="w-3.5 h-3.5 text-primary" /> Destination
-
                 </label>
                 <Select
                   value={searchDest}
@@ -147,7 +146,7 @@ export default function Home() {
                     setSearchAttr(''); // Reset attraction selection on change
                   }}
                 >
-                  <SelectTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none">
+                  <SelectTrigger className="w-full bg-transparent border rounded-xl border-zinc-200 py-2 sm:py-3 font-semibold text-zinc-900 h-10 sm:h-12 hover:bg-transparent shadow-none px-3 sm:px-4 text-xs sm:text-sm">
                     <SelectValue placeholder="All Destinations" />
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
@@ -160,15 +159,15 @@ export default function Home() {
               </div>
 
               {/* Attraction Dropdown */}
-              <div className="flex flex-col text-left px-3 py-1">
-                <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
+              <div className="flex flex-col text-left px-2 py-1">
+                <label className="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
                   <MapPin className="w-3.5 h-3.5 text-primary" /> Attraction
                 </label>
                 <Select
                   value={searchAttr}
                   onValueChange={(val) => setSearchAttr(val === "all" ? "" : val || "")}
                 >
-                  <SelectTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none">
+                  <SelectTrigger className="w-full bg-transparent border rounded-xl border-zinc-200 py-2 sm:py-3 font-semibold text-zinc-900 h-10 sm:h-12 hover:bg-transparent shadow-none px-3 sm:px-4 text-xs sm:text-sm">
                     <SelectValue placeholder="All Experience" />
                   </SelectTrigger>
                   <SelectContent className="bg-white border border-zinc-200 shadow-xl rounded-2xl p-1 z-50">
@@ -181,13 +180,13 @@ export default function Home() {
               </div>
 
               {/* Travel Date */}
-              <div className="flex flex-col text-left px-3 py-1">
-                <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
+              <div className="flex flex-col text-left px-2 py-1">
+                <label className="text-[10px] sm:text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
                   <Calendar className="w-3.5 h-3.5 text-primary" /> Travel Date
                 </label>
                 <Popover>
-                  <PopoverTrigger className="w-full bg-transparent border-1 rounded-sm border-zinc-200 py-1 font-semibold text-zinc-900 h-auto p-4 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer">
-                    <span className="text-sm">
+                  <PopoverTrigger className="w-full bg-transparent border rounded-xl border-zinc-200 py-2 sm:py-3 font-semibold text-zinc-900 h-10 sm:h-12 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer px-3 sm:px-4 text-xs sm:text-sm">
+                    <span>
                       {searchDate ? new Date(searchDate).toLocaleDateString(undefined, { dateStyle: 'medium' }) : 'Pick a date'}
                     </span>
                   </PopoverTrigger>
@@ -202,12 +201,12 @@ export default function Home() {
               </div>
 
               {/* Search Button */}
-              <div className="pt-2 md:pt-0">
+              <div className="pt-2 sm:pt-0 sm:col-span-2 md:col-span-1">
                 <Button
                   type="submit"
                   variant="marketing"
                   size="xl"
-                  className="w-full flex items-center justify-center gap-2"
+                  className="w-full flex items-center justify-center gap-2 h-10 sm:h-12 rounded-xl text-xs sm:text-sm"
                 >
                   <Search className="w-5 h-5" />
                   <span>Search Programs</span>
