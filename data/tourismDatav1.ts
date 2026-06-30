@@ -102,7 +102,7 @@ export const destinations: Destination[] = [
     "id": "bogor",
     "name": "Bogor",
     "slug": "bogor",
-    "image": "https://images.unsplash.com/photo-1633948450914-46f57be6ba2c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=1200&q=80",
     "description": "A charming city south of Jakarta, known for its cooler climate, colonial-era botanical gardens, and surrounding mountains.",
     "attractionCount": 1,
     "quickFacts": {
@@ -124,7 +124,7 @@ export const destinations: Destination[] = [
     "id": "dieng",
     "name": "Dieng Plateau",
     "slug": "dieng",
-    "image": "https://images.unsplash.com/photo-1724667523248-cb55bf707427?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=1200&q=80",
     "description": "A misty volcanic plateau in Central Java, famous for multi-colored lakes, ancient Hindu temples, and dramatic sunrise views.",
     "attractionCount": 1,
     "quickFacts": {
@@ -146,7 +146,7 @@ export const destinations: Destination[] = [
     "id": "bromo",
     "name": "Mount Bromo",
     "slug": "bromo",
-    "image": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=1200&q=80",
     "description": "Part of the Bromo Tengger Semeru National Park, showcasing active volcanic craters, dramatic sand seas, and epic sunrise viewpoints.",
     "attractionCount": 1,
     "quickFacts": {
@@ -168,7 +168,7 @@ export const destinations: Destination[] = [
     "id": "purwakarta",
     "name": "Purwakarta",
     "slug": "purwakarta",
-    "image": "https://images.unsplash.com/photo-1761565966665-8ae515401a8b?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=1200&q=80",
     "description": "A scenic regency in West Java, home to the massive Jatiluhur Dam, scenic volcanic hills, and rich Sundanese cultural history.",
     "attractionCount": 1,
     "quickFacts": {
@@ -190,7 +190,7 @@ export const destinations: Destination[] = [
     "id": "banyuwangi",
     "name": "Banyuwangi",
     "slug": "banyuwangi",
-    "image": "https://images.unsplash.com/photo-1596389996692-c9a70a9bca46?q=80&w=2662&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=1200&q=80",
     "description": "The \"Sunrise of Java\", located on the eastern tip of Java, serving as the gateway to Ijen Crater and wild national parks.",
     "attractionCount": 1,
     "quickFacts": {
@@ -212,7 +212,7 @@ export const destinations: Destination[] = [
     "id": "toba",
     "name": "Lake Toba",
     "slug": "toba",
-    "image": "https://images.unsplash.com/photo-1601058497548-f247dfe349d6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80",
     "description": "The largest volcanic lake in the world, featuring Samosir Island at its center, surrounded by majestic pine-covered peaks and Batak culture.",
     "attractionCount": 2,
     "quickFacts": {
@@ -234,7 +234,7 @@ export const destinations: Destination[] = [
     "id": "palembang",
     "name": "Palembang",
     "slug": "palembang",
-    "image": "https://images.unsplash.com/photo-1598675551183-1b091d43f99f?q=80&w=3392&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
     "description": "One of the oldest cities in Southeast Asia, capital of the ancient Srivijaya Kingdom, famous for the Musi River and Pempek culinary arts.",
     "attractionCount": 1,
     "quickFacts": {
@@ -256,7 +256,7 @@ export const destinations: Destination[] = [
     "id": "makassar",
     "name": "Makassar (Malino)",
     "slug": "makassar",
-    "image": "https://images.unsplash.com/photo-1647611158121-8d819856ce30?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80",
     "description": "The largest city in Eastern Indonesia, gateway to the highland resort town of Malino with pine forests and waterfalls.",
     "attractionCount": 1,
     "quickFacts": {
@@ -271,15 +271,14 @@ export const destinations: Destination[] = [
     },
     "bestTimeToVisit": "July to October",
     "gallery": [
-      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1647611158121-8d819856ce30?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
     "id": "lampung",
     "name": "Lampung",
     "slug": "lampung",
-    "image": "https://images.unsplash.com/photo-1662083823095-c509c12e3d7d?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
     "description": "The southern gateway to Sumatra, featuring pristine bays like Pahawang, coral reefs, and wild elephant national parks.",
     "attractionCount": 2,
     "quickFacts": {
@@ -301,7 +300,7 @@ export const destinations: Destination[] = [
     "id": "semarang",
     "name": "Semarang",
     "slug": "semarang",
-    "image": "https://images.unsplash.com/photo-1625967445155-bf8cc0412e9b?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=1200&q=80",
     "description": "A historic port city on Java's north coast, featuring colonial Lawang Sewu and a vibrant Chinatown.",
     "attractionCount": 2,
     "quickFacts": {
@@ -327,7 +326,7 @@ export const attractions: Attraction[] = [
     "name": "National Monument (Monas)",
     "slug": "monas",
     "destinationId": "jakarta",
-    "image": "https://images.unsplash.com/photo-1782332327995-3b62b61dc511?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEd1YXJkaWFucyUyMG9mJTIwVGhlJTIwQnJvbW8lMjBDYWxkZXJhfGVufDB8fDB8fHww",
+    "image": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80",
     "description": "A 132-meter tower in the center of Merdeka Square, symbolizing the struggle for Indonesian Independence.",
     "location": "Central Jakarta",
     "rating": 4.5,
@@ -371,7 +370,7 @@ export const attractions: Attraction[] = [
     "name": "Kebun Raya Bogor",
     "slug": "kebun-raya-bogor",
     "destinationId": "bogor",
-    "image": "https://images.unsplash.com/photo-1656693156830-0a281c6f866c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
     "description": "The world-famous Bogor Botanical Gardens established in 1817, featuring over 13,000 species of tropical plants.",
     "location": "Kota Bogor, Jawa Barat",
     "rating": 4.8,
@@ -847,10 +846,10 @@ export const programs: Program[] = [
     "slug": "surviving-in-the-analog-age",
     "destinationId": "bogor",
     "attractionId": "kebun-raya-bogor",
-    "image": "/bogor_analog.jpeg",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
     "description": "Program team building berbasis destinasi yang mengajak peserta kembali pada kekuatan fundamental manusia di tengah ketergantungan terhadap teknologi. Dalam simulasi \"digital blackout\", peserta ditantang menyelesaikan berbagai misi tanpa bantuan gadget, mengandalkan kemampuan berpikir strategis, komunikasi, navigasi analog, dan kolaborasi tim di tengah keindahan dan kekayaan sejarah Kebun Raya Bogor.",
     "duration": "4 s/d 6 jam",
-    "price": 550000,
+    "price": 55000000,
     "rating": 4.9,
     "reviewsCount": 77,
     "category": "Adventure and Challenge",
@@ -918,7 +917,7 @@ export const programs: Program[] = [
     "slug": "busana-gunungan-berkah-csr-budaya-yang-mempererat-kebersamaan",
     "destinationId": "yogyakarta",
     "attractionId": "omah-tabon",
-    "image": "/csr.jpeg",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
     "description": "Program CSR dan budaya yang mengajak peserta menjadi \"Abdi Dalem Perusahaan\" dalam sebuah perjalanan budaya Jawa yang penuh makna. Peserta menjalankan misi berburu hasil bumi di pasar tradisional, mengenakan busana adat Jawa, merakit Gunungan Lanang dan Gunungan Wadon, hingga mengarak dan membagikan gunungan kepada masyarakat sebagai simbol rasa syukur, kebersamaan, dan kepedulian sosial.",
     "duration": "4 jam / half day",
     "price": 1750000,
@@ -1049,7 +1048,7 @@ export const programs: Program[] = [
     "slug": "second-life-expedition",
     "destinationId": "jakarta",
     "attractionId": "kota-tua",
-    "image": "/second_live.jpeg",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
     "description": "Second Life Expedition adalah program pre-retirement berbasis destinasi yang mengajak calon purnabakti menelusuri jejak perubahan Kota Tua Jakarta sebagai metafora perjalanan menuju kehidupan kedua. Melalui eksplorasi, dialog dengan komunitas lokal, tantangan reflektif, dan workshop perencanaan hidup, peserta menyusun Future Life Map dan Personal Retirement Action Plan agar masa purnabakti menjadi fase hidup yang lebih sehat, produktif, dan bermakna.",
     "duration": "Full Day (08.00-18.00) atau 2 Hari 1 Malam",
     "price": 450000,
@@ -1167,7 +1166,7 @@ export const programs: Program[] = [
     "slug": "guardians-of-the-thousand-islands",
     "destinationId": "jakarta",
     "attractionId": "kepulauan-seribu",
-    "image": "/guardian.jpeg",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
     "description": "Guardians of the Thousand Islands adalah program eksplorasi bahari berbasis destinasi yang mengajak peserta menjelajahi keindahan dan kekayaan ekosistem Kepulauan Seribu melalui pengalaman Stand Up Paddle (SUP). Peserta berperan sebagai anggota ekspedisi laut yang bertugas menjelajahi, memahami, dan menjaga kawasan pesisir Indonesia melalui tantangan eksplorasi, observasi lingkungan, navigasi tim, dan refleksi bermakna.\n\nProgram ini memadukan petualangan laut, pembelajaran kolaboratif, dan kesadaran lingkungan dalam pengalaman yang autentik dan transformatif.",
     "duration": "Full Day / 2 Hari 1 Malam",
     "price": 1,
@@ -1222,7 +1221,7 @@ export const programs: Program[] = [
     "slug": "dieng-culture-resonance",
     "destinationId": "dieng",
     "attractionId": "dieng-plateau",
-    "image": "/dieng.jpeg",
+    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80",
     "description": "Sebuah perjalanan seni dan budaya yang mengajak peserta merasakan Dieng sebagai ruang budaya pegunungan melalui tiga pengalaman utama: Ritual → Rhythm → Reflection. Peserta tidak hanya mengunjungi destinasi, tetapi terlibat langsung dalam tari ritual, permainan ritme perkusi tradisional, dan penciptaan karya seni kolektif.",
     "duration": "3-4 jam dengan rundown utama 3,5 jam",
     "price": 850000,
@@ -1313,7 +1312,7 @@ export const programs: Program[] = [
     "slug": "bromo-expedition-guardians-of-the-bromo-caldera",
     "destinationId": "bromo",
     "attractionId": "mount-bromo",
-    "image": "/bromo.jpeg",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80",
     "description": "Kabut Bromo menyimpan sebuah misi. Hanya tim yang bersatu yang mampu menuntaskannya. Bromo Expedition: Guardians of The Caldera adalah program destination-based exploration yang menggabungkan petualangan alam, experiential learning, dan kearifan lokal Suku Tengger dalam sebuah misi epik penyelamatan harmoni Kaldera Bromo.\nPeserta berperan sebagai \"Guardians of The Caldera\", tim terpilih yang ditugaskan untuk mengumpulkan Fragments of Harmony yang tersebar di berbagai titik ikonik Bromo. Dalam perjalanan, peserta akan menghadapi tantangan navigasi, pemecahan masalah, pengambilan keputusan di bawah tekanan, serta refleksi mendalam mengenai kepemimpinan, komunikasi, dan kolaborasi.\nProgram ini dirancang untuk menghadirkan pengalaman yang tidak hanya menyenangkan dan penuh petualangan, tetapi juga menghasilkan pembelajaran nyata yang dapat diterapkan dalam kehidupan dan dunia kerja.",
     "duration": "Full day (00.00-12.00)",
     "price": 595000,
@@ -1848,7 +1847,7 @@ export const programs: Program[] = [
     "slug": "samosir-journey-kayu-pun-bisa-menari",
     "destinationId": "toba",
     "attractionId": "pulau-samosir",
-    "image": "https://images.unsplash.com/photo-1623692333663-c2d4aeb14b83?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
     "description": "program destination-based exploration yang mengajak peserta menyelami filosofi dan kisah budaya Batak melalui legenda Sigale-gale. Peserta diajak menjadi keturunan terakhir Batak Toba yang bertugas menemukan Sigale-gale dan mempelajari tiga tarian Tor-tor melalui serangkaian tantangan berupa mystery box, trekking, bersepeda, hingga eksplorasi Desa Tomok. Program ini menggabungkan petualangan, budaya, dan pembelajaran tentang makna kerja, kolaborasi, serta warisan yang melampaui diri sendiri.",
     "duration": "3 – 4 Jam",
     "price": 1650000,
@@ -2975,6 +2974,223 @@ export const programs: Program[] = [
     ],
     "gallery": [
       "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "bromo-bromo-expedition-guardians-of-the-bromo-caldera-alt",
+    "name": "Bromo Expedition: Guardians of The Bromo Caldera",
+    "slug": "bromo-expedition-guardians-of-the-bromo-caldera",
+    "destinationId": "bromo",
+    "attractionId": "mount-bromo",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80",
+    "description": "Kabut Bromo menyimpan sebuah misi. Hanya tim yang bersatu yang mampu menuntaskannya. Bromo Expedition: Guardians of The Caldera adalah program destination-based exploration yang menggabungkan petualangan alam, experiential learning, dan kearifan lokal Suku Tengger dalam sebuah misi epik penyelamatan harmoni Kaldera Bromo.\nPeserta berperan sebagai \"Guardians of The Caldera\", tim terpilih yang ditugaskan untuk mengumpulkan Fragments of Harmony yang tersebar di berbagai titik ikonik Bromo. Dalam perjalanan, peserta akan menghadapi tantangan navigasi, pemecahan masalah, pengambilan keputusan di bawah tekanan, serta refleksi mendalam mengenai kepemimpinan, komunikasi, dan kolaborasi.\nProgram ini dirancang untuk menghadirkan pengalaman yang tidak hanya menyenangkan dan penuh petualangan, tetapi juga menghasilkan pembelajaran nyata yang dapat diterapkan dalam kehidupan dan dunia kerja.",
+    "duration": "Full day (00.00-12.00)",
+    "price": 595000,
+    "rating": 4.7,
+    "reviewsCount": 27,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Program ini hadir untuk mentransformasi pengembangan tim menjadi misi epik penyelamatan harmoni alam, di mana peserta akan merasakan kombinasi menegangkan antara taktik kolaborasi di medan ekstrem dan koneksi magis dengan kearifan lokal suku Tengger. Pengalaman ini sepenuhnya tidak dapat direplikasi di tempat lain karena memanfaatkan lanskap geografis unik lautan pasir aktif dan spiritualitas hidup Sang Kaldera secara langsung sebagai ruang bermain sekaligus refleksi dinamika kelompok."
+    ],
+    "included": [
+      "✓ Transportasi shuttle start Malang Kota",
+      "✓ Transportasi jip 4x4 meeting point rest area Tumpang / Wringinanom",
+      "✓ Driver, BBM, Parkir",
+      "✓ Retribusi kendaraan Jip Paguyuban",
+      "✓ Tiket masuk kawasan TNBTS",
+      "✓ Asuransi lokasi wisata Kawasan TNBTS",
+      "✓ Tour guide yang ramah dan berpengalaman",
+      "✓ 7 Destinasi wisata di Bromo:",
+      "• Sunrise view point",
+      "• Widodaren",
+      "• Kawah Bromo",
+      "• Pura Luhur Poten",
+      "• Pasir berbisik",
+      "• Savana",
+      "• Lembah Watangan",
+      "✓ Medical kit/P3K Standar"
+    ],
+    "excluded": [
+      "Hotel,",
+      "makan peserta,",
+      "video,",
+      "perizinan drone di bromo,",
+      "transportasi luar kota malang"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "00.00 – 00.30",
+        "activities": [
+          "Penjemputan peserta",
+          "Kota Malang",
+          "Koordinasi kehadiran  peserta, pengecekan  jumlah dan kondisi fisik  awal, briefing singkat  perjalanan dan",
+          "keselamatan."
+        ]
+      },
+      {
+        "title": "00.30 – 01.30",
+        "activities": [
+          "Perjalanan ke rest area",
+          "Rest area Tumpang /  Wringinanom",
+          "Shuttle jip, penggunaan  toilet & pastikan",
+          "kesiapan sebelum",
+          "berangkat. pengingat  pakaian hangat"
+        ]
+      },
+      {
+        "title": "01.30 – 03.30",
+        "activities": [
+          "Perjalanan menuju",
+          "Bromo",
+          "Bromo",
+          "Monitoring kondisi",
+          "peserta selama",
+          "perjalanan malam dan  menjaga ketertiban di  kendaraan. Pastikan  peserta istirahat."
+        ]
+      },
+      {
+        "title": "03.30 – 05.30",
+        "activities": [
+          "Sunrise Time",
+          "Bukit Kingkong",
+          "Atur posisi peserta,",
+          "briefing keamanan area tebing, dokumentasi,",
+          "dan pengelolaan waktu",
+          "sunrise. pastikan",
+          "peserta tidak terpencar"
+        ]
+      },
+      {
+        "title": "05.30 – 06.30",
+        "activities": [
+          "Perjalanan menuju Bukit  Widodaren",
+          "Bromo",
+          "Transisi kegiatan,",
+          "memastikan peserta  tetap hangat dan aman,  persiapan aktivitas",
+          "reflektif di Widodaren"
+        ]
+      },
+      {
+        "title": "06.30 – 07.00",
+        "activities": [
+          "Explore Wisata",
+          "Widodaren",
+          "Fasilitasi journaling",
+          "alam, piknik ringan, dan  fun games, menjaga  suasana kondusif serta  kebersihan area"
+        ]
+      },
+      {
+        "title": "07.00 – 08.00",
+        "activities": [
+          "Explore Wisata",
+          "Kawah Gunung Bromo &  Pura Luhur Poten",
+          "Briefing etika budaya  dan keselamatan,",
+          "pengaturan alur",
+          "kunjungan, pengawasan  di area kawah"
+        ]
+      },
+      {
+        "title": "08.00 – 09.00",
+        "activities": [
+          "Explore wisata",
+          "Pasir Berbisik",
+          "Arahkan aktivitas",
+          "eksplorasi dan foto, jaga  jarak aman, serta",
+          "pastikan peserta tidak  terpencar"
+        ]
+      },
+      {
+        "title": "09.00 – 10.00",
+        "activities": [
+          "Explore WIsata",
+          "Savana & Lembah",
+          "Watangan",
+          "Pengelolaan waktu",
+          "eksplorasi dan foto,",
+          "penggunaan toilet"
+        ]
+      },
+      {
+        "title": "10.00 – 11.00",
+        "activities": [
+          "Perjalanan kembali ke  rest area & shuttle jip",
+          "Rest area Tumpang /  Wringinanom",
+          "koordinasi transportasi,  dan memastikan tidak  ada peserta tertinggal"
+        ]
+      },
+      {
+        "title": "11.00 – 12.00",
+        "activities": [
+          "Perjalanan kembali ke  dropping point",
+          "Kota Malang",
+          "koordinasi transportasi,  dan memastikan tidak  ada peserta tertinggal"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "bogor-surviving-in-the-analog-age-alt",
+    "name": "SURVIVING IN THE ANALOG AGE",
+    "slug": "surviving-in-the-analog-age",
+    "destinationId": "bogor",
+    "attractionId": "kebun-raya-bogor",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
+    "description": "Program Team Building ini dirancang sebagai simulasi kolaboratif yang mengajak peserta kembali pada kekuatan fundamental manusia: berpikir strategis, bertindak adaptif, dan bekerja bersama secara efektif. Melalui pengalaman tersebut, peserta diharapkan semakin menyadari bahwa teknologi mendukung kinerja, tetapi ketangguhan manusialah yang menjaga sistem tetap berjalan. Namun di balik kecanggihan teknologi, faktor paling menentukan tetaplah manusia — kemampuan berpikir, beradaptasi, dan berkolaborasi saat menghadapi situasi yang tidak terduga.",
+    "duration": "4 s/d 6 jam",
+    "price": 55000000,
+    "rating": 4.8,
+    "reviewsCount": 77,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Peserta akan mendapatkan experience Dimana system yang serba digital saat ini, tiba2 down (rekayasa tidak boleh menggunakan gadget), menentukan arah yang biasanya menggunakan aplikasi map, dalam program ini harus menggunakan Kompas (kemampuan tambahan bagi peserta)"
+    ],
+    "included": [
+      "Tiket masuk Kebun Raya Bogor, Design program, Atribut Bandana"
+    ],
+    "excluded": [
+      "Slayer, Rain Coat, Banner Event, Asuransi, Peralatan & pendukung (games dll), SDM, Air minum selama kegiatan berlangsung, Dokumentasi (video & fhoto)"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "07.30 – 08.00",
+        "activities": [
+          "Opening & Conditionong",
+          "Main area",
+          "Treasury hunt Framing"
+        ]
+      },
+      {
+        "title": "08.00 – 10.00",
+        "activities": [
+          "Finding The Treasury",
+          "KBR",
+          "Gamess & Reward"
+        ]
+      },
+      {
+        "title": "10.00 – 10.30",
+        "activities": [
+          "We Are One",
+          "Main area",
+          "Final Project"
+        ]
+      },
+      {
+        "title": "10.30 – 11.00",
+        "activities": [
+          "Wrap up & Conculsion",
+          "Main area",
+          "Sharing experience"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
