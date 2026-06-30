@@ -475,7 +475,7 @@ function BookingFormContent() {
                     <form onSubmit={handleBookingSubmit} className="space-y-8">
                       {/* Method details conditional render */}
                       <AnimatePresence mode="wait">
-                        <TabsContent value="card">
+                        <TabsContent key="card" value="card">
                           <motion.div
                             key="card-details"
                             initial={{ opacity: 0, y: 10 }}
@@ -594,7 +594,7 @@ function BookingFormContent() {
                           </motion.div>
                         </TabsContent>
 
-                        <TabsContent value="wallet">
+                        <TabsContent key="wallet" value="wallet">
                           <motion.div
                             key="wallet-details"
                             initial={{ opacity: 0, y: 10 }}
@@ -631,7 +631,7 @@ function BookingFormContent() {
                           </motion.div>
                         </TabsContent>
 
-                        <TabsContent value="transfer">
+                        <TabsContent key="transfer" value="transfer">
                           <motion.div
                             key="transfer-details"
                             initial={{ opacity: 0, y: 10 }}

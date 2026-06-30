@@ -16,7 +16,7 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
   const menuItems = [
     { label: 'Home', path: '/', icon: Home },
     { label: 'Destinations', path: '/#destinations', icon: Compass },
-    { label: 'Experiences', path: '/#experience', icon: Map },
+    { label: 'Experience', path: '/#experience', icon: Map },
     { label: 'Programs', path: '/#program', icon: BookOpen },
     { label: 'About', path: '/#about', icon: BookOpen },
     { label: 'Contact', path: '/contact', icon: Phone }

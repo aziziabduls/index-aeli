@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Compass, MapPin, Calendar, Star, Search, Clock, ChevronLeft,
   ChevronRight,
+  ChevronDown,
   ArrowRight,
   Map,
   Users,
@@ -185,10 +186,11 @@ export default function Home() {
                   <Calendar className="w-3.5 h-3.5 text-primary" /> Travel Date
                 </label>
                 <Popover>
-                  <PopoverTrigger className="w-full bg-transparent border rounded-xl border-zinc-200 py-2 sm:py-3 font-semibold text-zinc-900 h-10 sm:h-12 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer px-3 sm:px-4 text-xs sm:text-sm">
-                    <span>
+                  <PopoverTrigger className="w-full bg-transparent border rounded-xl border-zinc-200 py-2 sm:py-3 text-zinc-900 h-10 sm:h-12 hover:bg-transparent shadow-none text-left flex items-center justify-between cursor-pointer px-3 sm:px-4 text-xs sm:text-sm">
+                    <span className={searchDate ? "font-semibold text-zinc-900" : "font-normal text-zinc-400"}>
                       {searchDate ? new Date(searchDate).toLocaleDateString(undefined, { dateStyle: 'medium' }) : 'Pick a date'}
                     </span>
+                    <ChevronDown className="h-4 w-4 text-zinc-400 opacity-70 shrink-0" />
                   </PopoverTrigger>
                   <PopoverContent className="w-auto p-0 z-50 bg-white border border-zinc-200 shadow-xl rounded-2xl">
                     <CalendarComponent

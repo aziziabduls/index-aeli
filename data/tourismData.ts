@@ -2,1609 +2,3342 @@ import { Destination, Attraction, Program, Review } from '../types';
 
 export const destinations: Destination[] = [
   {
-    id: 'bali',
-    name: 'Bali',
-    slug: 'bali',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80',
-    description: 'The legendary Island of the Gods, famous for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs.',
-    attractionCount: 5,
-    quickFacts: {
-      capital: 'Denpasar',
-      population: '4.3 Million',
-      language: 'Balinese & Indonesian',
-      timezone: 'GMT+8 (WITA)'
+    "id": "bali",
+    "name": "Bali",
+    "slug": "bali",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+    "description": "The legendary Island of the Gods, famous for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs.",
+    "attractionCount": 2,
+    "quickFacts": {
+      "capital": "Denpasar",
+      "population": "4.3 Million",
+      "language": "Balinese & Indonesian",
+      "timezone": "GMT+8 (WITA)"
     },
-    weather: {
-      temperature: '28°C',
-      condition: 'Sunny & Tropical'
+    "weather": {
+      "temperature": "28°C",
+      "condition": "Sunny & Tropical"
     },
-    bestTimeToVisit: 'April to October (Dry Season)',
-    gallery: [
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "April to October (Dry Season)",
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'jakarta',
-    name: 'Jakarta',
-    slug: 'jakarta',
-    image: 'https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80',
-    description: 'The dynamic, sprawling capital of Indonesia. A fascinating melting pot of modern skyscrapers, historic colonial quarters, and rich cultural heritage.',
-    attractionCount: 3,
-    quickFacts: {
-      capital: 'Jakarta',
-      population: '10.5 Million',
-      language: 'Indonesian (Betawi)',
-      timezone: 'GMT+7 (WIB)'
+    "id": "jakarta",
+    "name": "Jakarta",
+    "slug": "jakarta",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "The dynamic, sprawling capital of Indonesia. A fascinating melting pot of modern skyscrapers, historic colonial quarters, and rich cultural heritage.",
+    "attractionCount": 3,
+    "quickFacts": {
+      "capital": "Jakarta",
+      "population": "10.5 Million",
+      "language": "Indonesian (Betawi)",
+      "timezone": "GMT+7 (WIB)"
     },
-    weather: {
-      temperature: '31°C',
-      condition: 'Partly Cloudy'
+    "weather": {
+      "temperature": "31°C",
+      "condition": "Partly Cloudy"
     },
-    bestTimeToVisit: 'June to September',
-    gallery: [
-      'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "June to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'yogyakarta',
-    name: 'Yogyakarta',
-    slug: 'yogyakarta',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80',
-    description: 'The soul of Java, renowned as a center for classical Javanese fine art and culture, from batik and ballet to traditional shadow puppetry.',
-    attractionCount: 4,
-    quickFacts: {
-      capital: 'Yogyakarta',
-      population: '3.8 Million',
-      language: 'Javanese & Indonesian',
-      timezone: 'GMT+7 (WIB)'
+    "id": "yogyakarta",
+    "name": "Yogyakarta",
+    "slug": "yogyakarta",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=1200&q=80",
+    "description": "The soul of Java, renowned as a center for classical Javanese fine art and culture, from batik and ballet to traditional shadow puppetry.",
+    "attractionCount": 4,
+    "quickFacts": {
+      "capital": "Yogyakarta",
+      "population": "3.8 Million",
+      "language": "Javanese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
     },
-    weather: {
-      temperature: '27°C',
-      condition: 'Tropical Warm'
+    "weather": {
+      "temperature": "27°C",
+      "condition": "Tropical Warm"
     },
-    bestTimeToVisit: 'May to October',
-    gallery: [
-      'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "May to October",
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'bandung',
-    name: 'Bandung',
-    slug: 'bandung',
-    image: 'https://images.unsplash.com/photo-1611638281871-1063d3e76e1f?q=80&w=2266&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    description: 'Nicknamed the Paris of Java, Bandung is situated on a highland plateau, offering a cooler climate, volcanoes, tea plantations, and art deco architecture.',
-    attractionCount: 3,
-    quickFacts: {
-      capital: 'Bandung',
-      population: '2.5 Million',
-      language: 'Sundanese & Indonesian',
-      timezone: 'GMT+7 (WIB)'
+    "id": "lombok",
+    "name": "Lombok",
+    "slug": "lombok",
+    "image": "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=1200&q=80",
+    "description": "An unspoiled paradise east of Bali, known for its pristine white-sand beaches, crystal clear waters, Gili islands, and majestic Mount Rinjani.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Mataram",
+      "population": "3.5 Million",
+      "language": "Sasak & Indonesian",
+      "timezone": "GMT+8 (WITA)"
     },
-    weather: {
-      temperature: '23°C',
-      condition: 'Cool & Humid'
+    "weather": {
+      "temperature": "29°C",
+      "condition": "Tropical Breeze"
     },
-    bestTimeToVisit: 'May to September',
-    gallery: [
-      'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "May to October",
+    "gallery": [
+      "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'lombok',
-    name: 'Lombok',
-    slug: 'lombok',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=1200&q=80',
-    description: 'An unspoiled paradise east of Bali, known for its pristine white-sand beaches, crystal clear waters, Gili islands, and majestic Mount Rinjani.',
-    attractionCount: 3,
-    quickFacts: {
-      capital: 'Mataram',
-      population: '3.5 Million',
-      language: 'Sasak & Indonesian',
-      timezone: 'GMT+8 (WITA)'
+    "id": "bogor",
+    "name": "Bogor",
+    "slug": "bogor",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=1200&q=80",
+    "description": "A charming city south of Jakarta, known for its cooler climate, colonial-era botanical gardens, and surrounding mountains.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Bogor",
+      "population": "1.1 Million",
+      "language": "Sundanese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
     },
-    weather: {
-      temperature: '29°C',
-      condition: 'Tropical Breeze'
+    "weather": {
+      "temperature": "26°C",
+      "condition": "Rainy & Cool"
     },
-    bestTimeToVisit: 'May to October',
-    gallery: [
-      'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "May to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'labuan-bajo',
-    name: 'Labuan Bajo',
-    slug: 'labuan-bajo',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80',
-    description: 'The gateway to Komodo National Park. A breathtaking fishing town surrounded by dramatic hills, exotic pink beaches, and legendary giant dragons.',
-    attractionCount: 4,
-    quickFacts: {
-      capital: 'Labuan Bajo',
-      population: '250,000',
-      language: 'Manggarai & Indonesian',
-      timezone: 'GMT+8 (WITA)'
+    "id": "dieng",
+    "name": "Dieng Plateau",
+    "slug": "dieng",
+    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=1200&q=80",
+    "description": "A misty volcanic plateau in Central Java, famous for multi-colored lakes, ancient Hindu temples, and dramatic sunrise views.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Wonosobo",
+      "population": "800,000",
+      "language": "Javanese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
     },
-    weather: {
-      temperature: '30°C',
-      condition: 'Sunny'
+    "weather": {
+      "temperature": "15°C",
+      "condition": "Misty & Cold"
     },
-    bestTimeToVisit: 'April to November',
-    gallery: [
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "June to August",
+    "gallery": [
+      "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'surabaya',
-    name: 'Surabaya',
-    slug: 'surabaya',
-    image: 'https://images.unsplash.com/photo-1566176553949-872b2a73e04e?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    description: 'The City of Heroes. East Java\'s industrial heart and second largest metropolis, combining modern harbor terminals, colonial architecture, and dynamic culinary scenes.',
-    attractionCount: 3,
-    quickFacts: {
-      capital: 'Surabaya',
-      population: '3.1 Million',
-      language: 'Javanese & Indonesian',
-      timezone: 'GMT+7 (WIB)'
+    "id": "bromo",
+    "name": "Mount Bromo",
+    "slug": "bromo",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=1200&q=80",
+    "description": "Part of the Bromo Tengger Semeru National Park, showcasing active volcanic craters, dramatic sand seas, and epic sunrise viewpoints.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Probolinggo",
+      "population": "N/A",
+      "language": "Tenggerese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
     },
-    weather: {
-      temperature: '32°C',
-      condition: 'Hot & Humid'
+    "weather": {
+      "temperature": "12°C",
+      "condition": "Cold & Clear"
     },
-    bestTimeToVisit: 'July to October',
-    gallery: [
-      'https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1589979482837-e74f2e145060?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1611637576109-b6f76185ec9b?auto=format&fit=crop&w=800&q=80'
+    "bestTimeToVisit": "April to October",
+    "gallery": [
+      "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "purwakarta",
+    "name": "Purwakarta",
+    "slug": "purwakarta",
+    "image": "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=1200&q=80",
+    "description": "A scenic regency in West Java, home to the massive Jatiluhur Dam, scenic volcanic hills, and rich Sundanese cultural history.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Purwakarta",
+      "population": "1 Million",
+      "language": "Sundanese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "29°C",
+      "condition": "Sunny"
+    },
+    "bestTimeToVisit": "May to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "banyuwangi",
+    "name": "Banyuwangi",
+    "slug": "banyuwangi",
+    "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=1200&q=80",
+    "description": "The \"Sunrise of Java\", located on the eastern tip of Java, serving as the gateway to Ijen Crater and wild national parks.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Banyuwangi",
+      "population": "1.7 Million",
+      "language": "Osing & Javanese",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "28°C",
+      "condition": "Tropical Warm"
+    },
+    "bestTimeToVisit": "July to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "toba",
+    "name": "Lake Toba",
+    "slug": "toba",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=1200&q=80",
+    "description": "The largest volcanic lake in the world, featuring Samosir Island at its center, surrounded by majestic pine-covered peaks and Batak culture.",
+    "attractionCount": 2,
+    "quickFacts": {
+      "capital": "Balige",
+      "population": "N/A",
+      "language": "Batak & Indonesian",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "22°C",
+      "condition": "Cool & Fresh"
+    },
+    "bestTimeToVisit": "May to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "palembang",
+    "name": "Palembang",
+    "slug": "palembang",
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=80",
+    "description": "One of the oldest cities in Southeast Asia, capital of the ancient Srivijaya Kingdom, famous for the Musi River and Pempek culinary arts.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Palembang",
+      "population": "1.6 Million",
+      "language": "Palembang Malay & Indonesian",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "31°C",
+      "condition": "Hot & Humid"
+    },
+    "bestTimeToVisit": "June to September",
+    "gallery": [
+      "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "makassar",
+    "name": "Makassar (Malino)",
+    "slug": "makassar",
+    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80",
+    "description": "The largest city in Eastern Indonesia, gateway to the highland resort town of Malino with pine forests and waterfalls.",
+    "attractionCount": 1,
+    "quickFacts": {
+      "capital": "Makassar",
+      "population": "1.5 Million",
+      "language": "Buginese & Makassarese",
+      "timezone": "GMT+8 (WITA)"
+    },
+    "weather": {
+      "temperature": "24°C",
+      "condition": "Cool & Mountain Breeze"
+    },
+    "bestTimeToVisit": "July to October",
+    "gallery": [
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "lampung",
+    "name": "Lampung",
+    "slug": "lampung",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    "description": "The southern gateway to Sumatra, featuring pristine bays like Pahawang, coral reefs, and wild elephant national parks.",
+    "attractionCount": 2,
+    "quickFacts": {
+      "capital": "Bandar Lampung",
+      "population": "9 Million",
+      "language": "Lampungese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "28°C",
+      "condition": "Coastal Breeze"
+    },
+    "bestTimeToVisit": "May to October",
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "semarang",
+    "name": "Semarang",
+    "slug": "semarang",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=1200&q=80",
+    "description": "A historic port city on Java's north coast, featuring colonial Lawang Sewu and a vibrant Chinatown.",
+    "attractionCount": 2,
+    "quickFacts": {
+      "capital": "Semarang",
+      "population": "1.8 Million",
+      "language": "Javanese & Indonesian",
+      "timezone": "GMT+7 (WIB)"
+    },
+    "weather": {
+      "temperature": "30°C",
+      "condition": "Sunny & Coastal"
+    },
+    "bestTimeToVisit": "June to August",
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
     ]
   }
 ];
 
 export const attractions: Attraction[] = [
-  // Bali Attractions (5)
   {
-    id: 'tanah-lot',
-    name: 'Tanah Lot Temple',
-    slug: 'tanah-lot',
-    destinationId: 'bali',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'An iconic ancient Hindu pilgrimage temple perched on a unique rock formation off the coast of Bali, famous for spectacular sunset views.',
-    location: 'Tabanan, Bali',
-    rating: 4.8,
-    history: 'Built in the 16th century by the legendary priest Nirartha. Tanah Lot temple is a critical part of Balinese spiritual sea mythology, guarded by venomous sea snakes.',
-    openingHours: '06:00 AM - 07:00 PM',
-    facilities: ['Parking Lot', 'Souvenir Shops', 'Washrooms', 'Restaurants', 'Guides'],
-    gallery: [
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80'
+    "id": "monas",
+    "name": "National Monument (Monas)",
+    "slug": "monas",
+    "destinationId": "jakarta",
+    "image": "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80",
+    "description": "A 132-meter tower in the center of Merdeka Square, symbolizing the struggle for Indonesian Independence.",
+    "location": "Central Jakarta",
+    "rating": 4.5,
+    "history": "Commissioned by President Sukarno and opened in 1975, the flame at the top is covered with 35 kg of gold foil, representing independence spirit.",
+    "openingHours": "08:00 AM - 04:00 PM",
+    "facilities": [
+      "Museum of National History",
+      "Observation Deck",
+      "Electric Trains",
+      "Parks",
+      "Food Courts"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'ubud-monkey-forest',
-    name: 'Ubud Monkey Forest',
-    slug: 'ubud-monkey-forest',
-    destinationId: 'bali',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'A sanctuary and natural habitat of the Balinese long-tailed macaque, located in the cool highlands of Ubud.',
-    location: 'Ubud, Bali',
-    rating: 4.7,
-    history: 'Also known as the Sacred Monkey Forest Sanctuary, this site is dedicated to conservation, spiritual devotion, and scientific research in accordance with the Tri Hita Karana philosophy.',
-    openingHours: '09:00 AM - 06:00 PM',
-    facilities: ['Visitor Center', 'Restrooms', 'Information Desk', 'First Aid', 'Free Parking'],
-    gallery: [
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80'
+    "id": "kota-tua",
+    "name": "Old Batavia (Kota Tua)",
+    "slug": "kota-tua",
+    "destinationId": "jakarta",
+    "image": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80",
+    "description": "The historic core of Jakarta, boasting 17th-century Dutch colonial buildings centered around Fatahillah Square.",
+    "location": "West Jakarta",
+    "rating": 4.4,
+    "history": "Established by the Dutch East India Company (VOC) in 1619 as Batavia, it was the administrative headquarters of the colonial Dutch Empire in Asia.",
+    "openingHours": "24 Hours (Museums close at 03:00 PM)",
+    "facilities": [
+      "Bicycle Rental",
+      "Jakarta History Museum",
+      "Cafe Batavia",
+      "Street Performers",
+      "Train Station"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'uluwatu-temple',
-    name: 'Uluwatu Cliff Temple',
-    slug: 'uluwatu-temple',
-    destinationId: 'bali',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'Perched on a steep cliff 70 meters above the roaring Indian Ocean, this temple hosts the daily Kecak fire dance at sunset.',
-    location: 'Pecatu, South Kuta, Bali',
-    rating: 4.9,
-    history: 'Constructed originally in the 11th century, it is dedicated to Sang Hyang Widhi Wasa in his manifestation as Rudra, protecting Bali from evil spirits.',
-    openingHours: '07:00 AM - 07:00 PM',
-    facilities: ['Kecak Dance Stage', 'Traditional Sarong Rental', 'Walking Trails', 'Parking', 'Washrooms'],
-    gallery: ['https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'tegalalang',
-    name: 'Tegalalang Rice Terraces',
-    slug: 'tegalalang',
-    destinationId: 'bali',
-    image: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-    description: 'A beautiful terraced hillside showing the traditional Balinese cooperative irrigation system called Subak.',
-    location: 'Tegalalang, Ubud, Bali',
-    rating: 4.6,
-    history: 'Dating back to the 8th century, these valleys are cultivated by local farmers who maintain subak, Bali\'s UNESCO-recognized communal water system.',
-    openingHours: '08:00 AM - 06:00 PM',
-    facilities: ['Cafes', 'Swing Points', 'Photo Spots', 'Walkways', 'Local Guides'],
-    gallery: ['https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'nusa-penida',
-    name: 'Nusa Penida Kelingking Beach',
-    slug: 'nusa-penida',
-    destinationId: 'bali',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'A famous cliff formation resembling a T-Rex overlooking a crystal clear turquoise bay and pristine white sand.',
-    location: 'Nusa Penida, Bali',
-    rating: 4.9,
-    history: 'A secluded island southeast of Bali main island, Nusa Penida remained untouched for centuries, preserving its dramatic limestone cliffs and rich marine biodiversity.',
-    openingHours: '24 Hours (Best in Daylight)',
-    facilities: ['Local food stalls (Warungs)', 'Restrooms', 'Ferry Harbor Access', 'Viewing Deck'],
-    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Jakarta Attractions (3)
-  {
-    id: 'monas',
-    name: 'National Monument (Monas)',
-    slug: 'monas',
-    destinationId: 'jakarta',
-    image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-    description: 'A 132-meter tower in the center of Merdeka Square, symbolizing the struggle for Indonesian Independence.',
-    location: 'Central Jakarta',
-    rating: 4.5,
-    history: 'Commissioned by President Sukarno and opened in 1975, the flame at the top is covered with 35 kg of gold foil, representing independence spirit.',
-    openingHours: '08:00 AM - 04:00 PM',
-    facilities: ['Museum of National History', 'Observation Deck', 'Electric Trains', 'Parks', 'Food Courts'],
-    gallery: ['https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'kota-tua',
-    name: 'Old Batavia (Kota Tua)',
-    slug: 'kota-tua',
-    destinationId: 'jakarta',
-    image: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80',
-    description: 'The historic core of Jakarta, boasting 17th-century Dutch colonial buildings centered around Fatahillah Square.',
-    location: 'West Jakarta',
-    rating: 4.4,
-    history: 'Established by the Dutch East India Company (VOC) in 1619 as Batavia, it was the administrative headquarters of the colonial Dutch Empire in Asia.',
-    openingHours: '24 Hours (Museums close at 03:00 PM)',
-    facilities: ['Bicycle Rental', 'Jakarta History Museum', 'Cafe Batavia', 'Street Performers', 'Train Station'],
-    gallery: ['https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'taman-mini',
-    name: 'Taman Mini Indonesia Indah',
-    slug: 'taman-mini',
-    destinationId: 'jakarta',
-    image: 'https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80',
-    description: 'A culture-based recreational area showcasing pavilions representing the traditional homes of all 38 Indonesian provinces.',
-    location: 'East Jakarta',
-    rating: 4.6,
-    history: 'Conceived by former First Lady Tien Suharto and opened in 1975 to foster national pride, identity, and unity through cultural representations.',
-    openingHours: '06:00 AM - 08:00 PM',
-    facilities: ['Cable Car', 'IMAX Theater', 'Museums', 'Traditional Houses', 'Bicycle Tracks'],
-    gallery: ['https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Yogyakarta Attractions (4)
-  {
-    id: 'borobudur',
-    name: 'Borobudur Temple',
-    slug: 'borobudur',
-    destinationId: 'yogyakarta',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-    description: 'The world\'s largest Buddhist temple, a UNESCO World Heritage Site featuring 9 stacked platforms and 72 open-work stupas.',
-    location: 'Magelang (near Yogyakarta)',
-    rating: 5.0,
-    history: 'Built during the Sailendra Dynasty in the 9th century, Borobudur lay hidden for centuries under volcanic ash and jungle growth before being rediscovered in 1814.',
-    openingHours: '06:30 AM - 04:30 PM',
-    facilities: ['Visitor Center', 'Audioguides', 'Shuttle Trains', 'Souvenir Stalls', 'Museums', 'Wheelchair Access'],
-    gallery: [
-      'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80'
+    "id": "kebun-raya-bogor",
+    "name": "Kebun Raya Bogor",
+    "slug": "kebun-raya-bogor",
+    "destinationId": "bogor",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
+    "description": "The world-famous Bogor Botanical Gardens established in 1817, featuring over 13,000 species of tropical plants.",
+    "location": "Kota Bogor, Jawa Barat",
+    "rating": 4.8,
+    "history": "Founded by the Dutch colonial administration. It is the oldest botanical gardens in Southeast Asia and served as a major center for agricultural research.",
+    "openingHours": "08:00 AM - 04:00 PM",
+    "facilities": [
+      "Museum Zoologi",
+      "Taman Bunga",
+      "Cafe",
+      "Restrooms",
+      "Parking",
+      "Electric cars"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'prambanan',
-    name: 'Prambanan Temple',
-    slug: 'prambanan',
-    destinationId: 'yogyakarta',
-    image: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-    description: 'A magnificent 10th-century Hindu temple compound dedicated to the Trimurti (Creator Brahma, Preserver Vishnu, and Destroyer Shiva).',
-    location: 'Sleman, Yogyakarta',
-    rating: 4.9,
-    history: 'The largest Hindu temple site in Indonesia, built by the Sanjaya Dynasty. Its tall towering spires represent Mount Meru, the holy abode of Hindu gods.',
-    openingHours: '06:30 AM - 05:00 PM',
-    facilities: ['Ramayana Ballet Stage', 'Souvenir Center', 'Park Area', 'Information Center', 'Restrooms'],
-    gallery: ['https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80']
+    "id": "omah-tabon",
+    "name": "Omah Tabon Heritage",
+    "slug": "omah-tabon",
+    "destinationId": "yogyakarta",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "A beautiful traditional Javanese wooden house and cultural space located in Bantul, Yogyakarta.",
+    "location": "Bantul, Yogyakarta",
+    "rating": 4.7,
+    "history": "A conserved Javanese heritage compound showing rural Javanese lifestyle, traditional architecture, and serving authentic local culinary feasts.",
+    "openingHours": "09:00 AM - 09:00 PM",
+    "facilities": [
+      "Traditional Restaurant",
+      "Cultural Workshop Space",
+      "Meeting Area",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'keraton-yogyakarta',
-    name: 'Yogyakarta Palace (Keraton)',
-    slug: 'keraton-yogyakarta',
-    destinationId: 'yogyakarta',
-    image: 'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80',
-    description: 'The grand palace complex of the Sultan of Yogyakarta, serving as a living museum of Javanese royal culture.',
-    location: 'City Center, Yogyakarta',
-    rating: 4.6,
-    history: 'Built by Sultan Hamengkubuwono I in 1755, the palace displays exquisite Javanese architecture, court ornaments, and is still the current residence of the Sultan.',
-    openingHours: '08:30 AM - 01:30 PM',
-    facilities: ['Exhibition Rooms', 'Local Guides', 'Cultural Shows', 'Museum Store', 'Toilets'],
-    gallery: ['https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80']
+    "id": "kepulauan-seribu",
+    "name": "Kepulauan Seribu Bahari",
+    "slug": "kepulauan-seribu",
+    "destinationId": "jakarta",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "description": "A chain of islands north of Jakarta's coast, offering snorkeling, diving, Stand Up Paddleboarding, and historical fort ruins.",
+    "location": "Kepulauan Seribu, DKI Jakarta",
+    "rating": 4.6,
+    "history": "A historical archipelago containing ruins of 17th-century Dutch forts on Onrust Island, now preserved as an eco-marine national park.",
+    "openingHours": "24 Hours (Boat trips leave mornings)",
+    "facilities": [
+      "Boat Charters",
+      "Snorkeling rentals",
+      "Diving spots",
+      "Guest houses",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'malioboro',
-    name: 'Malioboro Street',
-    slug: 'malioboro',
-    destinationId: 'yogyakarta',
-    image: 'https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80',
-    description: 'A famous 24-hour shopping street filled with street vendors selling batik, traditional crafts, street food, and horse cart rides.',
-    location: 'City Center, Yogyakarta',
-    rating: 4.5,
-    history: 'Established in the colonial era, the street has served as Yogyakarta\'s commercial heart for over 250 years, linking the Sultan\'s palace and Mount Merapi.',
-    openingHours: '24 Hours',
-    facilities: ['Benches', 'Batik Stores', 'Food Stalls', 'Parking buildings', 'Pedestrian Walkway'],
-    gallery: ['https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Bandung Attractions (3)
-  {
-    id: 'tangkoeban-perahoe',
-    name: 'Tangkuban Perahu Volcano',
-    slug: 'tangkoeban-perahoe',
-    destinationId: 'bandung',
-    image: 'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80',
-    description: 'An active volcano north of Bandung, offering crater treks and geothermal hot springs to boil eggs in sulfur pools.',
-    location: 'Lembang, West Java',
-    rating: 4.5,
-    history: 'Derived from the Sundanese legend of Sangkuriang, who kicked a giant boat upside down in a fit of rage, which then turned into this boat-shaped mountain.',
-    openingHours: '08:00 AM - 05:00 PM',
-    facilities: ['Crater Walkway', 'Local Stalls', 'Volcano Guides', 'Restrooms', 'Parking Lot'],
-    gallery: ['https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80']
+    "id": "dieng-plateau",
+    "name": "Dieng Temple & Lakes",
+    "slug": "dieng-plateau",
+    "destinationId": "dieng",
+    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80",
+    "description": "A historical active volcanic field in Central Java, boasting 8th-century Hindu temples and the stunning multi-colored Telaga Warna lake.",
+    "location": "Wonosobo, Jawa Tengah",
+    "rating": 4.8,
+    "history": "Dieng was a sacred site for Javanese Hindus in the 8th and 9th centuries. The temples are some of the oldest surviving stone structures in Java.",
+    "openingHours": "07:00 AM - 05:00 PM",
+    "facilities": [
+      "Candi Arjuna Complex",
+      "Telaga Warna pathway",
+      "Geothermal viewing platform",
+      "Local guides",
+      "Souvenir shops"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'kawah-putih',
-    name: 'Kawah Putih (White Crater)',
-    slug: 'kawah-putih',
-    destinationId: 'bandung',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-    description: 'A striking sulfurous crater lake with surreal white-green waters surrounded by skeleton trees, sitting in high mountain mist.',
-    location: 'Ciwidey, West Java',
-    rating: 4.7,
-    history: 'Formed after Mount Patuha erupted in the 10th century. Discovered by German botanist Dr. Franz Wilhelm Junghuhn in 1837, who investigated the eerie birdless lake.',
-    openingHours: '07:00 AM - 05:00 PM',
-    facilities: ['Shuttle Service (Ontang-Anting)', 'Viewing Platforms', 'Suspension Bridge', 'Photography Service'],
-    gallery: ['https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80']
+    "id": "mount-bromo",
+    "name": "Mount Bromo Volcano",
+    "slug": "mount-bromo",
+    "destinationId": "bromo",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80",
+    "description": "An iconic active volcano sitting inside the Tengger Caldera, famous for its massive sea of sand and sunrise trails.",
+    "location": "Taman Nasional Bromo Tengger Semeru, Jawa Timur",
+    "rating": 4.9,
+    "history": "A sacred volcano for the local Tenggerese Hindu people, who perform the annual Yadnya Kasada festival throwing offerings into the active crater.",
+    "openingHours": "24 Hours",
+    "facilities": [
+      "Jeep Rentals",
+      "Horse riding trails",
+      "Viewing decks",
+      "Crater stairs",
+      "Restrooms",
+      "Food stalls"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'dusun-bambu',
-    name: 'Dusun Bambu Family Leisure Park',
-    slug: 'dusun-bambu',
-    destinationId: 'bandung',
-    image: 'https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80',
-    description: 'An eco-tourism park combining Sundanese culture, lush lakeside restaurants, glamping sites, and bamboo gardens.',
-    location: 'Lembang, Bandung',
-    rating: 4.6,
-    history: 'Designed to preserve Sundanese cultural identity, local bamboo species, and create a family-friendly oasis that blends modern design and nature.',
-    openingHours: '09:00 AM - 08:00 PM',
-    facilities: ['Lakeside Cottages', 'Bamboo Playground', 'Restaurants', 'Garden Center', 'Clean Restrooms'],
-    gallery: ['https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Lombok Attractions (3)
-  {
-    id: 'gili-islands',
-    name: 'The Gili Islands',
-    slug: 'gili-islands',
-    destinationId: 'lombok',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-    description: 'Three small islands—Gili Trawangan, Gili Meno, and Gili Air—known for sandy beaches, coral reefs, sea turtles, and no motorized vehicles.',
-    location: 'North Lombok Regency',
-    rating: 4.9,
-    history: 'Once used as a base for coconut plantations and a stopover for sailors, the Gilis have grown into an international eco-tourism hotspot.',
-    openingHours: '24 Hours (Boat schedules vary)',
-    facilities: ['Bicycle Rental', 'Diving Schools', 'Beachfront Resorts', 'Boat Charters', 'Dini and Sunset bars'],
-    gallery: ['https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80']
+    "id": "waduk-jatiluhur",
+    "name": "Waduk Jatiluhur Reservoir",
+    "slug": "waduk-jatiluhur",
+    "destinationId": "purwakarta",
+    "image": "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=800&q=80",
+    "description": "Indonesia's oldest and largest multi-purpose reservoir, surrounded by beautiful volcanic hills like Gunung Parang.",
+    "location": "Purwakarta, Jawa Barat",
+    "rating": 4.6,
+    "history": "Constructed in 1957 by French engineers, creating a massive 8,300-hectare lake that provides electricity and water to Jakarta and West Java.",
+    "openingHours": "08:00 AM - 06:00 PM",
+    "facilities": [
+      "Water Sports",
+      "Boat charters",
+      "Camping grounds",
+      "Lakeside restaurants",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'rinjani-volcano',
-    name: 'Mount Rinjani',
-    slug: 'rinjani-volcano',
-    destinationId: 'lombok',
-    image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80',
-    description: 'The second highest active volcano in Indonesia, offering challenging treks to the summit and the caldera lake Segara Anak.',
-    location: 'Sembalun / Senaru, Lombok',
-    rating: 4.8,
-    history: 'A sacred mountain for both local Sasak people and Balinese Hindus. The caldera lake contains a new active volcanic cone named Gunung Baru Jari.',
-    openingHours: 'Trek booking: 07:00 AM - 05:00 PM (National Park)',
-    facilities: ['Campsites', 'Porter Services', 'Registration Offices', 'Rescue Posts', 'Hiking Trails'],
-    gallery: ['https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80']
+    "id": "kintamani",
+    "name": "Kintamani Batur Volcano",
+    "slug": "kintamani",
+    "destinationId": "bali",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "description": "A spectacular highland region overlooking the active volcano Mount Batur and its crater lake.",
+    "location": "Kintamani, Bangli, Bali",
+    "rating": 4.8,
+    "history": "An ancient volcanic caldera formed thousands of years ago, Mount Batur remains active with volcanic fields and hot springs, sacred to Balinese Hindus.",
+    "openingHours": "24 Hours",
+    "facilities": [
+      "Panoramic Cafes",
+      "Hot Springs",
+      "Trekking paths",
+      "Lake boat charters",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'sendang-gile',
-    name: 'Sendang Gile & Tiu Kelep Waterfalls',
-    slug: 'sendang-gile',
-    destinationId: 'lombok',
-    image: 'https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80',
-    description: 'Lush tropical twin waterfalls hidden deep inside Mount Rinjani National Park, flowing with refreshing spring waters.',
-    location: 'Senaru, North Lombok',
-    rating: 4.7,
-    history: 'According to Sasak folklore, bathing under Tiu Kelep waterfall cures illnesses and makes you look younger, fed directly from Mount Rinjani\'s crater lake.',
-    openingHours: '08:00 AM - 05:00 PM',
-    facilities: ['Jungle Paths', 'Changing Rooms', 'Bridges', 'Entrance Ticket Booth', 'Local Guides'],
-    gallery: ['https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Labuan Bajo Attractions (4)
-  {
-    id: 'komodo-island',
-    name: 'Komodo Island National Park',
-    slug: 'komodo-island',
-    destinationId: 'labuan-bajo',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
-    description: 'The native habitat of the Komodo Dragon, the largest living lizard species, set amidst dry savannah volcanic hills.',
-    location: 'Komodo District, West Manggarai',
-    rating: 5.0,
-    history: 'Established in 1980 to protect the unique Komodo Dragon. It was designated a UNESCO World Heritage site and a New7Wonders of Nature.',
-    openingHours: '07:00 AM - 05:00 PM',
-    facilities: ['Ranger Center', 'Nature Trails', 'First Aid Station', 'Restrooms', 'Souvenir Area'],
-    gallery: ['https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80']
+    "id": "taman-gandrung-terakota",
+    "name": "Taman Gandrung Terakota",
+    "slug": "taman-gandrung-terakota",
+    "destinationId": "banyuwangi",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "A unique cultural site showcasing 1,000 terracotta statues of Gandrung dancers, celebrating Osing tribal agricultural heritage.",
+    "location": "Licin, Banyuwangi, Jawa Timur",
+    "rating": 4.8,
+    "history": "Built by local art conservators to preserve the traditional Gandrung dance, a harvest ritual dance dating back centuries in the Osing community.",
+    "openingHours": "08:00 AM - 05:00 PM",
+    "facilities": [
+      "Amphitheater",
+      "Art Gallery",
+      "Rice field pathways",
+      "Coffee shop",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'padar-island',
-    name: 'Padar Island Viewpoint',
-    slug: 'padar-island',
-    destinationId: 'labuan-bajo',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-    description: 'A legendary viewpoint on Padar Island displaying three distinct crescent bays of white, pink, and black sand beaches.',
-    location: 'Komodo National Park, Flores',
-    rating: 4.9,
-    history: 'An uninhabited rugged volcanic island that offers one of the most photographed viewpoints in Southeast Asia after a 815-step wooden staircase climb.',
-    openingHours: '06:00 AM - 05:00 PM (Best at Sunrise)',
-    facilities: ['Wooden Steps', 'Ferry jetty', 'Small Ranger Post', 'Security guards'],
-    gallery: ['https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80']
+    "id": "danau-toba",
+    "name": "Danau Toba Caldera",
+    "slug": "danau-toba",
+    "destinationId": "toba",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "description": "A spectacular volcanic lake formed by a supervolcanic eruption 74,000 years ago, surrounded by dramatic hills and Batak culture.",
+    "location": "Toba Regency, Sumatera Utara",
+    "rating": 4.9,
+    "history": "The site of the largest supervolcanic eruption in Earth's history, which triggered a volcanic winter and dramatically shaped human evolution.",
+    "openingHours": "24 Hours",
+    "facilities": [
+      "Viewing points",
+      "Ferry access",
+      "Water sports",
+      "Batak villages",
+      "Restaurants",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'pink-beach',
-    name: 'Komodo Pink Beach',
-    slug: 'pink-beach',
-    destinationId: 'labuan-bajo',
-    image: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80',
-    description: 'One of only seven pink sand beaches in the world, colored by tiny microscopic animals called Foraminifera.',
-    location: 'Komodo Island, Flores',
-    rating: 4.8,
-    history: 'A striking pink shore created by red coral fragments mixing with white calcium carbonate sand, surrounded by thriving coral gardens.',
-    openingHours: '24 Hours',
-    facilities: ['Coral Snorkeling Reef', 'Local boat anchorage', 'Small coconut stalls'],
-    gallery: ['https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80']
+    "id": "kali-talang",
+    "name": "Kali Talang Merapi",
+    "slug": "kali-talang",
+    "destinationId": "yogyakarta",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "An eco-tourism canyon on the slopes of Mount Merapi, offering majestic, up-close volcanic views.",
+    "location": "Balerante, Klaten, Jawa Tengah",
+    "rating": 4.7,
+    "history": "A river gorge formed by Merapi's historical lava paths, recently converted into a scenic nature park run by the local Balerante community.",
+    "openingHours": "06:00 AM - 05:00 PM",
+    "facilities": [
+      "Viewing decks",
+      "Pine forests",
+      "Mountain bike trails",
+      "Local food stalls",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'cunca-wami',
-    name: 'Cunca Wami Canyon Waterfall',
-    slug: 'cunca-wami',
-    destinationId: 'labuan-bajo',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'A deep forest canyon waterfall featuring clear blue swimming pools and exciting rock jumping ledges.',
-    location: 'Mbeliling Forest, Labuan Bajo',
-    rating: 4.6,
-    history: 'Discovered in rural Flores highlands, this canyon served as a natural pool for local Manggarai villagers for generations before opening to eco-tourism.',
-    openingHours: '08:00 AM - 04:30 PM',
-    facilities: ['Forest Trails', 'Locker services', 'Trained lifeguards', 'Snack vendor'],
-    gallery: ['https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Surabaya Attractions (3)
-  {
-    id: 'house-of-sampoerna',
-    name: 'House of Sampoerna',
-    slug: 'house-of-sampoerna',
-    destinationId: 'surabaya',
-    image: 'https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80',
-    description: 'A grand Dutch colonial style museum showing the history of Indonesia\'s famous clove cigarette (Kretek) brand.',
-    location: 'North Surabaya, East Java',
-    rating: 4.6,
-    history: 'Built in 1862 as an orphanage, it was bought in 1932 by Liem Seeng Tee and turned into Sampoerna\'s first commercial hand-rolling production facility.',
-    openingHours: '09:00 AM - 06:00 PM',
-    facilities: ['Historical Gallery', 'Live Hand-Rolling Floor', 'Cafe', 'Souvenir shop', 'Art Gallery'],
-    gallery: ['https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80']
+    "id": "sirkuit-mandalika",
+    "name": "Sirkuit Mandalika",
+    "slug": "sirkuit-mandalika",
+    "destinationId": "lombok",
+    "image": "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80",
+    "description": "The Pertamina Mandalika International Street Circuit, a world-class beachside racetrack host to MotoGP.",
+    "location": "Kuta Lombok, Lombok Tengah",
+    "rating": 4.8,
+    "history": "Completed in 2021 as a key national infrastructure project, integrating a premium race track with the pristine beaches of Kuta Lombok.",
+    "openingHours": "08:00 AM - 06:00 PM",
+    "facilities": [
+      "Grandstands",
+      "Pit building",
+      "Bicycle tracks",
+      "Beach access",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'suramadu-bridge',
-    name: 'Suramadu National Bridge',
-    slug: 'suramadu-bridge',
-    destinationId: 'surabaya',
-    image: 'https://images.unsplash.com/photo-1589979482837-e74f2e145060?auto=format&fit=crop&w=800&q=80',
-    description: 'A massive 5.4-kilometer bridge connecting Surabaya on Java island to Madura island, illuminated brilliantly at night.',
-    location: 'Kenjeran, Surabaya',
-    rating: 4.5,
-    history: 'Completed in 2009, it is the longest bridge in Indonesia, serving as a vital trade link and a testament to modern national infrastructure.',
-    openingHours: '24 Hours',
-    facilities: ['Photopoints', 'Bicycle lanes', 'Maduran seafood stalls nearby'],
-    gallery: ['https://images.unsplash.com/photo-1589979482837-e74f2e145060?auto=format&fit=crop&w=800&q=80']
+    "id": "pulau-samosir",
+    "name": "Pulau Samosir",
+    "slug": "pulau-samosir",
+    "destinationId": "toba",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "description": "A large volcanic island in the center of Lake Toba, the cultural heart of the Batak Toba people.",
+    "location": "Samosir Regency, Sumatera Utara",
+    "rating": 4.9,
+    "history": "An island formed by the resurgent dome of the Toba caldera, Samosir is rich in Batak stone graves, traditional houses, and cultural dance arts.",
+    "openingHours": "24 Hours (Ferry required)",
+    "facilities": [
+      "Ferry ports",
+      "Cultural museums",
+      "Stone tomb heritage sites",
+      "Bicycle rentals",
+      "Hotels",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'sub-monument',
-    name: 'Submarine Monument (Monkasel)',
-    slug: 'sub-monument',
-    destinationId: 'surabaya',
-    image: 'https://images.unsplash.com/photo-1611637576109-b6f76185ec9b?auto=format&fit=crop&w=800&q=80',
-    description: 'A real Russian submarine (KRI Pasopati 410) converted into a museum on the banks of the Kalimas river.',
-    location: 'Genteng, Surabaya',
-    rating: 4.4,
-    history: 'A Whiskey-class submarine launched in Vladivostok in 1952, it was active in the Indonesian Navy until 1989, participating in the historic West Irian campaign.',
-    openingHours: '08:00 AM - 09:00 PM',
-    facilities: ['Guided Submarine Program', 'Video Room', 'Riverside Cafe', 'Playground', 'Souvenir Area'],
-    gallery: ['https://images.unsplash.com/photo-1611637576109-b6f76185ec9b?auto=format&fit=crop&w=800&q=80']
+    "id": "lrt-palembang",
+    "name": "LRT Palembang",
+    "slug": "lrt-palembang",
+    "destinationId": "palembang",
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+    "description": "The first Light Rail Transit system in Indonesia, connecting Sultan Mahmud Badaruddin II Airport to Jakabaring Sport City.",
+    "location": "Kota Palembang, Sumatera Selatan",
+    "rating": 4.6,
+    "history": "Completed in 2018 to host the Asian Games, this 22km elevated rail serves as a futuristic landmark and a modern transportation hub in South Sumatra.",
+    "openingHours": "06:00 AM - 08:00 PM",
+    "facilities": [
+      "Elevated Stations",
+      "Air-conditioned trains",
+      "LRT Pass card",
+      "Accessibility lifts",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "candi-plaosan",
+    "name": "Candi Plaosan",
+    "slug": "candi-plaosan",
+    "destinationId": "yogyakarta",
+    "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80",
+    "description": "A pair of beautiful Buddhist temples built in the 9th century, representing a historical alliance between a Hindu King and Buddhist Queen.",
+    "location": "Prambanan, Klaten, Jawa Tengah",
+    "rating": 4.8,
+    "history": "Built by Rakai Pikatan of the Sanjaya Dynasty for his consort Pramodawardhani. It blends Javanese Hindu and Buddhist artistic styles.",
+    "openingHours": "08:00 AM - 05:00 PM",
+    "facilities": [
+      "Twin main temples",
+      "Pusaka garden area",
+      "Visitor path",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "kota-malino",
+    "name": "Malino Highlands",
+    "slug": "kota-malino",
+    "destinationId": "makassar",
+    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
+    "description": "A scenic mountain resort town in South Sulawesi, famous for tea estates, pine trees, and Takapala waterfall.",
+    "location": "Gowa, Sulawesi Selatan",
+    "rating": 4.8,
+    "history": "A colonial hill retreat built during Dutch rule in the 1920s to escape the heat of Makassar, known as a lush agricultural garden.",
+    "openingHours": "08:00 AM - 06:00 PM",
+    "facilities": [
+      "Takapala Waterfall access",
+      "Tea estate cafe",
+      "Pine forest walks",
+      "Camping grounds",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "rhino-camp-tanggamus",
+    "name": "Rhino Camp TNBBS",
+    "slug": "rhino-camp-tanggamus",
+    "destinationId": "lampung",
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80",
+    "description": "A conservation research camp deep inside the Bukit Barisan Selatan National Park, protecting the endangered Sumatran Rhinoceros.",
+    "location": "Tanggamus, Lampung",
+    "rating": 4.7,
+    "history": "Established as part of a global effort to conserve the Sumatran Rhinoceros and the dense tropical rainforest of southern Sumatra.",
+    "openingHours": "Pre-registered booking only",
+    "facilities": [
+      "Research station",
+      "Ranger office",
+      "Camping deck",
+      "Jungle pathways",
+      "Basic restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "pecinan-semarang",
+    "name": "Semarang Chinatown",
+    "slug": "pecinan-semarang",
+    "destinationId": "semarang",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "A historic Chinese settlement area featuring centuries-old temples like Tay Kak Sie and dynamic culinary streets like Gang Lombok.",
+    "location": "Semarang, Jawa Tengah",
+    "rating": 4.7,
+    "history": "Formed in the 17th century after the Dutch moved the Chinese population to a separate quarter. It remains the commercial and spiritual heart of Semarangs Chinese-Indonesian community.",
+    "openingHours": "24 Hours (Market open morning & night)",
+    "facilities": [
+      "Tay Kak Sie Temple",
+      "Gang Lombok food stalls",
+      "Traditional medicine shops",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "alun-alun-yogyakarta",
+    "name": "Alun-Alun Kidul Yogyakarta",
+    "slug": "alun-alun-yogyakarta",
+    "destinationId": "yogyakarta",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "The southern royal square of Yogyakarta palace, famous for the twin sacred banyan trees and illuminated pedal cars.",
+    "location": "City Center, Yogyakarta",
+    "rating": 4.6,
+    "history": "A critical part of the Yogyakarta Palace alignment. According to myth, anyone who can walk blindfolded between the two banyan trees (Masangin) has a clean heart.",
+    "openingHours": "24 Hours (Lively at night)",
+    "facilities": [
+      "Masangin area",
+      "Illuminated rental carts",
+      "Angkringan street food stalls",
+      "Parking",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "pulau-pahawang",
+    "name": "Pulau Pahawang",
+    "slug": "pulau-pahawang",
+    "destinationId": "lampung",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "description": "A beautiful island in Pesawaran, Lampung, famous for crystal clear waters, clownfish reef gardens, and white sandbars.",
+    "location": "Pesawaran, Lampung",
+    "rating": 4.8,
+    "history": "Once a quiet fishing island, Pahawang has grown into a major eco-tourism diving site in Lampung, protecting its coral reefs and clownfish habitats.",
+    "openingHours": "24 Hours (Boat charters leave morning)",
+    "facilities": [
+      "Snorkeling reefs",
+      "Diving centers",
+      "Beach villas",
+      "Restrooms",
+      "Boat docks"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "desa-wisata-petang",
+    "name": "Desa Wisata Petang",
+    "slug": "desa-wisata-petang",
+    "destinationId": "bali",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "description": "An eco-cultural tourist village in Badung, Bali, showcasing authentic rural Balinese farming, bamboo crafts, and river adventures.",
+    "location": "Badung, Bali",
+    "rating": 4.7,
+    "history": "A community-run tourism village designed to promote sustainable eco-tourism and preserve traditional Balinese Subak agriculture in the highlands.",
+    "openingHours": "08:00 AM - 05:00 PM",
+    "facilities": [
+      "Bamboo eco-lodges",
+      "Rice field pathways",
+      "Ayung River rafting point",
+      "Traditional kitchen",
+      "Restrooms",
+      "Parking"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "pasar-ambarawa",
+    "name": "Pasar Tradisional Ambarawa",
+    "slug": "pasar-ambarawa",
+    "destinationId": "semarang",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "A lively traditional heritage market in Ambarawa, serving as a hub for local Javanese spices and foods.",
+    "location": "Ambarawa, Kabupaten Semarang",
+    "rating": 4.5,
+    "history": "A historic market near the Dutch military fortress of Willem I, serving as a trading center for Javanese highlands for over a century.",
+    "openingHours": "05:00 AM - 03:00 PM",
+    "facilities": [
+      "Spice stalls",
+      "Traditional snack vendors",
+      "Heritage buildings",
+      "Parking",
+      "Restrooms"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 ];
 
-// Let's generate 40 Programs distributed among destinations (average ~6 programs per destination)
 export const programs: Program[] = [
-  // Bali Programs (7)
   {
-    id: 'bali-sunset-temple-program',
-    name: 'Tanah Lot Sunset & Cultural Temple Program',
-    slug: 'bali-sunset-temple-program',
-    destinationId: 'bali',
-    attractionId: 'tanah-lot',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'Witness the iconic sea temple Tanah Lot at golden hour, learn Balinese mythologies, and experience traditional cleansing rituals.',
-    duration: '6 Hours',
-    price: 735000,
-    rating: 4.8,
-    reviewsCount: 312,
-    category: 'Cultural Immersion',
-    highlights: ['Private hotel pickup', 'Skip-the-line entrance tickets', 'Expert Balinese historian guide', 'Sunset photo spots'],
-    included: ['Air-conditioned transport', 'Entrance fees', 'Local mineral water', 'Sarong rental'],
-    excluded: ['Dinner costs', 'Personal expenses', 'Guide tips'],
-    meetingPoint: 'Hotel Lobby pickup (Kuta/Seminyak/Ubud/Nusa Dua)',
-    itinerary: [
-      { title: '1:30 PM - Hotel Pickup', activities: ['Meet private driver', 'Drive to Tabanan through scenic rice views'] },
-      { title: '3:00 PM - Royal Family Temple', activities: ['Visit Taman Ayun, Royal Family Temple', 'Stroll through water garden moat'] },
-      { title: '5:00 PM - Tanah Lot Coastline', activities: ['Arrive at Tanah Lot ocean cliffs', 'Explore historical sea shrines', 'Holy water cleansing option'] },
-      { title: '6:00 PM - Sunset & Kecak Dance', activities: ['Enjoy dramatic sunset views', 'Kecak dance performance', 'Return to hotel'] }
+    "id": "bogor-surviving-in-the-analog-age",
+    "name": "SURVIVING IN THE ANALOG AGE",
+    "slug": "surviving-in-the-analog-age",
+    "destinationId": "bogor",
+    "attractionId": "kebun-raya-bogor",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
+    "description": "Program team building berbasis destinasi yang mengajak peserta kembali pada kekuatan fundamental manusia di tengah ketergantungan terhadap teknologi. Dalam simulasi \"digital blackout\", peserta ditantang menyelesaikan berbagai misi tanpa bantuan gadget, mengandalkan kemampuan berpikir strategis, komunikasi, navigasi analog, dan kolaborasi tim di tengah keindahan dan kekayaan sejarah Kebun Raya Bogor.",
+    "duration": "4 s/d 6 jam",
+    "price": 55000000,
+    "rating": 4.9,
+    "reviewsCount": 77,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Peserta akan mendapatkan experience Dimana system yang serba digital saat ini, tiba2 down (rekayasa tidak boleh menggunakan gadget), menentukan arah yang biasanya menggunakan aplikasi map, dalam program ini harus menggunakan Kompas (kemampuan tambahan bagi peserta)"
     ],
-    gallery: [
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80'
+    "included": [
+      "Tiket masuk Kebun Raya Bogor",
+      "Design program",
+      "Atribut Bandana/Slayer, Rain Coat, Banner Event",
+      "Asuransi",
+      "Peralatan & pendukung (games dll)",
+      "SDM",
+      "Air minum selama kegiatan berlangsung",
+      "Dokumentasi (video & photo)"
+    ],
+    "excluded": [
+      "Transportasi",
+      "Konsumsi",
+      "Kaos & atribut lain",
+      "Biaya/keperluan pribadi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "07.30 – 08.00",
+        "activities": [
+          "Opening & Conditionong",
+          "Main area",
+          "Treasury hunt Framing"
+        ]
+      },
+      {
+        "title": "08.00 – 10.00",
+        "activities": [
+          "Finding The Treasury",
+          "KBR",
+          "Gamess & Reward"
+        ]
+      },
+      {
+        "title": "10.00 – 10.30",
+        "activities": [
+          "We Are One",
+          "Main area",
+          "Final Project"
+        ]
+      },
+      {
+        "title": "10.30 – 11.00",
+        "activities": [
+          "Wrap up & Conculsion",
+          "Main area",
+          "Sharing experience"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'ubud-arts-monkey-forest',
-    name: 'Ubud Art Guild & Sacred Monkey Forest Safari',
-    slug: 'ubud-arts-monkey-forest',
-    destinationId: 'bali',
-    attractionId: 'ubud-monkey-forest',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore Ubud\'s famous woodcarving villages, walk the sacred monkey forest, swing over rice terraces, and visit local craft markets.',
-    duration: '8 Hours',
-    price: 585000,
-    rating: 4.7,
-    reviewsCount: 185,
-    category: 'Nature and Eco-Tourism',
-    highlights: ['Interact with macaque monkeys', 'Scenic jungle swings', 'Batik and woodcarving workshops', 'Organic plantation lunch'],
-    included: ['Private SUV Transport', 'All admission tickets', 'Local program driver', 'Traditional Indonesian lunch'],
-    excluded: ['Jungle swing fee (optional)', 'Souvenirs', 'Drinks'],
-    meetingPoint: 'Ubud central hotels or Denpasar meeting point',
-    itinerary: [
-      { title: '08:30 AM - Morning Departure', activities: ['Pickup from accommodation', 'Travel to Celuk silver village'] },
-      { title: '10:00 AM - Monkey Forest Walk', activities: ['Walk the nutmeg forest pathways', 'Observe monkeys in ancient temples', 'Learn ecological balance efforts'] },
-      { title: '12:30 PM - Plantation Lunch', activities: ['Indonesian buffet with views of deep forest valleys', 'Herbal coffee tasting'] },
-      { title: '03:00 PM - Art Market & Crafts', activities: ['Shop at Ubud Art Market', 'Visit Royal Ubud Palace and batik artists'] }
+    "id": "yogyakarta-busana-gunungan-berkah-csr-budaya-yang-mempererat-kebersamaan",
+    "name": "Busana & Gunungan Berkah: CSR Budaya yang Mempererat Kebersamaan",
+    "slug": "busana-gunungan-berkah-csr-budaya-yang-mempererat-kebersamaan",
+    "destinationId": "yogyakarta",
+    "attractionId": "omah-tabon",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "Program CSR dan budaya yang mengajak peserta menjadi \"Abdi Dalem Perusahaan\" dalam sebuah perjalanan budaya Jawa yang penuh makna. Peserta menjalankan misi berburu hasil bumi di pasar tradisional, mengenakan busana adat Jawa, merakit Gunungan Lanang dan Gunungan Wadon, hingga mengarak dan membagikan gunungan kepada masyarakat sebagai simbol rasa syukur, kebersamaan, dan kepedulian sosial.",
+    "duration": "4 jam / half day",
+    "price": 1750000,
+    "rating": 4.9,
+    "reviewsCount": 37,
+    "category": "Community and Social Impact",
+    "highlights": [
+      "Pengalaman menjadi \"Abdi Dalem Perusahaan\" dalam misi budaya Jawa.",
+      "Berbelanja langsung di pasar tradisional Yogyakarta untuk menyiapkan bahan gunungan.",
+      "Mengenakan kebaya dan busana adat Jawa lengkap beserta filosofinya.",
+      "Merakit dua jenis gunungan tradisional:",
+      "Gunungan Lanang (simbol kekuatan dan penciptaan kehidupan)",
+      "Gunungan Wadon (simbol kesuburan dan kesejahteraan)",
+      "Prosesi arak-arakan dan pembagian gunungan kepada masyarakat sebagai aktivitas CSR.",
+      "Perpaduan unik antara team building, cultural immersion, dan social impact program.",
+      "Mendorong kolaborasi, gotong royong, serta rasa syukur melalui pengalaman yang mendalam dan bermakna."
     ],
-    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'uluwatu-kecak-seafood',
-    name: 'Uluwatu Cliffside Kecak Fire Dance & Jimbaran Seafood Dinner',
-    slug: 'uluwatu-kecak-seafood',
-    destinationId: 'bali',
-    attractionId: 'uluwatu-temple',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'Witness the epic Ramayana fire dance at the edge of the world, followed by a romantic candlelit seafood dinner on Jimbaran Beach.',
-    duration: '7 Hours',
-    price: 1185000,
-    rating: 4.9,
-    reviewsCount: 428,
-    category: 'Cultural Immersion',
-    highlights: ['Uluwatu Cliff Sunset views', 'Folk Kecak dance tickets', 'Candlelit dinner on beach sand', 'Fresh Jimbaran seafood platter'],
-    included: ['Roundtrip hotel shuttle', 'Temple admissions', 'Kecak Dance seat reservation', 'Gourmet seafood dinner'],
-    excluded: ['Alcoholic beverages', 'Personal tips'],
-    meetingPoint: 'Hotel pickup across Bali',
-    itinerary: [
-      { title: '03:00 PM - Afternoon Pick-up', activities: ['SUV transit to Uluwatu peninsula'] },
-      { title: '04:30 PM - Uluwatu Temple Walk', activities: ['Stroll along safety walls of the 70m high cliff temple', 'Interact with cliff monkeys'] },
-      { title: '06:00 PM - Kecak & Fire Dance', activities: ['Watch the choir of 50 men chanting around the flame', 'Observe sunset over the Indian Ocean'] },
-      { title: '08:00 PM - Jimbaran Beach Seafood', activities: ['Arrive at Jimbaran white sand', 'Enjoy grilled lobster, prawns, and fish by candlelight'] }
+    "included": [
+      "Fasilitator profesional (Lead & Tim),",
+      "kebaya/baju adat Jawa untuk dipakai selama program,",
+      "semua bahan (sayuran, buah-buahan, umbi-umbian, wajik, jadah,  rengginang, kerupuk, dan kue tradisional),",
+      "peralatan merakit gunungan,",
+      "tandu untuk arak-arakan,",
+      "dokumentasi foto dan video profesional,",
+      "sertifikat peserta,",
+      "air minum dan snack, serta",
+      "seluruh biaya retribusi pasar dan sewa lokasi."
     ],
-    gallery: ['https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'tegalalang-bali-swing-nature',
-    name: 'Tegalalang Rice Terrace Trek & Jungle Swing Adventure',
-    slug: 'tegalalang-bali-swing-nature',
-    destinationId: 'bali',
-    attractionId: 'tegalalang',
-    image: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-    description: 'Trek the emerald terraced valley of Tegalalang, learn traditional rice farming techniques, and soar above the jungle canopy on the iconic Bali Swing.',
-    duration: '5 Hours',
-    price: 435000,
-    rating: 4.6,
-    reviewsCount: 154,
-    category: 'Adventure and Challenge',
-    highlights: ['Scenic terrace trekking', 'High-adrenaline jungle swing', 'Insta-famous photo spots', 'Coconut water refreshment'],
-    included: ['Entrance fees', 'Swing ticket', 'Safety harness', 'Mineral water', 'Local trekking guide'],
-    excluded: ['Hotel transport (optional extra)', 'Lunch', 'Gratuities'],
-    meetingPoint: 'Tegalalang Visitor Counter main entrance',
-    itinerary: [
-      { title: '08:00 AM - Morning Hike', activities: ['Begin walk into the steep valley', 'Learn subak irrigation tunnels', 'Interact with local farmers'] },
-      { title: '10:00 AM - Bali Swing Experience', activities: ['Safety briefing and harness fitting', 'Fly 20 meters above coconut trees', 'Relax in bird nest photo spots'] },
-      { title: '12:00 PM - Coconut Break', activities: ['Fresh young coconut drink at valley edge cafe', 'Return hike'] }
+    "excluded": [
+      "Biaya transportasi peserta dari titik kumpul menuju Lokasi Kegiatan"
     ],
-    gallery: ['https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'nusa-penida-snorkeling',
-    name: 'Nusa Penida East Coast Snorkeling & Beach Program',
-    slug: 'nusa-penida-snorkeling',
-    destinationId: 'bali',
-    attractionId: 'nusa-penida',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'Fast boat to Nusa Penida island, visit the dinosaur-shaped Kelingking Cliff, and snorkel with majestic Manta Rays at Manta Point.',
-    duration: '10 Hours',
-    price: 1425000,
-    rating: 4.9,
-    reviewsCount: 267,
-    category: 'Adventure and Challenge',
-    highlights: ['Swim with Manta Rays', 'Fast boat roundtrip tickets', 'T-rex shape Kelingking Beach viewpoint', 'Broken Beach & Angel Billabong'],
-    included: ['Fast boat ticket', 'Snorkeling equipment', 'Boat captain & guide', 'Indonesian lunch buffet', 'Air-conditioned island car'],
-    excluded: ['Manta Ray conservation contribution ($2)', 'Personal souvenirs'],
-    meetingPoint: 'Sanur Harbor Boat Counter',
-    itinerary: [
-      { title: '07:00 AM - Sanur Departure', activities: ['Check-in at Sanur harbor', 'Board express catamaran to Nusa Penida'] },
-      { title: '08:30 AM - Snorkeling Safari', activities: ['Board snorkeling boat', 'Swim with mantas at Manta Bay', 'Snorkel Crystal Bay coral reefs'] },
-      { title: '12:30 PM - Beachfront Lunch', activities: ['Relax and enjoy local fried rice or noodles'] },
-      { title: '02:00 PM - Kelingking Cliff Trek', activities: ['Walk the cliff ridge at Kelingking Beach', 'Photo opportunities', 'Return to harbor'] }
+    "meetingPoint": "Omah Tabon",
+    "itinerary": [
+      {
+        "title": "08.00 / 30 menit",
+        "activities": [
+          "OPENING: Registrasi &  Pembukaan Misi",
+          "Omah Tabon",
+          "Sambutan adat,",
+          "pembagian kostum",
+          "Jawa, dan panduan cara  mengenakannya.."
+        ]
+      },
+      {
+        "title": "08.30 / 45 menit",
+        "activities": [
+          "MISI I: Tim Lanang ke  Pasar Beringharjo",
+          "Pasar Bringharjo",
+          "Tim Lanang berbelanja  sayuran mentah (kacang  panjang, cabai, terong),  buah-buahan, dan umbi umbian ."
+        ]
+      },
+      {
+        "title": "08.30 / 45 menit",
+        "activities": [
+          "MISI I: Tim Wadon ke  Pasar Kranggan",
+          "Pasar kranggan",
+          "Tim Wadon berbelanja  makanan matang: wajik,  jadah, rengginang,",
+          "kerupuk, dan aneka kue  tradisional ."
+        ]
+      },
+      {
+        "title": "09.15 / 30 menit",
+        "activities": [
+          "Kembali ke Omah",
+          "tabon",
+          "Kendaraan",
+          "Kedua Tim Kembali ke  Omah Tabon dengan  membawa hasil belanja"
+        ]
+      },
+      {
+        "title": "09.45 / 30 menit",
+        "activities": [
+          "MISI II: memakai",
+          "Busana Adat",
+          "Omah tabon",
+          "Peserta mengenakan  kebaya/baju adat Jawa. Fasilitator menjelaskan  makna dan filosofi",
+          "busana . Foto bersama"
+        ]
+      },
+      {
+        "title": "10.15 / 60 menit",
+        "activities": [
+          "MISI III: Briefing &",
+          "Merakit Gunungan",
+          "Area Pembuatan",
+          "Penjelasan teknik",
+          "merakit, pembagian",
+          "tugas, dan proses",
+          "merakit Gunungan",
+          "Lanang (sayuran/umbi)  dan Gunungan Wadon  (makanan matang)"
+        ]
+      },
+      {
+        "title": "11.15 / 15 menit",
+        "activities": [
+          "Melihat Karya &",
+          "persiapan Mengarak  Gunungan",
+          "Area Pembuatan",
+          "Mengamati gunungan  dari berbagai sudut,  persiapan tandu dan  arak-arakan."
+        ]
+      },
+      {
+        "title": "11.30 / 30 menit",
+        "activities": [
+          "PUNCAK: Arak-arakan  & Pembagian Berkah",
+          "Jalan Sekitar Omah  Tabon",
+          "Mengarak gunungan  dan membagikannya  kepada masyarakat",
+          "yang lewat."
+        ]
+      },
+      {
+        "title": "12.00 / 30 menit",
+        "activities": [
+          "Penutupan & Debrief",
+          "Omah Tabon Resto",
+          "Sharing circle,",
+          "pembagian sertifikat,  dan pengisian survei  kepuasan."
+        ]
+      }
     ],
-    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bali-luxury-yacht-cruise',
-    name: 'Nusa Lembongan Luxury Catamaran Day Cruise',
-    slug: 'bali-luxury-yacht-cruise',
-    destinationId: 'bali',
-    attractionId: 'nusa-penida',
-    image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-    description: 'Sail in style on a 64-foot luxury catamaran, enjoy ocean water sports, and relax at a private beach club in Nusa Lembongan.',
-    duration: '8 Hours',
-    price: 2385000,
-    rating: 4.9,
-    reviewsCount: 94,
-    category: 'Culinary Journey',
-    highlights: ['Sailing on premium catamaran', 'Unlimited banana boat & kayaking', 'Beach club pool access', 'BBQ lunch buffet'],
-    included: ['Hotel transfers', 'Sailing cruise', 'Snorkeling program', 'BBQ Buffet lunch', 'Wine & beer on return sail'],
-    excluded: ['Premium spirits', 'Spa treatments'],
-    meetingPoint: 'Benoa Harbor Yacht Terminal',
-    itinerary: [
-      { title: '09:00 AM - Benoa Harbor Sail', activities: ['Welcome cocktail on board', 'Set sail for Nusa Lembongan'] },
-      { title: '10:30 AM - Snorkeling & Water Sports', activities: ['Anchor at pontoon', 'Snorkeling, banana boat rides, and waterslides'] },
-      { title: '01:00 PM - BBQ Beach Lunch', activities: ['Indonesian-Western barbecue buffet at private Beach Club'] },
-      { title: '03:30 PM - Sailing Return', activities: ['Relax on net decks with sunset music and complimentary drinks'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bali-spiritual-yoga-retreat',
-    name: 'Ubud Spiritual Cleansing & Yoga Healing Session',
-    slug: 'bali-spiritual-yoga-retreat',
-    destinationId: 'bali',
-    attractionId: 'ubud-monkey-forest',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80',
-    description: 'Immerse in Bali\'s spiritual heartland. Experience a Holy Water purification ceremony at Tirta Empul and private yoga session in Ubud.',
-    duration: '6 Hours',
-    price: 975000,
-    rating: 4.8,
-    reviewsCount: 112,
-    category: 'Community and Social Impact',
-    highlights: ['Melukat Water purification ritual', 'Private yoga instructor', 'Jungle-facing shala session', 'Healthy vegan lunch'],
-    included: ['All ceremonial offerings & sarongs', 'Yoga mat & instructor', 'Organic cold-pressed juice', 'Transports'],
-    excluded: ['Spa tips'],
-    meetingPoint: 'Ubud central pick up point',
-    itinerary: [
-      { title: '07:30 AM - Water Temple Purification', activities: ['Visit Tirta Empul holy spring temple', 'Undergo Melukat ritual guided by priest'] },
-      { title: '10:00 AM - Yoga and Sound Healing', activities: ['Pranayama breathing and gentle vinyasa yoga flow', 'Tibetan singing bowl sound bath'] },
-      { title: '12:30 PM - Wellness Vegan Lunch', activities: ['Organic plant-based meal at organic cafe in Ubud'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Jakarta Programs (5)
-  {
-    id: 'jakarta-historical-batavia',
-    name: 'Old Batavia Colonial Walking Program',
-    slug: 'jakarta-historical-batavia',
-    destinationId: 'jakarta',
-    attractionId: 'kota-tua',
-    image: 'https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80',
-    description: 'Step back in time to 17th-century colonial Batavia. Explore historic plazas, Dutch canals, and colonial buildings on foot and vintage bicycle.',
-    duration: '4 Hours',
-    price: 375000,
-    rating: 4.6,
-    reviewsCount: 89,
-    category: 'Cultural Immersion',
-    highlights: ['Fatahillah Square history', 'Vintage colonial bicycle ride', 'Fascinating Dutch canal walks', 'Coffee stop at historic Cafe Batavia'],
-    included: ['Local historian guide', 'Museum entrance fees', 'Bicycle & helmet rental', 'Traditional snack platter'],
-    excluded: ['Lunch', 'Tips'],
-    meetingPoint: 'Fatahillah Square fountain',
-    itinerary: [
-      { title: '08:30 AM - Fatahillah Square Meetup', activities: ['Historic briefing of VOC administration', 'Explore Jakarta History Museum'] },
-      { title: '10:00 AM - Ontel Bicycle Ride', activities: ['Ride vintage colorful bicycles around Sunda Kelapa historic harbor', 'See wooden pinisi sailing ships'] },
-      { title: '11:30 AM - Cafe Batavia Coffee', activities: ['Enjoy iced coffee or tea at the famous 1930s colonial Cafe Batavia', 'Wrap-up Q&A'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'jakarta-modern-landmark',
-    name: 'Jakarta Modern Skyscrapers & Monas Sightseeing',
-    slug: 'jakarta-modern-landmark',
-    destinationId: 'jakarta',
-    attractionId: 'monas',
-    image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the highlights of modern Jakarta. Visit the National Monument (Monas), Istiqlal Mosque, and Cathedral, and see the futuristic skyline.',
-    duration: '6 Hours',
-    price: 525000,
-    rating: 4.5,
-    reviewsCount: 76,
-    category: 'Cultural Immersion',
-    highlights: ['Go up Monas observation deck', 'Visit Southeast Asia\'s largest mosque', 'See Jakarta Cathedral', 'Private air-conditioned transit'],
-    included: ['Transport with driver', 'All entrance tickets', 'Istiqlal mosque program guide', 'Water'],
-    excluded: ['Meals'],
-    meetingPoint: 'Hotel Lobby (Central/South Jakarta)',
-    itinerary: [
-      { title: '09:00 AM - National Monument Monas', activities: ['Visit Independence Museum inside basement', 'Lift up to 115m high observation deck for city views'] },
-      { title: '11:30 AM - Interfaith Landmark Program', activities: ['Guided program of Istiqlal Mosque', 'Walk across street to historic Gothic Jakarta Cathedral'] },
-      { title: '01:30 PM - City Drive & Modern Landmarks', activities: ['Drive through Sudirman-Thamrin financial district', 'Return to hotel'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'jakarta-taman-mini-culture',
-    name: 'Taman Mini Indonesia Cultural Heritage Program',
-    slug: 'jakarta-taman-mini-culture',
-    destinationId: 'jakarta',
-    attractionId: 'taman-mini',
-    image: 'https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80',
-    description: 'Experience all of Indonesia in one day. Visit traditional houses of various provinces, ride cable cars, and view beautiful miniature archipelagos.',
-    duration: '7 Hours',
-    price: 675000,
-    rating: 4.7,
-    reviewsCount: 104,
-    category: 'Cultural Immersion',
-    highlights: ['Explore 38 provincial pavilions', 'Ride cable car over miniature Indonesia', 'Museum of Indonesia tickets', 'Sundanese lunch'],
-    included: ['Private vehicle transit', 'Entry tickets & cable car ticket', 'Provincial guide explanation', 'Indonesian lunch'],
-    excluded: ['Additional museum tickets (optional)'],
-    meetingPoint: 'Hotel Lobby (Jakarta areas)',
-    itinerary: [
-      { title: '08:30 AM - Transit to TMII', activities: ['Drive via toll road to East Jakarta'] },
-      { title: '09:30 AM - Cable Car & Miniature Lake', activities: ['Ride aerial cable car', 'View the miniature islands of Indonesian archipelago in the central lake'] },
-      { title: '11:00 AM - Provincial Houses Exploration', activities: ['Walk through West Sumatra, Bali, and Papua traditional pavilions', 'Observe structural woodcrafts'] },
-      { title: '01:00 PM - Sundanese Lunch & Museum visit', activities: ['Dine at lakeside restaurant', 'Visit Indonesia Museum containing rich Royal batik collections', 'Return to hotel'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'jakarta-foodie-street-adventure',
-    name: 'Jakarta Culinary Night Street Food Program',
-    slug: 'jakarta-foodie-street-adventure',
-    destinationId: 'jakarta',
-    attractionId: 'kota-tua',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
-    description: 'Taste your way through Jakarta\'s legendary street food corners. Sample authentic Satay, Kerak Telor, Martabak, and local coffee.',
-    duration: '4 Hours',
-    price: 450000,
-    rating: 4.8,
-    reviewsCount: 145,
-    category: 'Cultural Immersion',
-    highlights: ['Eat iconic Betawi Kerak Telor', 'Visit lively street markets', 'Try sweet chocolate-cheese Martabak', 'Travel by local motorized Bajaj'],
-    included: ['All food samples (8+ dishes)', 'Local culinary guide', 'Mineral water', 'Bajaj transport during program'],
-    excluded: ['Alcoholic drinks', 'Personal medication'],
-    meetingPoint: 'Menteng Central Park',
-    itinerary: [
-      { title: '06:00 PM - Meeting & Bajaj ride', activities: ['Meet foodie guide', 'Board three-wheeled gas-powered Bajaj', 'Drive to street food market'] },
-      { title: '06:30 PM - Savory Bites', activities: ['Sample charcoal-grilled chicken satay with rich peanut sauce', 'Taste Kerak Telor (spiced egg and coconut pancake)'] },
-      { title: '08:30 PM - Sweet Martabak & Coffee', activities: ['Watch vendors prepare Martabak Manis', 'Taste traditional Java coffee', 'Conclude program'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'jakarta-luxury-shopping-vip',
-    name: 'Jakarta Elite Lifestyle & Luxury Shopping Day',
-    slug: 'jakarta-luxury-shopping-vip',
-    destinationId: 'jakarta',
-    attractionId: 'monas',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
-    description: 'Indulge in a VIP shopping spree through Jakarta\'s premier luxury malls with a personal stylist, followed by fine dining and high tea.',
-    duration: '8 Hours',
-    price: 3735000,
-    rating: 4.9,
-    reviewsCount: 32,
-    category: 'Culinary Journey',
-    highlights: ['Personal shopping guide/stylist', 'VIP lounge access at Grand Indonesia', 'Fine-dining French-Indonesian dinner', 'Luxury Mercedes-Benz S-Class transit'],
-    included: ['Mercedes limousine service', 'Personal shopper assistant', 'Premium afternoon high tea', 'Multi-course fine dining menu'],
-    excluded: ['Shopping purchases', 'Alcoholic wines'],
-    meetingPoint: 'Five-star hotel pickup in Jakarta',
-    itinerary: [
-      { title: '10:00 AM - Luxury Limousine Pickup', activities: ['Meet private concierge', 'Transit to Plaza Indonesia luxury wing'] },
-      { title: '11:00 AM - Guided Spree & VIP Lounging', activities: ['Curated shop visits', 'Access to exclusive lounge for coffee & relaxation'] },
-      { title: '03:00 PM - Premium High Tea', activities: ['Indulge in pastries and gourmet teas at top salon'] },
-      { title: '06:30 PM - Gastronomy Fine Dining', activities: ['Multi-course tasting dinner at top-rated skyscraper restaurant overlooking Jakarta night lights'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Yogyakarta Programs (6)
-  {
-    id: 'yogyakarta-borobudur-sunrise',
-    name: 'Borobudur Sunrise & Village Cycling Program',
-    slug: 'yogyakarta-borobudur-sunrise',
-    destinationId: 'yogyakarta',
-    attractionId: 'borobudur',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-    description: 'Witness the sunrise over Borobudur from Punthuk Setumbu hill, explore the temple structure, and cycle through rustic rice villages.',
-    duration: '9 Hours',
-    price: 1275000,
-    rating: 5.0,
-    reviewsCount: 567,
-    category: 'Cultural Immersion',
-    highlights: ['Breathtaking sunrise viewpoint', 'Guided climb of Borobudur temple', 'Bicycle ride through local Javanese villages', 'Traditional Javanese breakfast'],
-    included: ['AC minivan transfers', 'All entry tickets', 'Javanese bicycle rental', 'Guided temple program', 'Buffet breakfast'],
-    excluded: ['Climb-up temple special ticket ($25 supplement, must book in advance)', 'Lunch', 'Tips'],
-    meetingPoint: 'Hotel lobby (Yogyakarta city center) at 03:30 AM',
-    itinerary: [
-      { title: '03:30 AM - Early Morning Pickup', activities: ['Drive through Javanese countryside under stars'] },
-      { title: '04:45 AM - Sunrise Punthuk Setumbu', activities: ['Walk up hill deck', 'Watch sun rise behind Mount Merapi, illuminating mist around Borobudur temple'] },
-      { title: '06:30 AM - Borobudur Exploration', activities: ['Program the massive stupa platforms', 'Inspect relief carvings of Buddha life'] },
-      { title: '09:00 AM - Rural Village Cycling', activities: ['Ride vintage bicycles through rural houses', 'Visit local tofu makers and clay pottery craftsmen', 'Enjoy traditional lunch and return'] }
-    ],
-    gallery: [
-      'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
-    id: 'yogyakarta-prambanan-sunset-ballet',
-    name: 'Prambanan Hindu Temple & Ramayana Ballet Show',
-    slug: 'yogyakarta-prambanan-sunset-ballet',
-    destinationId: 'yogyakarta',
-    attractionId: 'prambanan',
-    image: 'https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the high towers of Prambanan at sunset, followed by a buffet dinner and the legendary Ramayana dance performance with the illuminated temple as a backdrop.',
-    duration: '8 Hours',
-    price: 1035000,
-    rating: 4.9,
-    reviewsCount: 294,
-    category: 'Cultural Immersion',
-    highlights: ['Explore Prambanan temple compound', 'Sunset photos of high stone spires', 'Premium seats for Ramayana Ballet', 'Open-air buffet dinner'],
-    included: ['Hotel pickups', 'All entry fees', 'VIP theater ticket', 'Javanese buffet dinner'],
-    excluded: ['Personal beverages', 'Guide gratuities'],
-    meetingPoint: 'Yogyakarta hotels',
-    itinerary: [
-      { title: '01:30 PM - Afternoon Pickup', activities: ['Drive to Prambanan plains east of Yogyakarta'] },
-      { title: '02:30 PM - Candi Sewu & Prambanan program', activities: ['Explore neighboring Buddhist Sewu temple', 'Walk central Shiva temple at Prambanan', 'Learn mythological prince Bandung Bondowoso legend'] },
-      { title: '05:30 PM - Sunset & Dinner', activities: ['Photograph spires against orange sky', 'Dine at Prambanan Garden Restaurant overlooking floodlit temples'] },
-      { title: '07:30 PM - Ramayana Ballet Performance', activities: ['Watch performance of 200 dancers depicting Prince Rama rescuing Princess Shinta', 'Return to hotel'] }
+    "id": "jakarta-second-life-expedition",
+    "name": "SECOND LIFE EXPEDITION",
+    "slug": "second-life-expedition",
+    "destinationId": "jakarta",
+    "attractionId": "kota-tua",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "Second Life Expedition adalah program pre-retirement berbasis destinasi yang mengajak calon purnabakti menelusuri jejak perubahan Kota Tua Jakarta sebagai metafora perjalanan menuju kehidupan kedua. Melalui eksplorasi, dialog dengan komunitas lokal, tantangan reflektif, dan workshop perencanaan hidup, peserta menyusun Future Life Map dan Personal Retirement Action Plan agar masa purnabakti menjadi fase hidup yang lebih sehat, produktif, dan bermakna.",
+    "duration": "Full Day (08.00-18.00) atau 2 Hari 1 Malam",
+    "price": 450000,
+    "rating": 4.8,
+    "reviewsCount": 85,
+    "category": "Community and Social Impact",
+    "highlights": [
+      "Membantu peserta mempersiapkan transisi dari kehidupan kerja menuju purnabakti melalui pengalaman eksploratif berbasis destinasi. Peserta tidak hanya menerima materi, tetapi mengalami inspirasi kehidupan kedua dari sejarah kota, tokoh lokal, komunitas, dan aktivitas reflektif."
     ],
-    gallery: ['https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'yogyakarta-heritage-palace',
-    name: 'Yogyakarta Royal Palace, Water Castle & Batik Workshop',
-    slug: 'yogyakarta-heritage-palace',
-    destinationId: 'yogyakarta',
-    attractionId: 'keraton-yogyakarta',
-    image: 'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the Sultan\'s palace (Keraton), walk the underground tunnels of Taman Sari Water Castle, and paint your own traditional batik cloth.',
-    duration: '6 Hours',
-    price: 585000,
-    rating: 4.7,
-    reviewsCount: 167,
-    category: 'Cultural Immersion',
-    highlights: ['Guided Royal Palace program', 'Taman Sari underground pool tunnels', 'Make-your-own-batik class', 'Traditional horse cart ride (Andong)'],
-    included: ['Entrance fees', 'Batik master class & materials', 'Local museum guide', 'Traditional Javanese lunch'],
-    excluded: ['Drinks', 'Tips'],
-    meetingPoint: 'Keraton Main Gate clock tower',
-    itinerary: [
-      { title: '08:30 AM - Sultan Palace Program', activities: ['Explore historical royal quarters', 'Observe court relics, antique weapons, and royal gifts'] },
-      { title: '10:30 AM - Taman Sari Water Castle', activities: ['Walk private royal bathing pools', 'Walk the underground mosques and escape tunnels'] },
-      { title: '12:00 PM - Batik Workshop & Lunch', activities: ['Paint wax patterns (malam) on cloth using copper pen (canting)', 'Eat local Gudeg (jackfruit stew) for lunch', 'Take home your batik masterpiece'] }
+    "included": [
+      "Fasilitator, modul, mission kit, Second Life Passport, worksheet, dokumentasi standar, sertifikat, perlengkapan program, air mineral, dan koordinasi program."
     ],
-    gallery: ['https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'yogyakarta-merapi-jeep-adventure',
-    name: 'Mount Merapi Volcano Lava Jeep Safari',
-    slug: 'yogyakarta-merapi-jeep-adventure',
-    destinationId: 'yogyakarta',
-    attractionId: 'borobudur',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-    description: 'Ride an open-top 4x4 vintage jeep through volcanic ash paths of active Mount Merapi. Visit underground bunkers and lava museum ruins.',
-    duration: '5 Hours',
-    price: 675000,
-    rating: 4.8,
-    reviewsCount: 228,
-    category: 'Adventure and Challenge',
-    highlights: ['Vintage open 4x4 Jeep ride', 'Explore volcano lava paths', 'Visit Kaliadem underground bunker', 'Volcano ruins museum entry'],
-    included: ['Roundtrip hotel transport', 'Private 4x4 Jeep with driver', 'Safety helmet', 'All park fees', 'Bottled water'],
-    excluded: ['Personal masks', 'Lunch'],
-    meetingPoint: 'Yogyakarta hotels pickup',
-    itinerary: [
-      { title: '07:30 AM - Drive to Merapi slope', activities: ['Travel north to Kaliurang jeep basecamp'] },
-      { title: '08:30 AM - 4x4 Jeep Exploration', activities: ['Board open-air vintage Willys Jeep', 'Drive through rocky trails left by 2010 eruption lava flow'] },
-      { title: '09:30 AM - Underground Bunker & Ruins', activities: ['Visit bunker where volcanic ash trapped survivors', 'Explore Alien Rock shape', 'See ruined houses museum showing melted items'] }
+    "excluded": [
+      "Transportasi peserta menuju lokasi kumpul, penginapan (sesuai Kondisi program), konsumsi tambahan, tiket khusus, biaya izin khusus, asuransi tambahan, dokumentasi premium, dan kebutuhan khusus klien."
     ],
-    gallery: ['https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'yogyakarta-cave-tubing-pindul',
-    name: 'Pindul Cave River Tubing & Jomblang Cave Descent',
-    slug: 'yogyakarta-cave-tubing-pindul',
-    destinationId: 'yogyakarta',
-    attractionId: 'malioboro',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'Descend 60 meters into vertical Jomblang Cave to see the breathtaking "Light of Heaven" sunbeams, followed by tube floating in Pindul cave.',
-    duration: '9 Hours',
-    price: 1650000,
-    rating: 4.9,
-    reviewsCount: 145,
-    category: 'Adventure and Challenge',
-    highlights: ['Rappel down into Jomblang cave', 'Witness the celestial "Light of Heaven"', 'Float on inner tubes through cave rivers', 'Local traditional lunch'],
-    included: ['Private vehicle transit', 'Caving equipment & instructors', 'Rappelling crew', 'Tube rental & life jacket', 'Indonesian lunch box'],
-    excluded: ['Gratuities'],
-    meetingPoint: 'Hotel Lobby pickup at 06:30 AM',
-    itinerary: [
-      { title: '06:30 AM - Departure to Gunung Kidul', activities: ['Drive through limestone hills'] },
-      { title: '08:00 AM - Jomblang Cave Descent', activities: ['Equip harnesses and boots', 'Lowered by ropes 60m down into ancient sinkhole forest', 'Walk dark muddy tunnels to view light beams'] },
-      { title: '12:30 PM - Lunch & River Tubing', activities: ['Eat local boxed lunch', 'Float on inner tubes along cave river under bats and stalactites'] }
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00-09.00",
+        "activities": [
+          "Opening & Mission Briefing: Second Life Explorer",
+          "Meeting point / area Kota Tua",
+          "Bangun konteks, bagi paspor misi, jelaskan aturan keselamatan."
+        ]
+      },
+      {
+        "title": "09.00-10.30",
+        "activities": [
+          "Kota Tua Exploration: Life Transition Mission",
+          "Kota Tua Jakarta",
+          "Observasi simbol perubahan; refleksi peran lama dan identitas baru."
+        ]
+      },
+      {
+        "title": "10.30-12.00",
+        "activities": [
+          "Museum Bahari Experience: Legacy Navigation Challenge",
+          "Museum Bahari",
+          "Gunakan metafora kompas, kapal, navigasi, dan warisan."
+        ]
+      },
+      {
+        "title": "12.00-13.00",
+        "activities": [
+          "Istirahat, makan siang, dan sensory pause",
+          "Area lokal/UMKM",
+          "Dorong peserta mencatat insight pribadi dalam jurnal."
+        ]
+      },
+      {
+        "title": "13.00-14.30",
+        "activities": [
+          "Sunda Kelapa Reflection Journey: Future Voyage",
+          "Pelabuhan Sunda Kelapa",
+          "Refleksi pilihan hidup kedua, risiko, dan dukungan yang dibutuhkan."
+        ]
+      },
+      {
+        "title": "14.30-16.00",
+        "activities": [
+          "Community Inspiration Session",
+          "Kampung Akuarium / UMKM",
+          "Dialog tokoh lokal; tekankan resilience, usaha, dan kontribusi sosial."
+        ]
+      },
+      {
+        "title": "16.00-17.00",
+        "activities": [
+          "Future Life Mapping & Legacy Design Workshop",
+          "Ruang debrief / meeting point",
+          "Peserta menyusun peta hidup, prioritas, aktivitas, dan rencana 30-90 hari."
+        ]
+      },
+      {
+        "title": "17.00-18.00",
+        "activities": [
+          "Reflection Circle & Commitment Declaration",
+          "Ruang debrief / titik penutup",
+          "Closing transformatif; deklarasi komitmen; foto bersama; evaluasi.",
+          "Rundown Opsi 2 Hari 1 Malam",
+          "Hari / Waktu",
+          "Sesi",
+          "Fokus Pembelajaran",
+          "Hari 1 Pagi",
+          "Mission Briefing dan Kota Tua Exploration",
+          "Menyadari perubahan identitas dan fase hidup.",
+          "Hari 1 Siang",
+          "Museum Bahari dan Sunda Kelapa Journey",
+          "Navigasi masa depan, risiko, dan dukungan.",
+          "Hari 1 Sore",
+          "Community Resilience Dialogue",
+          "Belajar dari komunitas yang bangkit dan pelaku UMKM.",
+          "Hari 1 Malam",
+          "Life Story Circle",
+          "Sharing perjalanan karier, rasa syukur, dan makna peran lama.",
+          "Hari 2 Pagi",
+          "Health, Wealth, Relationship, Purpose Mapping",
+          "Menyusun keseimbangan kehidupan kedua.",
+          "Hari 2 Siang",
+          "Legacy Design Presentation",
+          "Presentasi rencana hidup dan umpan balik kelompok.",
+          "Hari 2 Sore",
+          "Commitment Ceremony",
+          "Deklarasi komitmen pribadi dan penutupan transformatif."
+        ]
+      }
     ],
-    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'yogyakarta-royal-palace-luxury-royal-dinner',
-    name: 'Yogyakarta VIP Royal Palace Program & Exclusive Sultan Dinner',
-    slug: 'yogyakarta-royal-palace-luxury-royal-dinner',
-    destinationId: 'yogyakarta',
-    attractionId: 'keraton-yogyakarta',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80',
-    description: 'Gain exclusive after-hours access to royal palace wings not open to public, followed by a luxury banquet dinner inside the palace grounds serving secret Sultan recipes.',
-    duration: '5 Hours',
-    price: 2985000,
-    rating: 4.9,
-    reviewsCount: 18,
-    category: 'Culinary Journey',
-    highlights: ['VIP royal palace access', 'Gamelan musical welcome', 'Sultan-cuisine banquet dinner', 'Exclusive palace souvenir gift'],
-    included: ['Hotel limousine transfer', 'Royal palace permit fees', 'Private royal guide', 'Multi-course banquet meal', 'Cultural dance show'],
-    excluded: ['Tips'],
-    meetingPoint: 'Five-star hotel pickup in Yogyakarta',
-    itinerary: [
-      { title: '05:00 PM - Palace Limousine Transfer', activities: ['Board private executive vehicle to Keraton'] },
-      { title: '05:30 PM - VIP After-Hours Program', activities: ['Guided program of royal chambers and private archives', 'Gamelan musical performance welcome'] },
-      { title: '07:00 PM - Royal Banquet Feast', activities: ['Dine inside historical royal pavilion', 'Sample traditional slow-cooked beef and desserts reserved for royal families'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Bandung Programs (5)
-  {
-    id: 'bandung-volcano-lembang',
-    name: 'Tangkuban Perahu Volcano & Hot Springs Day Program',
-    slug: 'bandung-volcano-lembang',
-    destinationId: 'bandung',
-    attractionId: 'tangkoeban-perahoe',
-    image: 'https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80',
-    description: 'Peer into the giant smoking crater of Tangkuban Perahu, bathe in Ciater sulfurous hot springs, and visit local civet coffee plantations.',
-    duration: '8 Hours',
-    price: 825000,
-    rating: 4.5,
-    reviewsCount: 198,
-    category: 'Nature and Eco-Tourism',
-    highlights: ['Walk Tangkuban Perahu crater edge', 'Bathe in Ciater volcanic mineral pools', 'Civet coffee Luwak tasting session', 'Visit strawberry farms'],
-    included: ['Minivan transport', 'All park admissions & hot spring entry', 'Local guide driver', 'Sundanese lunch platter'],
-    excluded: ['Volcano guide tip', 'Strawberry picking costs'],
-    meetingPoint: 'Bandung hotels',
-    itinerary: [
-      { title: '08:00 AM - Lembang Mountain Drive', activities: ['Travel north to Tangkuban Perahu slope'] },
-      { title: '09:30 AM - Active Crater Walk', activities: ['Explore Ratu Crater, see sulfuric smoke plumes', 'Learn legend of Sangkuriang'] },
-      { title: '12:00 PM - Volcanic Hot Springs', activities: ['Soak in warm sulfur streams of Ciater springs', 'Luwak coffee tasting and traditional lunch'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bandung-kawah-putih-tea-lake',
-    name: 'Ciwidey Kawah Putih Crater Lake & Tea Estate Program',
-    slug: 'bandung-kawah-putih-tea-lake',
-    destinationId: 'bandung',
-    attractionId: 'kawah-putih',
-    image: 'https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the surreal turquoise waters of Kawah Putih, stroll through Rancabali tea fields on suspended bridges, and dine in lakeside bamboo cottages.',
-    duration: '9 Hours',
-    price: 735000,
-    rating: 4.7,
-    reviewsCount: 142,
-    category: 'Nature and Eco-Tourism',
-    highlights: ['Surreal volcanic green lake views', 'Walk Rancabali tea estate bridges', 'Dine at Phinisi Boat Restaurant', 'Private transport from Bandung'],
-    included: ['Transport with driver', 'Kawah Putih tickets & shuttle', 'Tea estate access', 'Lakeside lunch'],
-    excluded: ['Suspension bridge ticket supplement ($2)'],
-    meetingPoint: 'Bandung central hotels',
-    itinerary: [
-      { title: '07:30 AM - Ciwidey Drive', activities: ['Travel south past strawberry farms and pine forests'] },
-      { title: '09:30 AM - Kawah Putih Exploration', activities: ['Board Ontang-Anting shuttle to crater summit', 'Walk shoreline of sulfur green lake'] },
-      { title: '12:00 PM - Rancabali Tea Fields', activities: ['Walk wooden bridge pathways through lush green tea valleys', 'BBQ lunch at Phinisi Lakeside Restaurant'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bandung-eco-dusun-bambu',
-    name: 'Dusun Bambu Eco Cultural Leisure Experience',
-    slug: 'bandung-eco-dusun-bambu',
-    destinationId: 'bandung',
-    attractionId: 'dusun-bambu',
-    image: 'https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80',
-    description: 'Spend a relaxing day in Dusun Bambu. Enjoy traditional Sundanese culinary treats, paddle wooden boats around a pristine lake, and walk bamboo forests.',
-    duration: '6 Hours',
-    price: 525000,
-    rating: 4.6,
-    reviewsCount: 88,
-    category: 'Cultural Immersion',
-    highlights: ['Scenic lakeside dining cottages', 'Traditional Sundanese live music', 'Row wooden boats on lake', 'Eco-friendly bamboo walks'],
-    included: ['All admission tickets', 'Lakeside cottage table reservation', 'Wooden boat ride ticket', 'Lunch credit voucher'],
-    excluded: ['Shopping purchases', 'Hotel pickup (optional supplement)'],
-    meetingPoint: 'Dusun Bambu Main Ticketing Gate',
-    itinerary: [
-      { title: '10:00 AM - Dusun Bambu Arrival', activities: ['Board floral shuttle car into park', 'Walk lavender gardens and bamboo pathways'] },
-      { title: '11:00 AM - Lakeside Boating', activities: ['Row wooden boats on central lake past floating huts', 'Feed ornamental koi fish'] },
-      { title: '12:30 PM - Sundanese Feast', activities: ['Dine inside bamboo nest huts (Lutung Kasarung) serving grilled chicken and spiced rice'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1620127252536-03bdfcf6d5c3?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bandung-shopping-factory-outlets',
-    name: 'Bandung Heritage Outlets & Fashion Spree',
-    slug: 'bandung-shopping-factory-outlets',
-    destinationId: 'bandung',
-    attractionId: 'dusun-bambu',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
-    description: 'Hunt for bargains in Bandung\'s world-famous factory outlets. Shop along Jalan Riau and Dago, and visit design concept stores.',
-    duration: '7 Hours',
-    price: 375000,
-    rating: 4.4,
-    reviewsCount: 65,
-    category: 'Culinary Journey',
-    highlights: ['Visit top Riau factory outlets', 'Shop premium local fashion brands', 'Dine at vintage Dutch colonial cafes', 'Private driver during shopping'],
-    included: ['Private car with driver', 'Parking fees', 'Mineral water', 'Discount coupons'],
-    excluded: ['Shopping purchases', 'Meals'],
-    meetingPoint: 'Bandung central hotels',
-    itinerary: [
-      { title: '10:00 AM - Outlet Shopping Spree', activities: ['Visit top outlets: Rumah Mode and Heritage', 'Bargain hunt designer labels'] },
-      { title: '01:00 PM - Colonial Lunch', activities: ['Dine at colonial mansion cafe serving Dutch-Indo fusion food'] },
-      { title: '03:00 PM - Creative Concept Stores', activities: ['Explore local indie boutiques and ceramic studios', 'Return to hotel'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'bandung-private-tea-spa-retreat',
-    name: 'Lembang Luxury Tea Estate & Volcanic Spa Ritual',
-    slug: 'bandung-private-tea-spa-retreat',
-    destinationId: 'bandung',
-    attractionId: 'tangkoeban-perahoe',
-    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80',
-    description: 'Immerse in pure highland relaxation. Enjoy a private walk through rolling tea fields followed by a volcanic clay body scrub and thermal massage.',
-    duration: '6 Hours',
-    price: 2025000,
-    rating: 4.8,
-    reviewsCount: 42,
-    category: 'Community and Social Impact',
-    highlights: ['Private tea master walk', 'Volcanic clay body scrub', 'Highland mineral pool soak', 'Private massage suite'],
-    included: ['Private Mercedes-Benz shuttle', 'Tea estate permit & guide', '120-minute spa package', 'Traditional herbal tea & snacks'],
-    excluded: ['Meals', 'Tips'],
-    meetingPoint: 'Bandung luxury hotel lobby',
-    itinerary: [
-      { title: '08:30 AM - Highland Transit', activities: ['Sleek luxury car ride into mist-covered Lembang mountains'] },
-      { title: '09:30 AM - Tea Estate Serenity', activities: ['Private stroll through private tea rows', 'Learn traditional tea harvesting'] },
-      { title: '11:00 AM - Volcanic Spa Ritual', activities: ['Enjoy thermal volcanic mud wrap and Swedish hot-stone massage overlooking lush valleys'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Lombok Programs (6)
-  {
-    id: 'lombok-gili-snorkeling-boat',
-    name: 'Gili Islands 3-Island Private Snorkeling Boat Program',
-    slug: 'lombok-gili-snorkeling-boat',
-    destinationId: 'lombok',
-    attractionId: 'gili-islands',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-    description: 'Board a private glass-bottom boat to snorkel the Gili Islands. Visit the underwater human statues at Gili Meno and swim with wild turtles at Gili Trawangan.',
-    duration: '8 Hours',
-    price: 975000,
-    rating: 4.9,
-    reviewsCount: 312,
-    category: 'Adventure and Challenge',
-    highlights: ['Private glass-bottom boat', 'Snorkel Gili Meno underwater statues', 'Swim with green sea turtles', 'Beach exploration at Gili Air'],
-    included: ['Private boat charter', 'All snorkeling gear & life jackets', 'Underwater GoPro photo files', 'Pickups from Lombok mainland', 'Local boat captain & guide'],
-    excluded: ['Lunch expenses at Gili beach restaurant'],
-    meetingPoint: 'Teluk Nare Harbor / Senggigi hotel lobby',
-    itinerary: [
-      { title: '08:30 AM - Harbor Departure', activities: ['Board private glass-bottom boat at Teluk Nare'] },
-      { title: '09:30 AM - Gili Meno Statues', activities: ['Snorkel Nest, the famous ring of 48 life-size human statues underwater'] },
-      { title: '11:30 AM - Gili Trawangan Turtle Reef', activities: ['Snorkel coral reefs, observe giant green sea turtles feeding'] },
-      { title: '01:00 PM - Beach Lunch Gili Air', activities: ['Dine beachfront, explore Gili Air on foot or horse cart', 'Return to Lombok mainland'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'lombok-rinjani-2day-trek',
-    name: 'Mount Rinjani Caldera & Crater Rim 2-Day Trek',
-    slug: 'lombok-rinjani-2day-trek',
-    destinationId: 'lombok',
-    attractionId: 'rinjani-volcano',
-    image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80',
-    description: 'Challenging 2-day trek to Mount Rinjani Senaru Crater Rim. Watch the sunset over Bali\'s Mt. Agung and camp above the clouds next to Segara Anak lake.',
-    duration: '2 Days',
-    price: 2775000,
-    rating: 4.8,
-    reviewsCount: 174,
-    category: 'Adventure and Challenge',
-    highlights: ['Camp at Senaru Crater Rim (2641m)', 'Sunset views over clouds and Bali', 'Porters carry all tents and food', 'Hearty meals prepared by campfire'],
-    included: ['National Park entry permits & insurance', 'Local mountain guide & porters', 'Camping equipment (tent, sleeping bags, mattress)', '5 campfire meals', 'Water', 'Minivan transfers'],
-    excluded: ['Trekking shoes and jackets', 'Tipping guide & porters ($15 recommendation)'],
-    meetingPoint: 'Rinjani National Park Office, Senaru at 07:00 AM',
-    itinerary: [
-      { title: 'Day 1: Senaru Village to Crater Rim', activities: ['Register at park office', 'Hike through rainforest shadow trails (5-6 hours)', 'Set up camp at Senaru Crater Rim', 'Dinner with sunset views over crater lake'] },
-      { title: 'Day 2: Rim Sunrise & Descent', activities: ['Watch spectacular sunrise over Mt. Rinjani peak', 'Breakfast', 'Descend Senaru trail back to village (4-5 hours)', 'Transfer back to hotel'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'lombok-twin-waterfalls-jungle',
-    name: 'Sendang Gile & Tiu Kelep Waterfall Rainforest Hike',
-    slug: 'lombok-twin-waterfalls-jungle',
-    destinationId: 'lombok',
-    attractionId: 'sendang-gile',
-    image: 'https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80',
-    description: 'Walk through dense tropical rainforest on the slopes of Mount Rinjani. Cross suspension bridges and swim in the cooling pools of Tiu Kelep waterfall.',
-    duration: '6 Hours',
-    price: 585000,
-    rating: 4.7,
-    reviewsCount: 115,
-    category: 'Nature and Eco-Tourism',
-    highlights: ['Hike lush jungle paths', 'Walk under water bridge tunnels', 'Swim under Tiu Kelep waterfall', 'Monkey spotting in canopy'],
-    included: ['Local forest guide', 'All entrance tickets', 'Indonesian lunch box', 'Minivan transfer from Senggigi'],
-    excluded: ['Tips'],
-    meetingPoint: 'Senaru tourist information gate',
-    itinerary: [
-      { title: '08:30 AM - Drive to Senaru Hills', activities: ['Scenic road trip along Senggigi coastline cliffs'] },
-      { title: '10:00 AM - Sendang Gile waterfall', activities: ['Walk down stairs to see the first twin-tiered waterfall', 'Enjoy misty air'] },
-      { title: '11:00 AM - Tiu Kelep Rainforest Hike', activities: ['Cross shallow mountain stream and irrigation tunnels', 'Arrive at the hidden pool of Tiu Kelep waterfall', 'Swim in refreshing mountain water', 'Lunch and return'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1582298538104-fc2c095a436c?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'lombok-culture-kuta-beach',
-    name: 'Sade Sasak Village & South Lombok Beach Program',
-    slug: 'lombok-culture-kuta-beach',
-    destinationId: 'lombok',
-    attractionId: 'gili-islands',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the ancestral thatch-roof homes of Sade Sasak tribe, learn traditional hand-weaving (tenun), and visit Kuta Lombok beaches.',
-    duration: '7 Hours',
-    price: 525000,
-    rating: 4.6,
-    reviewsCount: 96,
-    category: 'Cultural Immersion',
-    highlights: ['Explore historical Sasak village', 'Hand-weaving batik demonstration', 'Visit white-sand Tanjung Aan Beach', 'See modern Mandalika GP Circuit'],
-    included: ['Transport with driver', 'Local village guide', 'Entrance tickets', 'Lunch'],
-    excluded: ['Shopping purchases'],
-    meetingPoint: 'Lombok Airport / hotel pickup',
-    itinerary: [
-      { title: '09:00 AM - Sade Sasak Village', activities: ['Program the clay-dung floors, bamboo walls, and thatch roofs', 'Observe tribal weaving crafts'] },
-      { title: '11:30 AM - Tanjung Aan Beach & lunch', activities: ['Relax on fine white sand, climb Merese Hill for panoramic views', 'Enjoy grilled local seafood lunch'] },
-      { title: '02:30 PM - Mandalika Circuit photo', activities: ['Photo session outside MotoGP street circuit', 'Return to hotel'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'lombok-luxury-gili-sailing',
-    name: 'Exclusive Gili Air Sunset Sailing Charter',
-    slug: 'lombok-luxury-gili-sailing',
-    destinationId: 'lombok',
-    attractionId: 'gili-islands',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
-    description: 'Charter a private luxury yacht for an unforgettable sunset sail around Gili Trawangan, Meno, and Air, with gourmet catering on board.',
-    duration: '5 Hours',
-    price: 2835000,
-    rating: 4.9,
-    reviewsCount: 28,
-    category: 'Culinary Journey',
-    highlights: ['Private yacht charter', 'Champagne toast at sunset', 'Snorkeling with sea turtles', 'Gourmet seafood platter on board'],
-    included: ['Private yacht, captain & crew', 'Gourmet appetizers and fresh seafood', '1 bottle of French Champagne', 'Snorkeling masks', 'Hotel pickup'],
-    excluded: ['Extra bottles of spirits'],
-    meetingPoint: 'Senggigi Yacht Marina',
-    itinerary: [
-      { title: '02:00 PM - Board Luxury Yacht', activities: ['Welcome aboard, safety briefing, set sail to Gili islands'] },
-      { title: '03:30 PM - Swim & Snorkel', activities: ['Anchor at private reef spot, snorkel with sea turtles'] },
-      { title: '05:30 PM - Golden Hour Sailing', activities: ['Watch sun sink behind Mt. Agung, pop Champagne, enjoy gourmet dinner on deck'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80']
-  },
-  {
-    id: 'lombok-surf-camp-kuta',
-    name: 'Kuta Lombok Beginners Surf Camp & Coaching',
-    slug: 'lombok-surf-camp-kuta',
-    destinationId: 'lombok',
-    attractionId: 'gili-islands',
-    image: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=800&q=80',
-    description: 'Learn to ride the tropical waves of Lombok with certified instructors. Perfect for absolute beginners at gentle Selong Belanak beach.',
-    duration: '4 Hours',
-    price: 735000,
-    rating: 4.7,
-    reviewsCount: 54,
-    category: 'Adventure and Challenge',
-    highlights: ['1-on-1 surf instruction', 'Gentle beginner waves', 'Surfboard rental included', 'Action photos of your ride'],
-    included: ['Surfboard and rash guard', 'Certified instructor', 'Mineral water', 'Beach lounge chairs', 'Roundtrip transport'],
-    excluded: ['Lunch', 'Sunscreen'],
-    meetingPoint: 'Selong Belanak Surf Shack',
-    itinerary: [
-      { title: '08:30 AM - Beach Warm-up', activities: ['Dry-land safety briefing, paddling and pop-up drills'] },
-      { title: '09:30 AM - First Water Session', activities: ['Instructors assist you in shallow waters, catching first white-water waves'] },
-      { title: '11:00 AM - Video Analysis & Break', activities: ['Short rest, hydration, tips for balance'] }
-    ],
-    gallery: ['https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Labuan Bajo Programs (6)
-  {
-    id: 'komodo-dragon-speedboat',
-    name: 'Komodo Island Speedboat 1-Day VIP Program',
-    slug: 'komodo-dragon-speedboat',
-    destinationId: 'labuan-bajo',
-    attractionId: 'komodo-island',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
-    description: 'Fast speedboat charter to Komodo Island, Padar viewpoint, and Pink Beach. Trek with national park rangers and snorkel with manta rays.',
-    duration: '10 Hours',
-    price: 1875000,
-    rating: 5.0,
-    reviewsCount: 412,
-    category: 'Adventure and Challenge',
-    highlights: ['VIP shared speedboat', 'Hike Padar island viewpoint', 'Trek with Komodo dragon rangers', 'Relax on Pink Beach sand', 'Snorkel with manta rays'],
-    included: ['Speedboat cruise', 'English program host', 'Snorkeling equipment', 'Bento lunch box & fresh fruits', 'Labuan Bajo hotel transfers'],
-    excluded: ['Komodo National Park entrance fees ($30/person cash cash, paid at park ranger station)'],
-    meetingPoint: 'Labuan Bajo Public Harbor Gate',
-    itinerary: [
-      { title: '06:00 AM - Speedboat Boarding', activities: ['Meet crew at harbor, speed towards Padar island'] },
-      { title: '07:30 AM - Padar Summit Hike', activities: ['Climb stairs to Padar viewpoint to see three colored beaches'] },
-      { title: '09:30 AM - Komodo Ranger Trek', activities: ['Arrive at Loh Liang, hike dry forest with rangers, spot giant Komodo dragons'] },
-      { title: '12:00 PM - Pink Beach Shore', activities: ['Swim in warm waters, relax on pink sand shore, eat lunch'] },
-      { title: '02:00 PM - Manta Point Swim', activities: ['Snorkel with giant manta rays, then return to Bajo'] }
-    ],
-    gallery: [
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80'
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
     ]
   },
   {
-    id: 'labuan-bajo-luxury-phinisi',
-    name: 'Komodo National Park Luxury Phinisi 3-Day Liveaboard',
-    slug: 'labuan-bajo-luxury-phinisi',
-    destinationId: 'labuan-bajo',
-    attractionId: 'komodo-island',
-    image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-    description: 'Experience an ultra-luxury private cruise on a magnificent traditional wooden Phinisi yacht. Stay in state rooms, enjoy gourmet dining, and explore Komodo.',
-    duration: '3 Days',
-    price: 9750000,
-    rating: 5.0,
-    reviewsCount: 38,
-    category: 'Culinary Journey',
-    highlights: ['Sailing on premium wooden Phinisi', 'Stay in air-conditioned state cabins', 'Private dining with personal chef', 'Island beach excursions'],
-    included: ['VIP airport pickup', '3 days accommodation on yacht', 'All chef meals and beverages', 'Private snorkeling boat & guide', 'All national park entry tickets & ranger fees'],
-    excluded: ['Alcoholic wines & spirits', 'Massage treatments'],
-    meetingPoint: 'Labuan Bajo Yacht Club Harbour',
-    itinerary: [
-      { title: 'Day 1: Sail to Padar Island', activities: ['Board Phinisi yacht, welcome drinks & cabin check-in', 'Sail to Padar island, climb viewpoint for sunset', 'Candlelit dinner on deck under stars'] },
-      { title: 'Day 2: Komodo Dragons & Pink Beach', activities: ['Early morning trek to spot Komodo Dragons', 'Swim and picnic on Pink Beach', 'Manta Ray snorkeling session'] },
-      { title: 'Day 3: Kalong Flying Foxes & Departure', activities: ['Sail to Kalong island, watch thousands of flying foxes fly at sunrise', 'Breakfast, sail back to Bajo, airport transfer'] }
+    "id": "jakarta-guardians-of-the-thousand-islands",
+    "name": "Guardians of the Thousand Islands",
+    "slug": "guardians-of-the-thousand-islands",
+    "destinationId": "jakarta",
+    "attractionId": "kepulauan-seribu",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "Guardians of the Thousand Islands adalah program eksplorasi bahari berbasis destinasi yang mengajak peserta menjelajahi keindahan dan kekayaan ekosistem Kepulauan Seribu melalui pengalaman Stand Up Paddle (SUP). Peserta berperan sebagai anggota ekspedisi laut yang bertugas menjelajahi, memahami, dan menjaga kawasan pesisir Indonesia melalui tantangan eksplorasi, observasi lingkungan, navigasi tim, dan refleksi bermakna.\n\nProgram ini memadukan petualangan laut, pembelajaran kolaboratif, dan kesadaran lingkungan dalam pengalaman yang autentik dan transformatif.",
+    "duration": "Full Day / 2 Hari 1 Malam",
+    "price": 1,
+    "rating": 5,
+    "reviewsCount": 26,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Program ini dirancang untuk menghubungkan peserta dengan laut Indonesia melalui pengalaman eksplorasi  langsung menggunakan Stand Up Paddle Board di Kepulauan Seribu.",
+      "Peserta tidak hanya menikmati keindahan alam, tetapi juga mengalami petualangan yang menumbuhkan  kesadaran lingkungan, kolaborasi, kepemimpinan, dan koneksi yang lebih dalam dengan alam.",
+      "Yang membuat program ini unik adalah perpaduan antara marine adventure, destination exploration, dan  experiential learning yang hanya dapat dirasakan di ekosistem bahari Kepulauan Seribu."
     ],
-    gallery: [
-      'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80'
+    "included": [
+      "✔ Lead Facilitator Experiential Learning",
+      "✔ Assistant Facilitator",
+      "✔ Marine Adventure Guide",
+      "✔ Safety Officer",
+      "✔ Stand Up Paddle Board",
+      "✔ Paddle",
+      "✔ Life Jacket",
+      "✔ Dry Bag",
+      "✔ Modul Aktivitas & Learning Materials",
+      "✔ Dokumentasi Foto",
+      "✔ Dokumentasi Video Highlight",
+      "✔ Transportasi lokal sesuai itinerary",
+      "✔ Kapal pendukung (support boat)",
+      "✔ Konsumsi selama program",
+      "✔ Air mineral",
+      "✔ Asuransi aktivitas",
+      "✔ First Aid & Safety Equipment",
+      "✔ Sertifikat Partisipasi",
+      "✔ Reflection & Debrief Session"
+    ],
+    "excluded": [
+      "✖ Transportasi peserta menuju titik keberangkatan (Marina Ancol/Jakarta)",
+      "✖ Tiket perjalanan menuju Jakarta (untuk peserta luar kota)",
+      "✖ Pengeluaran pribadi",
+      "✖ Penginapan tambahan di luar itinerary",
+      "✖ Permintaan dokumentasi profesional tambahan (drone khusus, video cinematic full production)",
+      "✖ Merchandise atau souvenir khusus",
+      "✖ Biaya akibat perubahan itinerary karena cuaca ekstrem atau kondisi force majeure",
+      "✖ Pajak (apabila diperlukan sesuai ketentuan yang berlaku)"
+    ],
+    "meetingPoint": "Marina Ancol, Jakarta Utara.",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
     ]
   },
   {
-    id: 'labuan-bajo-cunca-wami-canyon',
-    name: 'Cunca Wami Canyon Waterfall Rainforest Hike',
-    slug: 'labuan-bajo-cunca-wami-canyon',
-    destinationId: 'labuan-bajo',
-    attractionId: 'cunca-wami',
-    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-    description: 'Hike through Mbeliling mountain rainforest, scramble down sandstone canyon cliffs, and swim in the blue-green natural pools of Cunca Wami.',
-    duration: '6 Hours',
-    price: 675000,
-    rating: 4.6,
-    reviewsCount: 54,
-    category: 'Adventure and Challenge',
-    highlights: ['Trek Flores rainforest hills', 'Sandstone canyon climbing', 'Swim in deep forest springs', 'Indonesian lunch at local village'],
-    included: ['Transport from hotel', 'Forest park entry tickets', 'Jungle guide', 'Lunch box', 'Mineral water'],
-    excluded: ['Tips'],
-    meetingPoint: 'Labuan Bajo hotel pickup',
-    itinerary: [
-      { title: '08:00 AM - Forest Drive', activities: ['Drive up winding roads into Mbeliling mountains'] },
-      { title: '09:00 AM - Jungle Trek', activities: ['Hike dense forest paths past giant ferns and orchids'] },
-      { title: '10:30 AM - Canyon swimming', activities: ['Arrive at canyon entrance, climb down to natural pools', 'Swim, try rock jumping, eat lunch box'] }
+    "id": "dieng-dieng-culture-resonance",
+    "name": "Dieng Culture Resonance",
+    "slug": "dieng-culture-resonance",
+    "destinationId": "dieng",
+    "attractionId": "dieng-plateau",
+    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80",
+    "description": "Sebuah perjalanan seni dan budaya yang mengajak peserta merasakan Dieng sebagai ruang budaya pegunungan melalui tiga pengalaman utama: Ritual → Rhythm → Reflection. Peserta tidak hanya mengunjungi destinasi, tetapi terlibat langsung dalam tari ritual, permainan ritme perkusi tradisional, dan penciptaan karya seni kolektif.",
+    "duration": "3-4 jam dengan rundown utama 3,5 jam",
+    "price": 850000,
+    "rating": 4.6,
+    "reviewsCount": 17,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Program ini mengajak peserta mengalami Dieng sebagai dataran tinggi budaya melalui tiga ekspresi seni: gerak, bunyi, dan rupa. Melalui tari ritual di Candi Arjuna, klothekan percussion di Kawah Sikidang, dan puzzle painting di Telaga Menjer, peserta tidak hanya melihat Dieng sebagai destinasi alam, tetapi merasakan bagaimana budaya hidup melalui tubuh, suara, karya, dan kebersamaan."
     ],
-    gallery: ['https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Fasilitator program, local guide, jip lokal venue to venue, perlengkapan tari ritual sederhana, alat klothekan percussion / media bambu, kanvas kecil, cat, kuas, perlengkapan puzzle painting, perlengkapan program, dokumentasi foto/video, air mineral, coffee break / snack lokal Dieng, P3K dasar, dan tiket wisata."
+    ],
+    "excluded": [
+      "Transportasi menuju dan dari Dieng serta makan siang."
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00-08.20 / 20”",
+        "activities": [
+          "Opening, Mission Briefing",
+          "Candi Arjuna",
+          "Pengantar cerita Dieng Culture Resonance dan memasuki benang merah Ritual → Rhythm → Reflection.."
+        ]
+      },
+      {
+        "title": "08.20-09.00 / 20”",
+        "activities": [
+          "Ritual Dancing",
+          "Candi Arjuna",
+          "Bantu seniman tari lokal melatih aktivitas tari ritual"
+        ]
+      },
+      {
+        "title": "09.00-09.20 / 20”",
+        "activities": [
+          "Jip Transfer",
+          "Candi Arjuna menuju Kawah Sikidang menggunakan jip lokal."
+        ]
+      },
+      {
+        "title": "09.20-10.00 / 40”",
+        "activities": [
+          "Klothekan Percussion",
+          "Kawah Sikidang",
+          "Bantu seniman musik lokal melatih aktivitas klothekan bambu"
+        ]
+      },
+      {
+        "title": "10.00-10.20 / 20”",
+        "activities": [
+          "Jip Transfer",
+          "Kawah Sikidang menuju Telaga Menjer menggunakan jip lokal"
+        ]
+      },
+      {
+        "title": "10.20-10.35 / 15”",
+        "activities": [
+          "Coffebreak",
+          "Telaga Menjer",
+          "Pastikan peserta regrouping, dan siap melanjutkan misi."
+        ]
+      },
+      {
+        "title": "10.35-11.15 / 40”",
+        "activities": [
+          "Puzzle Painting",
+          "Telaga Menjer",
+          "Pandu menyatukan lukisan menjadi kanvas besar."
+        ]
+      },
+      {
+        "title": "11.15-11.30 / 15”",
+        "activities": [
+          "Debrief & Closing",
+          "Telaga Menjer",
+          "Berikan final debrief dan tutup dengan makna utama program."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'labuan-bajo-padar-island-sunrise',
-    name: 'Padar Island Private Sunrise & Pink Beach Cruise',
-    slug: 'labuan-bajo-padar-island-sunrise',
-    destinationId: 'labuan-bajo',
-    attractionId: 'padar-island',
-    image: 'https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80',
-    description: 'Catch a private boat at 4:30 AM to climb Padar Island for an unforgettable sunrise view. Followed by a relaxing morning on Pink Beach.',
-    duration: '7 Hours',
-    price: 1485000,
-    rating: 4.9,
-    reviewsCount: 84,
-    category: 'Nature and Eco-Tourism',
-    highlights: ['Private boat cruise', 'Unforgettable sunrise on Padar summit', 'Secluded morning on Pink Beach', 'Gourmet breakfast box'],
-    included: ['Private boat charter', 'All entry fees', 'Breakfast box with hot coffee/tea', 'English speaking host'],
-    excluded: ['National Park fees ($30)'],
-    meetingPoint: 'Labuan Bajo Marina harbor at 04:15 AM',
-    itinerary: [
-      { title: '04:30 AM - Private Departure', activities: ['Board private speed cruise, sail under starry skies'] },
-      { title: '05:30 AM - Padar Summit climb', activities: ['Climb wooden staircase, watch horizon turn red-orange, illuminating the volcanic bays'] }
+    "id": "bromo-bromo-expedition-guardians-of-the-bromo-caldera",
+    "name": "Bromo Expedition: Guardians of The Bromo Caldera",
+    "slug": "bromo-expedition-guardians-of-the-bromo-caldera",
+    "destinationId": "bromo",
+    "attractionId": "mount-bromo",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80",
+    "description": "Kabut Bromo menyimpan sebuah misi. Hanya tim yang bersatu yang mampu menuntaskannya. Bromo Expedition: Guardians of The Caldera adalah program destination-based exploration yang menggabungkan petualangan alam, experiential learning, dan kearifan lokal Suku Tengger dalam sebuah misi epik penyelamatan harmoni Kaldera Bromo.\nPeserta berperan sebagai \"Guardians of The Caldera\", tim terpilih yang ditugaskan untuk mengumpulkan Fragments of Harmony yang tersebar di berbagai titik ikonik Bromo. Dalam perjalanan, peserta akan menghadapi tantangan navigasi, pemecahan masalah, pengambilan keputusan di bawah tekanan, serta refleksi mendalam mengenai kepemimpinan, komunikasi, dan kolaborasi.\nProgram ini dirancang untuk menghadirkan pengalaman yang tidak hanya menyenangkan dan penuh petualangan, tetapi juga menghasilkan pembelajaran nyata yang dapat diterapkan dalam kehidupan dan dunia kerja.",
+    "duration": "Full day (00.00-12.00)",
+    "price": 595000,
+    "rating": 4.9,
+    "reviewsCount": 66,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Program ini hadir untuk mentransformasi pengembangan tim menjadi misi epik penyelamatan harmoni alam, di mana peserta akan merasakan kombinasi menegangkan antara taktik kolaborasi di medan ekstrem dan koneksi magis dengan kearifan lokal suku Tengger. Pengalaman ini sepenuhnya tidak dapat direplikasi di tempat lain karena memanfaatkan lanskap geografis unik lautan pasir aktif dan spiritualitas hidup Sang Kaldera secara langsung sebagai ruang bermain sekaligus refleksi dinamika kelompok."
     ],
-    gallery: ['https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "✓ Transportasi shuttle start Malang Kota",
+      "✓ Transportasi jip 4x4 meeting point rest area Tumpang / Wringinanom",
+      "✓ Driver, BBM, Parkir",
+      "✓ Retribusi kendaraan Jip Paguyuban",
+      "✓ Tiket masuk kawasan TNBTS",
+      "✓ Asuransi lokasi wisata Kawasan TNBTS",
+      "✓ Tour guide yang ramah dan berpengalaman",
+      "✓ 7 Destinasi wisata di Bromo:",
+      "• Sunrise view point",
+      "• Widodaren",
+      "• Kawah Bromo",
+      "• Pura Luhur Poten",
+      "• Pasir berbisik",
+      "• Savana",
+      "• Lembah Watangan",
+      "✓ Medical kit/P3K Standar"
+    ],
+    "excluded": [
+      "Hotel,",
+      "makan peserta,",
+      "video,",
+      "perizinan drone di bromo,",
+      "transportasi luar kota malang"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "00.00 – 00.30",
+        "activities": [
+          "Penjemputan peserta",
+          "Kota Malang",
+          "Koordinasi kehadiran peserta, pengecekan jumlah dan kondisi fisik awal, briefing singkat perjalanan dan keselamatan."
+        ]
+      },
+      {
+        "title": "00.30 – 01.30",
+        "activities": [
+          "Perjalanan ke rest area",
+          "Rest Area Tumpang / Wringinanom",
+          "Shuttle jip, penggunaan toilet, dan memastikan kesiapan sebelum berangkat; pengingat penggunaan pakaian hangat."
+        ]
+      },
+      {
+        "title": "01.30 – 03.30",
+        "activities": [
+          "Perjalanan menuju Bromo",
+          "Bromo",
+          "Monitoring kondisi peserta selama perjalanan malam dan menjaga ketertiban di kendaraan. Pastikan peserta beristirahat."
+        ]
+      },
+      {
+        "title": "03.30 – 05.30",
+        "activities": [
+          "Sunrise Time",
+          "Bukit Kingkong",
+          "Atur posisi peserta, briefing keamanan area tebing, dokumentasi, dan pengelolaan waktu sunrise. Pastikan peserta tidak terpencar."
+        ]
+      },
+      {
+        "title": "05.30 – 06.30",
+        "activities": [
+          "Perjalanan menuju Bukit Widodaren",
+          "Bromo",
+          "Transisi kegiatan, memastikan peserta tetap hangat dan aman, serta persiapan aktivitas reflektif di Widodaren."
+        ]
+      },
+      {
+        "title": "06.30 – 07.00",
+        "activities": [
+          "Explore Wisata",
+          "Widodaren",
+          "Fasilitasi journaling alam, piknik ringan, dan fun games; menjaga suasana kondusif serta kebersihan area."
+        ]
+      },
+      {
+        "title": "07.00 – 08.00",
+        "activities": [
+          "Explore Wisata",
+          "Kawah Gunung Bromo & Pura Luhur Poten",
+          "Briefing etika budaya dan keselamatan, pengaturan alur kunjungan, serta pengawasan di area kawah."
+        ]
+      },
+      {
+        "title": "08.00 – 09.00",
+        "activities": [
+          "Explore Wisata",
+          "Pasir Berbisik",
+          "Arahkan aktivitas eksplorasi dan foto, jaga jarak aman, serta pastikan peserta tidak terpencar."
+        ]
+      },
+      {
+        "title": "09.00 – 10.00",
+        "activities": [
+          "Explore Wisata",
+          "Savana & Lembah Watangan",
+          "Pengelolaan waktu eksplorasi dan foto, serta penggunaan toilet."
+        ]
+      },
+      {
+        "title": "10.00 – 11.00",
+        "activities": [
+          "Perjalanan kembali ke rest area & shuttle jip",
+          "Rest Area Tumpang / Wringinanom",
+          "Koordinasi transportasi dan memastikan tidak ada peserta yang tertinggal."
+        ]
+      },
+      {
+        "title": "11.00 – 12.00",
+        "activities": [
+          "Perjalanan kembali ke dropping point",
+          "Kota Malang",
+          "Koordinasi transportasi dan memastikan tidak ada peserta yang tertinggal."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'labuan-bajo-pink-beach-romantic-picnic',
-    name: 'Pink Beach Private Sunset & Seafood BBQ Picnic',
-    slug: 'labuan-bajo-pink-beach-romantic-picnic',
-    destinationId: 'labuan-bajo',
-    attractionId: 'pink-beach',
-    image: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80',
-    description: 'Sail to a secluded stretch of Pink Beach for a private, romantic sunset picnic. Feast on fresh lobster and red snapper grilled over coconut husks by your personal butler.',
-    duration: '6 Hours',
-    price: 2625000,
-    rating: 4.9,
-    reviewsCount: 22,
-    category: 'Culinary Journey',
-    highlights: ['Private beach setup', 'Personal butler and chef', 'Grilled lobster feast', 'Sunset sail from Komodo'],
-    included: ['Speedboat transfer', 'Luxury beach mat & tent setup', 'Full BBQ seafood dinner', 'Chilled white wine bottle', 'All permits'],
-    excluded: ['Tips'],
-    meetingPoint: 'Labuan Bajo hotel lobby',
-    itinerary: [
-      { title: '02:30 PM - Cruise to Pink Beach', activities: ['Enjoy speedboat ride past scenic volcanic islands'] },
-      { title: '04:00 PM - Beach Relaxation & Snorkel', activities: ['Enjoy private canopy setup, snorkel the reef'] },
-      { title: '06:00 PM - Sunset BBQ Feast', activities: ['Watch sunset paint the shore pink, enjoy lobster and fish grilled live on the beach'] }
+    "id": "purwakarta-corporate-team-leader-team-power-excellence-an-experiential-leadership-character-building-program",
+    "name": "CORPORATE TEAM LEADER & TEAM POWER EXCELLENCE – An Experiential Leadership & Character Building Program",
+    "slug": "corporate-team-leader-team-power-excellence-an-experiential-leadership-character-building-program",
+    "destinationId": "purwakarta",
+    "attractionId": "waduk-jatiluhur",
+    "image": "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=800&q=80",
+    "description": "Program experiential learning berbasis alam terbuka yang dirancang untuk membangun karakter, kepemimpinan, teamwork, komunikasi, dan resiliensi karyawan melalui berbagai aktivitas outdoor seperti canoeing, raft building, lintas medan, high rope, dan low rope simulation di kawasan Waduk Jatiluhur.",
+    "duration": "Mulai 3 Hari 2 Malam atau 3 Hari 3 Malam.",
+    "price": 2000000,
+    "rating": 4.5,
+    "reviewsCount": 37,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Melalui program CORPORATE TEAM LEADER & TEAM POWER EXCELLENCE, para peserta yang merupakan karyawan baik Junior maupun Senior termasuk Board of Director (BOD) dapat menemukan kekuatan bersinergi (Cross Layer & Cross Function) dan mampu beradaptasi dengan berbagai situasi dan kondisi terkini yang secara dinamis berubah serta memahami dan terlatih dalam memenuhi tuntutan dunia bisnis dan korporasi yang menuntut Kepemimpinan (Leading by Example) yang dapat memberi contoh dan kemampuan bergotong royong mencapai pertumbuhan yang sesuai dengan tuntutan Perusahaan.",
+      "Melalui SAMAPTA CHARACTER BUILDING BOOT CAMP, para peserta calon karyawan baru dibentuk untuk memiliki kemampuan berkomunikasi (Inter Relationship Skill), siap beradaptasi, suka tantangan dan respect pada lingkungan setempat termasuk para Junior dan Senior di perusahaan."
     ],
-    gallery: ['https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Fasilitator, Transportasi Bus dan Perahu, Peralatan Safety, Perlengkapan Simulasi,",
+      "Perlengkapan Rescue Boat",
+      "Makan Minum & Logistik selama aktifitas",
+      "Dokumentasi Photo dan Video"
+    ],
+    "excluded": [
+      "Perlengkapan Pribadi (Personal Effect)",
+      "Obat2an Pribadi",
+      "Camilan (Snakck) Pribadi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1626266028882-963a7df23023?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'labuan-bajo-diving-manta-point',
-    name: 'Scuba Diving Day Trip - Manta Point & Castle Rock',
-    slug: 'labuan-bajo-diving-manta-point',
-    destinationId: 'labuan-bajo',
-    attractionId: 'komodo-island',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80',
-    description: 'For certified divers. Explore Komodo\'s world-famous high-current dive sites. Drift past mantas at Manta Point and see sharks at Castle Rock.',
-    duration: '8 Hours',
-    price: 1800000,
-    rating: 4.9,
-    reviewsCount: 62,
-    category: 'Adventure and Challenge',
-    highlights: ['2 drift dives in Komodo', 'High chance of Manta Ray sightings', 'Professional PADI Divemaster guides', 'Custom dive catamaran boat'],
-    included: ['2 tanks and weights', 'Full dive gear rental', 'Certified Divemaster (max 1:4 ratio)', 'Lunch and snacks on board'],
-    excluded: ['National Park dive permit fee ($35)'],
-    meetingPoint: 'Labuan Bajo Dive Center',
-    itinerary: [
-      { title: '07:30 AM - Gear Check & Sail', activities: ['Briefing, load gear onto custom dive boat, sail to national park'] },
-      { title: '09:30 AM - Dive 1: Manta Point', activities: ['Drift dive along 15m deep cleaning station, spot feeding mantas'] },
-      { title: '12:00 PM - Buffet Lunch on Boat', activities: ['Relax on sun deck, log dives'] },
-      { title: '01:30 PM - Dive 2: Castle Rock', activities: ['Deep sea mount dive, watch grey reef sharks, giant trevally, and schooling barracudas'] }
+    "id": "bali-balinese-gastronomy-experience-the-nyat-nyat-challenge",
+    "name": "Balinese Gastronomy Experience - The Nyat – Nyat Challenge",
+    "slug": "balinese-gastronomy-experience-the-nyat-nyat-challenge",
+    "destinationId": "bali",
+    "attractionId": "kintamani",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "description": "Program experiential learning berbasis gastronomi yang mengajak peserta mengeksplorasi budaya kuliner Bali melalui pengalaman berbelanja di pasar tradisional, memasak hidangan khas Mujair Nyat-Nyat, serta merefleksikan nilai kolaborasi, kepemimpinan, komunikasi, dan adaptasi dalam tim.",
+    "duration": "Half day",
+    "price": 50000002000000,
+    "rating": 4.5,
+    "reviewsCount": 72,
+    "category": "Culinary Journey",
+    "highlights": [
+      "Gastronomy Experience adalah sebuah program pembelajaran berbasis Experiential Learning yang mengajak peserta memasuki dunia gastronomi bukan sebagai koki, melainkan sebagai pembelajar. tentang budaya, kerja sama, kreativitas, dan kesadaran terhadap keberlanjutan. Melalui rangkaian tantangan kuliner yang interaktif dan penuh makna, peserta tidak hanya belajar memasak makanan, tetapi juga memahami bagaimana setiap peran, setiap keputusan, dan setiap komunikasi memengaruhi hasil akhir yang dicapai bersama. Dengan pendekatan ini, program Gastronomy bukan lagi sekadar kegiatan memasak, tetapi menjadi simulasi organisasi yang sangat kuat untuk mempelajari kolaborasi, kepemimpinan, komunikasi, inovasi, adaptabilitas, ownership, trust, dan budaya kerja berkinerja tinggi"
     ],
-    gallery: ['https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80']
-  },
-
-  // Surabaya Programs (6)
-  {
-    id: 'surabaya-historical-sightseeing',
-    name: 'Surabaya Heritage Colonial & Museum Program',
-    slug: 'surabaya-historical-sightseeing',
-    destinationId: 'surabaya',
-    attractionId: 'house-of-sampoerna',
-    image: 'https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80',
-    description: 'Explore the heritage of East Java\'s capital. Visit House of Sampoerna, see the submarine monument, and learn history at the Heroes Monument.',
-    duration: '6 Hours',
-    price: 435000,
-    rating: 4.5,
-    reviewsCount: 54,
-    category: 'Cultural Immersion',
-    highlights: ['Watch live clove cigarette rolling', 'Program inside KRI Pasopati Submarine', 'Visit historic Heroes Monument', 'Air-conditioned transport'],
-    included: ['Transport with driver', 'All museum entry fees', 'Local program guide', 'Traditional East Javanese lunch (Rujak Cingur)'],
-    excluded: ['Personal tips'],
-    meetingPoint: 'Surabaya hotels pickup',
-    itinerary: [
-      { title: '09:00 AM - House of Sampoerna', activities: ['Explore colonial architecture, view the tobacco museum, watch workers roll 300 cigarettes per hour'] },
-      { title: '11:30 AM - Submarine Monument', activities: ['Enter the authentic Russian Whiskey-class submarine, program the torpedo and engine rooms'] },
-      { title: '01:00 PM - Local Lunch & Heroes Monument', activities: ['Eat authentic Surabaya peanut salad', 'Visit the war museum under the giant monuments spire'] }
+    "included": [
+      "Fasilitator, Transport peserta dalam program bukan menuju dan pulang ke venue, Coffee Break, perijinan lokasi, Refreshment Water, alat memasak, modal belanja bahan & Bumbu, Dokumentasi program"
     ],
-    gallery: ['https://images.unsplash.com/photo-1601999109332-542b18dbec57?auto=format&fit=crop&w=800&q=80']
+    "excluded": [
+      "Transport peserta menuju Kintamani dan balik/pulang",
+      "Penginapan",
+      "Pengeluaran di luar harga paket"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'surabaya-suramadu-madura-culture',
-    name: 'Suramadu Bridge & Madura Island Day Program',
-    slug: 'surabaya-suramadu-madura-culture',
-    destinationId: 'surabaya',
-    attractionId: 'suramadu-bridge',
-    image: 'https://images.unsplash.com/photo-1589979482837-e74f2e145060?auto=format&fit=crop&w=800&q=80',
-    description: 'Cross the magnificent Suramadu National Bridge to Madura Island. Visit traditional batik centers, see limestone cliffs of Bukit Jaddih, and sample famous duck satay.',
-    duration: '8 Hours',
-    price: 735000,
-    rating: 4.6,
-    reviewsCount: 78,
-    category: 'Cultural Immersion',
-    highlights: ['Cross Indonesia\'s longest bridge', 'See white limestone cliffs of Jaddih', 'Visit Bangkalan traditional batik village', 'Feast on authentic Madura Duck Satay'],
-    included: ['Private car & bridge tolls', 'Entrance fees', 'Traditional lunch platter', 'English guide driver'],
-    excluded: ['Gratuities'],
-    meetingPoint: 'Surabaya hotels lobby',
-    itinerary: [
-      { title: '08:00 AM - Cross Suramadu Bridge', activities: ['Scenic bridge drive over Madura strait'] },
-      { title: '09:30 AM - Bukit Jaddih Cliffs', activities: ['Explore giant white limestone mining cliffs and blue swimming pools'] },
-      { title: '12:00 PM - Maduran Duck Lunch', activities: ['Dine on Bebek Sinjay, famous spicy fried duck with mango salad'] },
-      { title: '02:00 PM - Tresna Art Batik', activities: ['Visit traditional weaving house, see historical Maduran design methods'] }
+    "id": "banyuwangi-beautiful-terracotta-of-banyuwangi",
+    "name": "Beautiful Terracotta of Banyuwangi",
+    "slug": "beautiful-terracotta-of-banyuwangi",
+    "destinationId": "banyuwangi",
+    "attractionId": "taman-gandrung-terakota",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "Sebuah perjalanan pembelajaran berbasis destinasi yang mengajak peserta menjelajahi keindahan budaya, seni, dan alam Banyuwangi melalui pengalaman langsung di Taman Gandrung Terakota. Peserta memasuki peran sebagai Pejalan Gandrung, mengikuti rangkaian eksplorasi budaya dan alam yang dirancang untuk membangun kolaborasi, kepemimpinan, kepekaan lingkungan, serta refleksi diri.",
+    "duration": "4 Jam",
+    "price": 1450000,
+    "rating": 4.8,
+    "reviewsCount": 49,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Program ini mengubah destinasi menjadi ruang belajar yang hidup melalui rangkaian tantangan, observasi, interaksi budaya, eksplorasi alam, dan refleksi, serta menggunakan Taman Gandrung Terakota sebagai sumber utama pengalaman belajar. Setiap tantangan dirancang berdasarkan karakter budaya, lanskap, karya seni, dan ekologi yang hanya dimiliki oleh destinasi ini sebagai ruang pembelajaran. Peserta diajak membangun makna dari setiap pengalaman sehingga memperoleh pembelajaran yang dapat diterapkan dalam kehidupan pribadi, sosial, maupun profesional."
     ],
-    gallery: ['https://images.unsplash.com/photo-1589979482837-e74f2e145060?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Learning concept, mission kit, all facilitators team, tiket masuk kawasan dan perijinan kegiatan, meals & snack, spanduk/banner/backdrop, air mineral, transport peserta PP hotel - venue, alat & bahan permainan utama, P3K standard, tim medis, dokumentasi foto+video+drone"
+    ],
+    "excluded": [
+      "Biaya menuju dan dari Banyuwangi, akomodasi hotel, hadiah, doorprize, sewa alat, wisata lainnya, mini stage, extra property, personal expenses, sertifikat, asuransi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'surabaya-bromo-midnight-sunrise',
-    name: 'Mount Bromo Volcano Sunrise Midnight Program',
-    slug: 'surabaya-bromo-midnight-sunrise',
-    destinationId: 'surabaya',
-    attractionId: 'suramadu-bridge',
-    image: 'https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80',
-    description: 'Depart Surabaya at midnight to witness the sunrise over the volcanic landscape of Mount Bromo. Climb the crater rim and ride 4x4 jeeps across the sea of sand.',
-    duration: '12 Hours',
-    price: 1650000,
-    rating: 4.9,
-    reviewsCount: 345,
-    category: 'Adventure and Challenge',
-    highlights: ['Midnight departure from Surabaya', 'Bromo sunrise view from Penanjakan', 'Climb volcanic active crater steps', 'Cross the Sea of Sand in 4x4 Jeep'],
-    included: ['Private SUV transfer from Surabaya', 'Shared 4x4 Jeep in Bromo', 'National park entrance fees', 'Warm breakfast', 'Local Bromo guide'],
-    excluded: ['Horse ride on Sea of Sand ($10, optional)', 'Personal winter jackets'],
-    meetingPoint: 'Surabaya hotels/airport pickup at 11:30 PM',
-    itinerary: [
-      { title: '11:30 PM - Depart Surabaya', activities: ['Midnight drive south to Probolinggo village'] },
-      { title: '02:30 AM - Board 4x4 Jeep', activities: ['Switch to 4x4 Jeep, drive up Mount Penanjakan through dark forest'] },
-      { title: '04:30 AM - Bromo Sunrise Show', activities: ['Watch sun illuminate Mount Bromo crater and Mount Semeru volcano against mist clouds'] },
-      { title: '06:30 AM - Sea of Sand & Crater hike', activities: ['Drive Jeep down to Sea of Sand', 'Walk or ride horse to volcano base, climb 250 steps to active smoking crater rim'] },
-      { title: '09:00 AM - Breakfast & return', activities: ['Enjoy hot breakfast at local lodge, drive back to Surabaya'] }
+    "id": "jakarta-the-lost-code",
+    "name": "THE LOST CODE",
+    "slug": "the-lost-code",
+    "destinationId": "jakarta",
+    "attractionId": "kota-tua",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "The Lost Code adalah program Amazing Race berbasis eksplorasi destinasi yang mengajak peserta menjalankan misi mengungkap sebuah kode rahasia yang hilang. Melalui serangkaian tantangan kolaboratif yang tersebar di berbagai titik destinasi Jakarta, peserta dituntut untuk berkomunikasi secara efektif, menyusun strategi, memecahkan masalah, dan bekerja sama untuk mengumpulkan petunjuk hingga berhasil membuka The Lost Code.\n\nProgram ini menghadirkan pengalaman belajar yang menyenangkan sekaligus bermakna, di mana peserta memahami bahwa keberhasilan tidak ditentukan oleh kemampuan individu semata, tetapi oleh kemampuan tim dalam membangun kolaborasi, kepercayaan, dan koordinasi menuju tujuan bersama.",
+    "duration": "2 - 4 jam",
+    "price": 1000000,
+    "rating": 4.7,
+    "reviewsCount": 77,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Amazing Race Experience dengan storyline misteri yang kuat dan engaging.",
+      "Memanfaatkan destinasi ikonik Jakarta sebagai arena petualangan nyata.",
+      "Menggabungkan eksplorasi kota, pemecahan masalah, dan team challenge.",
+      "Mengembangkan keterampilan komunikasi, kolaborasi, strategi, dan pengambilan keputusan.",
+      "Menggunakan pendekatan Experiential Learning dengan sesi refleksi dan debrief.",
+      "Fleksibel dilaksanakan di berbagai area Jakarta seperti GBK Senayan maupun Kota Tua.",
+      "Cocok untuk corporate gathering, employee engagement, leadership development, dan team building."
     ],
-    gallery: ['https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "fasilitator, mission kit, dokumentasi foto, sertifikat, air minum, venue"
+    ],
+    "excluded": [
+      "transportasi peserta, makan siang."
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "00:00 - 00:10",
+        "activities": [
+          "Opening, Briefing & Mission Introduction"
+        ]
+      },
+      {
+        "title": "00:10 - 00:20",
+        "activities": [
+          "Team Formation & Team Identity Challenge"
+        ]
+      },
+      {
+        "title": "00:20 - 00:35",
+        "activities": [
+          "Challenge 1 – Number Code"
+        ]
+      },
+      {
+        "title": "00:35 - 00:50",
+        "activities": [
+          "Challenge 2 – Finding Picture"
+        ]
+      },
+      {
+        "title": "00:50 - 01:05",
+        "activities": [
+          "Challenge 3 – Dart Balloon Challenge"
+        ]
+      },
+      {
+        "title": "01:05 - 01:20",
+        "activities": [
+          "Challenge 4 – Ring Toss Challenge"
+        ]
+      },
+      {
+        "title": "01:20 - 01:35",
+        "activities": [
+          "Challenge 5 – Code Break Challenge"
+        ]
+      },
+      {
+        "title": "01:35 - 01:50",
+        "activities": [
+          "Final Mission – Unlock The Lost Code"
+        ]
+      },
+      {
+        "title": "01:50 - 02:00",
+        "activities": [
+          "Debrief, Winner Announcement & Closing"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
+    ]
   },
   {
-    id: 'surabaya-foodie-culinary-program',
-    name: 'Surabaya Legendary Night Food Crawl',
-    slug: 'surabaya-foodie-culinary-program',
-    destinationId: 'surabaya',
-    attractionId: 'house-of-sampoerna',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
-    description: 'Taste Surabaya\'s best night markets. Try rich black beef soup (Rawon), savory tofu omelets (Tahu Tek), and sweet pancakes.',
-    duration: '4 Hours',
-    price: 375000,
-    rating: 4.7,
-    reviewsCount: 68,
-    category: 'Cultural Immersion',
-    highlights: ['Try legendary Rawon black soup', 'Taste authentic street food stalls', 'Sample local ginger drinks (Wedang)', 'Experienced food guide'],
-    included: ['All food & drink tastings (7+ items)', 'Local culinary guide', 'Minivan transfers between spots'],
-    excluded: ['Gratuities'],
-    meetingPoint: 'Surabaya Town Square',
-    itinerary: [
-      { title: '06:00 PM - Rawon Setan start', activities: ['Sample the famous "Satanic" midnight black beef soup flavored with black nuts (keluak)'] },
-      { title: '07:30 PM - Tahu Tek stall', activities: ['Watch vendor slice tofu and potatoes with scissors, served with rich sweet shrimp-paste peanut sauce'] },
-      { title: '09:00 PM - Traditional Ginger Tea', activities: ['Dine at roadside table, drink warm herbal ginger teas, return to hotel'] }
+    "id": "toba-batak-journey",
+    "name": "BATAK JOURNEY",
+    "slug": "batak-journey",
+    "destinationId": "toba",
+    "attractionId": "danau-toba",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "description": "Danau Toba banyak cerita klasik rakyat Sumatera Utara Juga banyak versi maka dijadikan produk program EL dengan latar belakang budaya dan kultur serta keindahan seperti kepingan surga. aneka ragam marga yang ada di kawasan danau toba.",
+    "duration": "Full Day",
+    "price": 1200000,
+    "rating": 4.7,
+    "reviewsCount": 43,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Mengenal Budaya Batak yang sangat banyak turunan MARGA",
+      "Khas kuliner yang sangat spesial",
+      "Tempat penuh sejarah",
+      "Destinasi wisata seperti kepingan surga"
     ],
-    gallery: ['https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Suvenir ulos wisata..Sor Tali/Topi Tali",
+      "Kapal Wisata",
+      "Program",
+      "Tiketing Venue",
+      "Air Mineral",
+      "Back up Sound",
+      "Property Memasak",
+      "Fasilitator",
+      "Lunch 1x prasmanan",
+      "Dokumentasi foto dan video berupa file soft copy"
+    ],
+    "excluded": [
+      "Saweran tor tor",
+      "Cofee Break."
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'surabaya-private-yacht-madura-strait',
-    name: 'Private Yacht Charter - Madura Strait Sunset Cruise',
-    slug: 'surabaya-private-yacht-madura-strait',
-    destinationId: 'surabaya',
-    attractionId: 'suramadu-bridge',
-    image: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80',
-    description: 'Charter a luxury private yacht to cruise the Madura Strait. Pass beneath the illuminated Suramadu Bridge at sunset and enjoy a gourmet sushi dinner.',
-    duration: '4 Hours',
-    price: 4485000,
-    rating: 4.9,
-    reviewsCount: 12,
-    category: 'Culinary Journey',
-    highlights: ['Private yacht charter', 'Sail under Suramadu Bridge at sunset', 'Gourmet Japanese-Indonesian fusion dinner', 'Chilled mocktails and wine'],
-    included: ['Yacht rental, captain & crew', 'Gourmet dinner & drinks', 'All harbor permits', 'Limousine pickup'],
-    excluded: ['Tips'],
-    meetingPoint: 'Surabaya Tanjung Perak Yacht Club',
-    itinerary: [
-      { title: '04:00 PM - Board Luxury Yacht', activities: ['Welcome drinks, check-in, set sail along Surabaya harbor'] },
-      { title: '05:30 PM - Suramadu Sunset Sail', activities: ['Position yacht under the bridge as sunset colors the sky and bridge lights turn on', 'Enjoy gourmet dinner'] }
+    "id": "yogyakarta-kalitalang-the-living-trail",
+    "name": "Kalitalang; The Living Trail",
+    "slug": "kalitalang-the-living-trail",
+    "destinationId": "yogyakarta",
+    "attractionId": "kali-talang",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "The Living Trail – Where Nature Teaches, Experience Transforms adalah program trekking berbasis experiential learning yang menjadikan alam sebagai ruang belajar untuk pengembangan personal dan tim. Melalui perjalanan di jalur Kalitalang dengan panorama Gunung Merapi, peserta diajak menghadapi berbagai tantangan yang merefleksikan dinamika kehidupan dan pekerjaan: bagaimana beradaptasi, mengambil keputusan, membangun kepercayaan, dan berkolaborasi untuk mencapai tujuan bersama.",
+    "duration": "5 Jam",
+    "price": 1250000,
+    "rating": 4.7,
+    "reviewsCount": 87,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Trekking experiential learning dengan panorama langsung Gunung Merapi.",
+      "Alam sebagai media pembelajaran dan refleksi diri.",
+      "Menggunakan metafora perjalanan untuk pengembangan individu dan tim.",
+      "Mengangkat nilai adaptabilitas, resiliensi, kolaborasi, dan sustainability.",
+      "Mengintegrasikan storytelling tentang Merapi dan ketangguhan masyarakat lereng gunung.",
+      "Menghadirkan immersive learning journey yang sulit direplikasi di destinasi lain."
     ],
-    gallery: ['https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Course Director",
+      "Lead Experiential Learning Facilitator",
+      "Experiential Learning Facilitator",
+      "Logistic & Technical Support",
+      "Trek & Safety Facilitator",
+      "Medical Team"
+    ],
+    "excluded": [
+      "Creative Program Development",
+      "Training Need Analysis",
+      "Accident Insurance",
+      "First Aid Bag",
+      "Venue Permit & Entrance Fee",
+      "Meals (Lunch & Snack)",
+      "Sound System Standard",
+      "Program Properties"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00 – 08.20",
+        "activities": [
+          "(20 menit)",
+          "Conditioning & Framing: Opening Circle & Storytelling Merapi",
+          "Area Parkir/ Pintu Masuk Kalitalang",
+          "Jangan terlalu banyak briefing teknis. Bangun rasa kagum (awe) terhadap Merapi dan alam. Fokus pada pertanyaan: \"Apa yang alam dapat ajarkan kepada kita hari ini?\" Hindari menjelaskan learning point terlalu dini."
+        ]
+      },
+      {
+        "title": "08.20 – 08.35 (15 menit)",
+        "activities": [
+          "The Gate of Transformation",
+          "“Leave & Carry”",
+          "Area Parkir/ Pintu Masuk Kalitalang",
+          "Dorong peserta jujur terhadap dirinya sendiri. Tidak perlu sharing panjang. Simpan hasilnya untuk direview kembali saat closing."
+        ]
+      },
+      {
+        "title": "08.35 – 09.30 (55 menit)",
+        "activities": [
+          "The Shifting Path",
+          "“Pace Challenge”",
+          "Jalur trekking awal menuju area perkebunan / vegetasi",
+          "Mulai observasi perilaku alami. Jangan terlalu sering memberi instruksi. Catat siapa yang memimpin, siapa yang menjaga kelompok, siapa yang cenderung pasif.",
+          "Biarkan peserta menemukan ritme sendiri. Amati bagaimana kelompok merespon anggota yang lebih lambat.",
+          "Debrief Singkat dengan gunakan pertanyaan pendek. Hindari analisis panjang. Fokus pada fakta dan perasaan."
+        ]
+      },
+      {
+        "title": "09.30 – 10.40",
+        "activities": [
+          "(70 menit)",
+          "The Resilience Field",
+          "“Rise Again Challenge”",
+          "Area terbuka dengan view bekas aliran material vulkanik",
+          "Ini titik utama munculnya ketidaknyamanan. Jangan menghilangkan frustrasi peserta terlalu cepat. Ketidaknyamanan adalah bahan belajar. Intervensi hanya jika tim benar-benar stuck.",
+          "Debrief singkat mulai dengan \"Apa yang terjadi?\" sebelum masuk ke \"Mengapa itu terjadi?\". Hindari memberi kesimpulan sebelum peserta menemukan sendiri maknanya."
+        ]
+      },
+      {
+        "title": "10.40 – 11.45",
+        "activities": [
+          "(65 menit)",
+          "The Ecosystem Zone",
+          "“Nature Network”",
+          "Area vegetasi / jalur alami yang lebih teduh",
+          "Fokus observasi pada aliran informasi. Siapa yang mendominasi? Siapa yang tidak didengar? Jangan hanya melihat hasil, tetapi proses interaksi.",
+          "Debrief gunakan metafora ekosistem alam. Hubungkan perilaku peserta dengan bagaimana alam bekerja melalui keterhubungan dan saling ketergantungan."
+        ]
+      },
+      {
+        "title": "11.45 – 12.20 (35 menit)",
+        "activities": [
+          "The Survivor’s LEsson",
+          "“Decision Under The Pressure”",
+          "Area yang menghadap kawasan Kaliadem atau titik yang dapat digunakan untuk storytelling sejarah Merapi",
+          "Kurangi instruksi. Biarkan peserta menikmati lanskap. Momen ini penting untuk transisi dari challenge menuju reflection.",
+          "Jangan fokus pada benar atau salahnya keputusan. Fokus pada bagaimana keputusan dibuat dan bagaimana tim merespon konsekuensinya."
+        ]
+      },
+      {
+        "title": "12.20 – 13.00",
+        "activities": [
+          "(40 menit)",
+          "The Merapi Summit View",
+          "“Silent Reflection”",
+          "Gardu Pandang Kalitalang / View Point Utama Merapi",
+          "aga suasana tetap tenang. Hindari suara pengeras atau briefing panjang. Berikan waktu hening minimal 5 menit sebelum pertanyaan refleksi diberikan. Ini adalah titik emosional tertinggi dalam program.",
+          "Sesi debrief hubungkan pengalaman dengan dunia kerja secara bertahap. Hindari ceramah. Gunakan pertanyaan seperti: \"Di mana situasi ini terjadi dalam pekerjaan kita?\""
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
   },
   {
-    id: 'surabaya-golf-luxury-day',
-    name: 'Surabaya VIP Golf Championship Course Day',
-    slug: 'surabaya-golf-luxury-day',
-    destinationId: 'surabaya',
-    attractionId: 'sub-monument',
-    image: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=800&q=80',
-    description: 'Play 18 holes at Ciputra Golf Club, East Java\'s largest championship golf course, with VIP service, caddy, and premium club rental.',
-    duration: '6 Hours',
-    price: 2235000,
-    rating: 4.7,
-    reviewsCount: 24,
-    category: 'Culinary Journey',
-    highlights: ['Play at 18-hole championship course', 'VIP private cart and premium caddy service', 'Access to exclusive Clubhouse locker & restaurant', 'High-end Taylormade club sets'],
-    included: ['18-hole green fees', 'Private buggy/cart', 'Professional caddy service', 'Taylormade club set rental', 'Executive lunch at clubhouse'],
-    excluded: ['Caddy tips ($15 recommendation)'],
-    meetingPoint: 'Ciputra Golf Club Pro Shop',
-    itinerary: [
-      { title: '06:30 AM - Registration & Warm-up', activities: ['Check-in at pro shop, pick up rental clubs, warm-up at driving range'] },
-      { title: '07:00 AM - Tee Off 18 Holes', activities: ['Play 18 holes through scenic hills and lakes courses, caddy assisting yardages'] },
-      { title: '11:30 AM - VIP Club Lunch', activities: ['Shower, relax, enjoy gourmet lunch at members restaurant'] }
+    "id": "lombok-amazing-journey-sirkuit-mandalika",
+    "name": "Amazing journey Sirkuit Mandalika",
+    "slug": "amazing-journey-sirkuit-mandalika",
+    "destinationId": "lombok",
+    "attractionId": "sirkuit-mandalika",
+    "image": "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80",
+    "description": "Amazing Journey Sirkuit Mandalika merupakan program eksplorasi berbasis destinasi yang mengajak peserta merasakan sensasi menjadi seorang pembalap di salah satu sirkuit internasional terbaik di dunia. Melalui perjalanan menyusuri lintasan Sirkuit Mandalika, peserta akan menghadapi berbagai tantangan tim yang memadukan unsur budaya Lombok, kerja sama, strategi, dan semangat kompetitif. Program ini menghadirkan pengalaman unik yang menggabungkan sport tourism, experiential learning, dan destination exploration.",
+    "duration": "2 Jam",
+    "price": 400000,
+    "rating": 4.9,
+    "reviewsCount": 70,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Eksplorasi di lintasan resmi Sirkuit Internasional Mandalika.",
+      "Menghadirkan sensasi menjadi pembalap MotoGP.",
+      "Perpaduan sport tourism, budaya Lombok, dan experiential learning.",
+      "Tantangan tim yang mendorong komunikasi dan kolaborasi.",
+      "Aktivitas interaktif dengan elemen budaya lokal seperti Cukli dan busana adat Sasak.",
+      "Penutupan dengan pengalaman eksklusif foto di podium juara."
     ],
-    gallery: ['https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=800&q=80']
+    "included": [
+      "Tiket masuk sirkuit, sepeda listrik , helm, desain program, air mineral, equipment game,snack"
+    ],
+    "excluded": [
+      "Dokumentasi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "16.30 -17.00",
+        "activities": [
+          "Ice Breaking",
+          "Depan garasi pembalap"
+        ]
+      },
+      {
+        "title": "17.00 -18.00",
+        "activities": [
+          "Amazing Journey",
+          "Sepanjang lintasin",
+          "sirkuitmana?",
+          "Instruksi khusus"
+        ]
+      },
+      {
+        "title": "18.00 -18.30",
+        "activities": [
+          "Debriefing",
+          "Depan garasi",
+          "pembalapDi mana?",
+          "Instruksi khusus"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1530948990335-1eb93cbe6430?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "toba-samosir-journey-kayu-pun-bisa-menari",
+    "name": "Samosir Journey – Kayu Pun Bisa Menari",
+    "slug": "samosir-journey-kayu-pun-bisa-menari",
+    "destinationId": "toba",
+    "attractionId": "pulau-samosir",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "description": "program destination-based exploration yang mengajak peserta menyelami filosofi dan kisah budaya Batak melalui legenda Sigale-gale. Peserta diajak menjadi keturunan terakhir Batak Toba yang bertugas menemukan Sigale-gale dan mempelajari tiga tarian Tor-tor melalui serangkaian tantangan berupa mystery box, trekking, bersepeda, hingga eksplorasi Desa Tomok. Program ini menggabungkan petualangan, budaya, dan pembelajaran tentang makna kerja, kolaborasi, serta warisan yang melampaui diri sendiri.",
+    "duration": "3 – 4 Jam",
+    "price": 1650000,
+    "rating": 4.5,
+    "reviewsCount": 98,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Menggabungkan adventure challenge dengan eksplorasi budaya Batak yang autentik.",
+      "Berlangsung di kawasan Danau Toba UNESCO Global Geopark.",
+      "Menghadirkan pengalaman imersif melalui legenda Sigale-gale dan Tor-tor Batak.",
+      "Memadukan trekking, gowes, permainan misi, dan cultural immersion dalam satu rangkaian program.",
+      "Memiliki experiential learning yang relevan dengan dunia kerja: purpose, kolaborasi, dan legacy.",
+      "Melibatkan komunitas lokal, pemandu lokal, dan pelaku usaha setempat."
+    ],
+    "included": [
+      "1. Fasilitator",
+      "2. Media program",
+      "3. Property program",
+      "4. Retribusi",
+      "5. Transportasi selama program",
+      "6. Air mineral",
+      "7. Backup first aid",
+      "8. Backup sound"
+    ],
+    "excluded": [
+      "Fotographer & Videographer",
+      "Belanja Souvenir",
+      "Akomodasi di Marianna Resort"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "palembang-journey-in-1-hour-lrt-palembang-challenge",
+    "name": "Journey in 1 Hour: LRT Palembang Challenge",
+    "slug": "journey-in-1-hour-lrt-palembang-challenge",
+    "destinationId": "palembang",
+    "attractionId": "lrt-palembang",
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+    "description": "Program eksplorasi kota berbasis petualangan yang mengajak peserta menjelajahi Palembang menggunakan moda transportasi LRT pertama di luar Pulau Jawa. Peserta ditantang menyelesaikan berbagai misi di sejumlah stasiun, mengungkap sejarah, budaya, kuliner, dan transformasi Kota Palembang melalui pengalaman belajar yang interaktif, kompetitif, dan menyenangkan.",
+    "duration": "4 jam",
+    "price": 787500,
+    "rating": 4.8,
+    "reviewsCount": 78,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Petualangan seru dan menantang berbatas waktu dengan menggunakan moda LRT di kota Palembang"
+    ],
+    "included": [
+      "Fasilitator, program, air mineral, kartu pass LRT, sertifikat peserta, makan siang, dokumentasi foto, tiket masuk area"
+    ],
+    "excluded": [
+      "Snack dan keperluan pribadi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.30 / 30 menit",
+        "activities": [
+          "Pembukaan dan Ice Breaking",
+          "Stasiun SMB 2",
+          "Buat semangat, happy dan jelas Rules kegiatannya"
+        ]
+      },
+      {
+        "title": "09.00 / 150 menit",
+        "activities": [
+          "Adventure Program",
+          "Seluruh Stasiun LRT",
+          "Aman dalam kegiatan"
+        ]
+      },
+      {
+        "title": "11.30 / 30 menit",
+        "activities": [
+          "Debrief",
+          "Jakabaring Sport City",
+          "Refleksi dan Feedback"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "jakarta-the-batavia-trail-jakarta-heritage-adventure-challenge",
+    "name": "The Batavia Trail – Jakarta Heritage Adventure Challenge",
+    "slug": "the-batavia-trail-jakarta-heritage-adventure-challenge",
+    "destinationId": "jakarta",
+    "attractionId": "kota-tua",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "Program petualangan urban yang mengajak peserta menjadi Trail Keeper untuk menelusuri jejak Batavia melalui serangkaian tantangan berbasis sejarah, budaya, dan kerja sama tim. Peserta bergerak dari Kota Tua hingga Glodok untuk memecahkan clue, mengumpulkan bukti perjalanan, dan menyusun Trail Code sebagai komitmen perilaku yang dibawa pulang.",
+    "duration": "Paket utama Half Day 4-5 jam. Tersedia Lite 3 jam, Full Day 7-8 jam, dan Corporate Challenge Lab",
+    "price": 295000,
+    "rating": 4.6,
+    "reviewsCount": 18,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Urban adventure berbasis kawasan heritage Jakarta Barat.",
+      "Menggabungkan sejarah, budaya, dan experiential learning.",
+      "Menggunakan metode clue hunt dan mission challenge.",
+      "Cocok untuk sekolah, korporasi, komunitas, dan keluarga.",
+      "Memiliki sesi refleksi dan Trail Code yang menghubungkan pengalaman dengan kehidupan nyata dan dunia kerja.",
+      "Dapat disesuaikan untuk berbagai segmen peserta dan kebutuhan organisasi."
+    ],
+    "included": [
+      "Lead facilitator, co-facilitator sesuai rasio, safety officer, mission kit, clue card, map challenge, lanyard/ID sederhana, air minum/refill, dokumentasi foto standar, P3K, sertifikat digital."
+    ],
+    "excluded": [
+      "Transportasi peserta, parkir, makan siang, tiket tambahan di luar paket, asuransi tambahan, venue khusus, konsumsi premium, bilingual facilitator, dan biaya izin khusus jika muncul."
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00-08.20",
+        "activities": [
+          "Registrasi, hydration check, mission kit",
+          "Taman Fatahillah",
+          "Cek peserta, lanyard, kelompok, emergency contact."
+        ]
+      },
+      {
+        "title": "08.20-08.45",
+        "activities": [
+          "Opening: The Trail Begins",
+          "Taman Fatahillah",
+          "Script pembuka, safety, peran Trail Keeper."
+        ]
+      },
+      {
+        "title": "08.45-09.30",
+        "activities": [
+          "Checkpoint 1 - Decision Maze",
+          "Museum Sejarah Jakarta",
+          "Clue sejarah, keputusan rute, mini debrief."
+        ]
+      },
+      {
+        "title": "09.30-10.15",
+        "activities": [
+          "Checkpoint 2 - Trust Challenge",
+          "Museum Bank Indonesia / area sekitar",
+          "Koordinasi pendaftaran jika masuk museum; opsi outdoor clue jika tidak masuk."
+        ]
+      },
+      {
+        "title": "10.15-11.00",
+        "activities": [
+          "Checkpoint 3 - Riverside Evidence Hunt",
+          "Kali Besar",
+          "Photo evidence, observasi, peta, dan batas waktu."
+        ]
+      },
+      {
+        "title": "11.00-11.35",
+        "activities": [
+          "Checkpoint 4 - Final Code Walk",
+          "Glodok/Pancoran atau titik terdekat",
+          "Komunikasi etis, clue akhir, dan nilai keberagaman."
+        ]
+      },
+      {
+        "title": "11.35-12.15",
+        "activities": [
+          "Trail Code Council",
+          "Area teduh Kota Tua",
+          "Presentasi bukti, nilai, dan solusi tim."
+        ]
+      },
+      {
+        "title": "12.15-12.45",
+        "activities": [
+          "After-Trail Reflection & Victory Ritual",
+          "Area debrief",
+          "Debrief EL, action card, foto bersama."
+        ]
+      },
+      {
+        "title": "08.00-08.20",
+        "activities": [
+          "Registrasi, hydration check, mission kit",
+          "Taman Fatahillah",
+          "Cek peserta, lanyard, kelompok, emergency contact."
+        ]
+      },
+      {
+        "title": "08.20-08.45",
+        "activities": [
+          "Opening: The Trail Begins",
+          "Taman Fatahillah",
+          "Script pembuka, safety, peran Trail Keeper."
+        ]
+      },
+      {
+        "title": "08.45-09.30",
+        "activities": [
+          "Checkpoint 1 - Decision Maze",
+          "Museum Sejarah Jakarta",
+          "Clue sejarah, keputusan rute, mini debrief."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
+    ]
+  },
+  {
+    "id": "yogyakarta-plaosan-past-present-future",
+    "name": "Plaosan - Past, Present, Future",
+    "slug": "plaosan-past-present-future",
+    "destinationId": "yogyakarta",
+    "attractionId": "candi-plaosan",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "Program eksplorasi sejarah dan budaya yang mengajak peserta menyusuri jejak peradaban di Candi Plaosan, sebuah candi unik yang merepresentasikan akulturasi dua agama besar pada masa lampau. Melalui berbagai tantangan dan misi, peserta diajak kembali ke masa lalu untuk memahami nilai toleransi, peradaban, dan pembelajaran yang relevan bagi kehidupan masa kini.",
+    "duration": "4 jam halfday",
+    "price": 240000,
+    "rating": 4.6,
+    "reviewsCount": 74,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Eksplorasi di Candi Plaosan, candi dengan sejarah akulturasi dua agama yang unik di Indonesia.",
+      "Menggabungkan unsur sejarah, budaya, dan experiential learning.",
+      "Menghadirkan pengalaman “kembali ke masa lampau” melalui misi dan tantangan eksplorasi."
+    ],
+    "included": [
+      "Fasilitator, Master Game, Dokumentasi, Perijinan, Mineral water"
+    ],
+    "excluded": [
+      "Konsumsi snack dan makan siang"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "makassar-malino-amazing-journey",
+    "name": "MALINO AMAZING JOURNEY",
+    "slug": "malino-amazing-journey",
+    "destinationId": "makassar",
+    "attractionId": "kota-malino",
+    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
+    "description": "Malino Amazing Journey adalah sebuah program perjalanan ke destinasi-destinasi yang khas dan unik yang dapat memberikan pengalaman yang berkesan bagi yang mengalaminya. Dikemas dengan konsep Eksperiential Learning, peserta akan merasakan pengalaman berpetualang sambil belajar bekerja sama dalam satu tim. Peserta akan melakukan perjalanan ke destinasi yang mewakili unsur culture, kuliner dan heritage di sekitar lokasi kegiatan. Di setiap lokasi, peserta akan dihadapkan kepada tantangan yang harus diselesaikan untuk memperoleh petunjuk menuju perjalanan berikutnya sampai ke garis finish.",
+    "duration": "3 – 4 jam",
+    "price": 450000,
+    "rating": 4.6,
+    "reviewsCount": 62,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Peserta melakukan perjalanan ke beberapa destinasi khas di Malino yang mewakili unsur wisata alam (Air Terjun Takapala), kuliner (Cendol Malino/Tenteng Malino/Kopi Luwak Malino) dan heritage (Balla Lompoa)."
+    ],
+    "included": [
+      "Mission Kit, Media Transportasi, Dokumentasi, Snack, Sertifikat, HTM Destinasi"
+    ],
+    "excluded": [
+      "Biaya perjalanan Makassar - Malino",
+      "Hotel / Penginapan",
+      "Atribut dll"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "09.00 – 09.30 / 30 menit",
+        "activities": [
+          "Penjelasan Program",
+          "Start Point",
+          "Scan QR Code"
+        ]
+      },
+      {
+        "title": "09.30 – 11.30 /120 menit",
+        "activities": [
+          "Perjalanan (Journey) Peserta",
+          "Semua destinasi",
+          "Ikuti instruksi yang telah disiapkan"
+        ]
+      },
+      {
+        "title": "11.30 – 12.00 / 30 menit",
+        "activities": [
+          "Penyelesaian tugas (upload video)",
+          "Finish Point",
+          "Ikuti instruksi yang telah disiapkan"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "lampung-sasmita-rimba-ritual-utusan-datuk-tnbbs",
+    "name": "SASMITA RIMBA: RITUAL UTUSAN DATUK TNBBS",
+    "slug": "sasmita-rimba-ritual-utusan-datuk-tnbbs",
+    "destinationId": "lampung",
+    "attractionId": "rhino-camp-tanggamus",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "description": "Sebuah ekspedisi imersif selama 4 jam di jantung Taman Nasional Bukit Barisan Selatan, di mana peserta bertransformasi menjadi \"Utusan Datuk\" yang menjalankan misi konservasi melalui river trekking, jungle tracking, pelacakan jejak Gajah Sumatra, dan pencarian habitat Rafflesia arnoldii. Program ini dirancang untuk meluruhkan ego, membangun resiliensi, serta memperkuat kolaborasi tim melalui pengalaman alam yang autentik dan penuh makna.",
+    "duration": "4 Jam",
+    "price": 750000,
+    "rating": 4.6,
+    "reviewsCount": 24,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Di dalam jantung TNBBS, keajaiban terbesar tidak lahir dari kekuatan untuk berdiri sendiri, melainkan dari keberanian untuk saling terhubung dan bersandar. Program ini dikemas sebagai sebuah simulasi peran (role-play expedition) intensif selama 4 jam yang menantang resiliensi (daya juang) fisik dan mental peserta. Di sini, keberhasilan tidak dinilai dari siapa yang tercepat, melainkan bagaimana setiap individu mampu menekan ego mereka untuk saling bersandar, berkolaborasi, dan menjaga keselarasan dengan tim serta alam demi menyelesaikan misi konservasi"
+    ],
+    "included": [
+      "SIMAKSI",
+      "Pemandu lokal",
+      "air mineral",
+      "expedition kit",
+      "fasilitator",
+      "Makan siang",
+      "Dokumentasi ( foto & video )"
+    ],
+    "excluded": [
+      "Penginapan",
+      "Transportasi ke Krui"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00 / 20’",
+        "activities": [
+          "Peserta tiba di Gerbang Batas TNBBS.",
+          "Pembukaan oleh Pemandu lokal sebagai Tetua Adat dengan membacakan narasi \"Perjanjian Lama\".",
+          "Pembagian kelompok (5-7 orang) dan pembagian peran sakral secara mandiri (Sang Malim, Pawang Jejak, Bujang Penjaga, Tabib Rimba, Pewarta Rimba).",
+          "Pendistribusian Kit Utusan (Peta Buta, Kompas, Logbook, P3K",
+          "Peserta tiba di Gerbang Batas TNBBS"
+        ]
+      },
+      {
+        "title": "08.20 / 60’",
+        "activities": [
+          "Perjalanan dimulai dengan memasuki jalur aliran sungai TNBBS.",
+          "The Challenge: Berjalan menyusuri arus air dan batuan licin. Sang Malim menavigasi arah, Bujang Penjaga mengatur keselamatan barisan.",
+          "Ultimate Team Challenge (Menit ke-08.50): Tim harus menyeberangi area sungai terdalam menggunakan formasi rantai manusia tanpa tali (Rope-less Chain) untuk menjaga agar Logbook Ekspedisi tidak basah.",
+          "Perjalanan dimulai dengan memasuki jalur aliran sungai TNBBS."
+        ]
+      },
+      {
+        "title": "09.20 / 60’",
+        "activities": [
+          "Tim keluar dari sungai dan masuk ke vegetasi hutan hujan tropis yang rapat dan lembap.",
+          "Stamina mulai terkuras, medan mulai menanjak.",
+          "The Challenge: Pawang Jejak memimpin tim merunduk di lantai hutan untuk mencari dan mengidentifikasi minimal 3 bukti autentik jejak Gajah Sumatra (Datuk). Pewarta Rimba mencatat koordinat dan menggambarnya di logbook. Tabib Rimba mencari vegetasi obat tradisional di sekitar jalur",
+          "Tim keluar dari sungai dan masuk ke vegetasi hutan hujan tropis yang rapat dan lembap."
+        ]
+      },
+      {
+        "title": "10.20 / 40’",
+        "activities": [
+          "Tim bergerak cepat di bawah tekanan batas waktu menuju koordinat habitat Rafflesia arnoldii.",
+          "The Challenge: Menemukan inang tanaman merambat (liana) tempat bunga raksasa tersebut tumbuh. Ketelitian diuji di tengah kelelahan fisik puncak.",
+          "Begitu bunga/kuncup ditemukan, seluruh anggota tim wajib meletakkan perlengkapan dan berdiri melingkar",
+          "Koordinat habitat Rafflesia arnoldii."
+        ]
+      },
+      {
+        "title": "11.00 / 30’",
+        "activities": [
+          "Aktivitas: Duduk melingkar di bawah kanopi hutan purba di dekat area habitat.",
+          "Memulai Ritual Hening Rimba selama 3 menit (mata terpejam, gawai mati).",
+          "Fasilitasi Debrief: The Mentor mengumpulkan logbook dan memimpin diskusi reflektif (What & So What?) mengenai peluruhan ego, arti penting saling bersandar dalam tim, serta filosofi ketangguhan hidup dari bunga Rafflesia",
+          "Vegetasi Lembap & Habitat Rafflesia"
+        ]
+      },
+      {
+        "title": "11.30 / 30",
+        "activities": [
+          "Perjalanan keluar dari kawasan hutan menuju kebun masyarakat penyangga TNBBS.",
+          "Aktivitas: Peserta menuliskan satu komitmen aksi nyata tanpa ego (Sumpah Utusan) di selembar kertas.",
+          "Kertas diserahkan secara simbolis kepada perwakilan warga sebagai tiket masuk perjamuan.",
+          "Selebrasi: Menikmati makan siang bersama dengan menu kuliner tradisional khas lokal yang disiapkan oleh warga desa penyangga. Program selesai.",
+          "Kebun Masyarakat Penyangga"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "jakarta-capital-quest-the-nation-builders",
+    "name": "Capital Quest: The Nation Builders",
+    "slug": "capital-quest-the-nation-builders",
+    "destinationId": "jakarta",
+    "attractionId": "monas",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "Peserta berperan sebagai Nation Builders: tim yang ditugaskan menelusuri jejak  keputusan-keputusan besar yang membentuk Indonesia, dari Monas, Museum Nasional, Istiqlal-Katedral,  hingga Lapangan Banteng. Di setiap titik, tim memecahkan tantangan yang mengungkap hidden connection  antara sejarah dan kepemimpinan modern. Puncaknya: menyusun Blueprint Bangsa, dokumen nilai-nilai tim yang  terinspirasi dari perjalanan Nation Builders dan dibawa pulang sebagai kompas kerja",
+    "duration": "3-4 jam",
+    "price": 350000,
+    "rating": 4.8,
+    "reviewsCount": 85,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Capital Quest hadir untuk membuktikan bahwa nilai-nilai terbaik sebuah tim sudah  pernah diwujudkan dalam skala bangsa, dan jejaknya masih bisa ditemukan di kawasan Monas hingga  Lapangan Banteng. Seluruh tantangan dirancang dari karakter nyata lokasi: arsitektur Monas yang  monumental, koleksi 140.000+ artefak Museum Nasional, dialog toleransi Istiqlal-Katedral, dan sejarah  Lapangan Banteng. Pengalaman ini tidak bisa direplikasi di ruangan mana pun."
+    ],
+    "included": [
+      "Fasilitator dan Game Master Marshal di setiap titik, tiket masuk monas, mission kit  (peta custom, mission sheet, kartu clue), briefing dan debriefing, dokumentasi foto,  air minum peserta, Blueprint Bangsa (lembar nilai tim)"
+    ],
+    "excluded": [
+      "Transportasi peserta, makan dan minum peserta, kostum tematik (lanyard dan ID  card Nation Builders), videografi dan highlight reel, merchandise"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.30 / 30 menit",
+        "activities": [
+          "Registrasi dan briefing  umum",
+          "Area parkir Monas / titik  kumpul",
+          "Distribusikan mission kit,  otoped/sepeda listrik  disiapkan"
+        ]
+      },
+      {
+        "title": "09.00 / 15 menit",
+        "activities": [
+          "Character reveal dan  mission briefing: Nation  Builders",
+          "Kaki Monas",
+          "Bacakan narasi",
+          "pembuka. Peserta",
+          "menerima identitas",
+          "Nation Builders dan misi  pertama"
+        ]
+      },
+      {
+        "title": "09.15 / 165 menit",
+        "activities": [
+          "Eksplorasi 4 titik, final  mission Blueprint",
+          "Bangsa, debrief, dan",
+          "penutupan",
+          "Monas, Museum  Nasional, Istiqlal Katedral, Lapangan  Banteng",
+          "Game Master Marshal  standby di setiap titik.  Blueprint Bangsa",
+          "disusun di Lapangan  Banteng. Selesai pukul  12.00"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
+    ]
+  },
+  {
+    "id": "semarang-the-bamboo-scroll-secrets-of-the-perfect-fold",
+    "name": "THE BAMBOO SCROLL: SECRETS OF THE PERFECT FOLD",
+    "slug": "the-bamboo-scroll-secrets-of-the-perfect-fold",
+    "destinationId": "semarang",
+    "attractionId": "pecinan-semarang",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "Rahasia cita rasa yang abadi tidak terletak pada ketatnya takaran resep, melainkan pada konsistensi nilai yang dijaga lintas generasi.",
+    "duration": "3,5 Jam (210 Menit)",
+    "price": 280000,
+    "rating": 4.9,
+    "reviewsCount": 20,
+    "category": "Culinary Journey",
+    "highlights": [
+      "Fisik: Mengaktifkan indra taktil saat menguleni kulit lumpia, serta indra gustatori dan olfaktori saat pematangan.",
+      "Pengetahuan: Memahami asimilasi sosiologis Tionghoa-Jawa lewat jalur kuliner",
+      "perdagangan Semarang.",
+      "Emosional: Menyadari nilai ketekunan, integritas terhadap kualitas proses, dan",
+      "kebanggaan atas sebuah karya tangan."
+    ],
+    "included": [
+      "1. Customize Games Challenge Activity",
+      "2. Master Games/Ice Breaker",
+      "3. Fasilitator Experiential Learning 1:10-12 peserta",
+      "4. Tim Logistic Support",
+      "5. EL Program Design",
+      "6. Standard First Aid Kit",
+      "7. Program Leader",
+      "8. Tim Advance",
+      "9. Alat Games",
+      "10. Profesional Fotografer",
+      "11. Short Video",
+      "12. Ijin pemakaian lokasi",
+      "13. BONUS 1 Box Lunpia"
+    ],
+    "excluded": [
+      "Transportasi Peserta dari lokasi asal, Makan Siang, Belanja Oleh-oleh Lunpia pribadi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "yogyakarta-jogja-heritage-quest",
+    "name": "Jogja Heritage Quest",
+    "slug": "jogja-heritage-quest",
+    "destinationId": "yogyakarta",
+    "attractionId": "alun-alun-yogyakarta",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "Peserta akan menjelajahi berbagai ikon budaya Jogja melalui serangkaian tantangan yang menguji kerja sama, kreativitas, dan strategi. Di setiap lokasi, tim akan mengumpulkan atribut serta petunjuk yang menjadi bagian dari perjalanan mereka hingga akhirnya disatukan dalam Solving The Big Puzzle, sebagai simbol bahwa setiap pengalaman dan kontribusi individu memiliki peran penting dalam mencapai tujuan bersama.",
+    "duration": "4 – 8 Jam",
+    "price": 1550000,
+    "rating": 4.9,
+    "reviewsCount": 59,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Jogja Heritage Quest hadir sebagai program Indonesia Destination-Based Exploration untuk mengungkap seluk-beluk sejarah dan kearifan lokal Yogyakarta melalui petualangan interaktif."
+    ],
+    "included": [
+      "Program, Property Games, Sound System, Crowd Permit, Banner Photo, Bajaj & Becak Transport, Best Team Prize 1, 2, 3, Dokumentasi Highlight, Man. Power, Jas Hujan bila hujan, P3K"
+    ],
+    "excluded": [
+      "Venue",
+      "Food & Drink",
+      "Ppn",
+      "Insurance"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00 / 45’",
+        "activities": [
+          "Ice Breaking &",
+          "Grouping serta",
+          "Briefing",
+          "Hotel / Venue Awal",
+          "Kondisioning",
+          "peserta,",
+          "pembagian",
+          "kelompok,",
+          "pembagian Mission  Sheet dan atribut."
+        ]
+      },
+      {
+        "title": "08.45 / 15’",
+        "activities": [
+          "Mobilisasi ke",
+          "Lapangan",
+          "Menuju Titik Nol  KM",
+          "Drop peserta di",
+          "area Titik Nol KM  menggunakan",
+          "transportasi yang  disiapkan."
+        ]
+      },
+      {
+        "title": "09.00 / 30’",
+        "activities": [
+          "1st Mission: Break  the Code",
+          "POS 1: Titik Nol",
+          "KM",
+          "Pemecahan teka teki visual arsitektur  kolonial. Kelompok  langsung jalan kaki  ke Pos 2 (~400m)."
+        ]
+      },
+      {
+        "title": "09.30 / 30’",
+        "activities": [
+          "2nd Mission:",
+          "Transaksi Budaya",
+          "POS 2: Pasar",
+          "Beringharjo",
+          "Berburu Aksesoris  Jogja asli. Refleksi  singkat 5 menit",
+          "dilakukan di akhir  pos ini."
+        ]
+      },
+      {
+        "title": "10.00 / 30’",
+        "activities": [
+          "3rd Mission: Aksara  Jawa & Becak",
+          "POS 3: Selasar",
+          "Malioboro",
+          "Misi",
+          "menerjemahkan  petunjuk Aksara  Jawa & steel tower,  dilanjutkan naik",
+          "Becak menuju post  4 dengan becak",
+          "(1,2 km)."
+        ]
+      },
+      {
+        "title": "10.30 / 30’",
+        "activities": [
+          "4th Mission:",
+          "Membuat video",
+          "POS 4 : Gapura",
+          "Utara alun-alun",
+          "Misi membuat",
+          "video kearifan jogja  dengan team"
+        ]
+      },
+      {
+        "title": "11.00 / 15’",
+        "activities": [
+          "Mobilisasi ke",
+          "Venue Akhir",
+          "Menuju Final Pos",
+          "Menggunakan bajaj"
+        ]
+      },
+      {
+        "title": "11.15 / 15’",
+        "activities": [
+          "Final Mission: Big  Puzzle",
+          "Collaboration",
+          "Venue Final",
+          "Semua kelompok  menyatukan",
+          "potongan misi.",
+          "Refleksi singkat 5  menit dilakukan setelah rakitan",
+          "selesai."
+        ]
+      },
+      {
+        "title": "11.30 / 30’",
+        "activities": [
+          "Debrief Mendalam  & Foto Bersama",
+          "Venue Final",
+          "Debrief 20 menit  mengaitkan filosofi  program dengan  dunia kerja,",
+          "pengumuman",
+          "pemenang, dan",
+          "foto bersama."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "lampung-roots-and-reefs",
+    "name": "Roots and Reefs",
+    "slug": "roots-and-reefs",
+    "destinationId": "lampung",
+    "attractionId": "pulau-pahawang",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "description": "program eksplorasi alam selama 2 hari 1 malam yang mengajak peserta memahami hubungan antara daratan, laut, dan manusia melalui pengalaman langsung bersama ekosistem lebah madu dan konservasi terumbu karang. Peserta akan memanen madu, membuat eco printing, menyelami kehidupan bawah laut, serta terlibat dalam transplantasi terumbu karang sebagai bentuk nyata kepedulian terhadap lingkungan.",
+    "duration": "2 hari 1 malam",
+    "price": 2000000,
+    "rating": 4.9,
+    "reviewsCount": 69,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Menggabungkan pengalaman daratan dan laut dalam satu program terpadu.",
+      "Panen madu langsung bersama beekeeper profesional.",
+      "Aktivitas eco printing dengan material alami yang dikumpulkan sendiri oleh peserta.",
+      "Terlibat langsung dalam transplantasi terumbu karang di Pulau Pahawang.",
+      "Snorkeling di area terumbu karang sehat dan area konservasi.",
+      "Pembelajaran konservasi yang didampingi fasilitator, edukator, dan komunitas lokal.",
+      "Program berbasis keberlanjutan dan pelibatan masyarakat setempat."
+    ],
+    "included": [
+      "Fasilitator, edukator, dokumentasi, tenaga relawan, guide snorkeling, penyelam, makan & minum selama kegiatan, kapal penyebrangan, alat keselamatan, paket harvesting honeycomb, bis medium"
+    ],
+    "excluded": [
+      "Pembelian produk Madu, asuransi, souvenir & seragam, obat pribadi, pembelian diluar paket"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "bali-tri-hita-karana",
+    "name": "Tri Hita Karana",
+    "slug": "tri-hita-karana",
+    "destinationId": "bali",
+    "attractionId": "desa-wisata-petang",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "description": "Program team building berbasis filosofi Bali Tri Hita Karana yang mengajak peserta membangun keseimbangan antara Purpose (Parahyangan), People (Pawongan), dan Impact (Palemahan). Melalui serangkaian tantangan kolaboratif, eksplorasi desa, dan interaksi dengan masyarakat lokal, peserta belajar membangun kepercayaan, kepemimpinan, dan dampak positif dalam tim.",
+    "duration": "2 hari 1 malam",
+    "price": 3750000,
+    "rating": 4.5,
+    "reviewsCount": 27,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Team building berbasis filosofi asli Bali, Tri Hita Karana.",
+      "Diselenggarakan di Desa Wisata Petang yang masih autentik dan sarat nilai budaya.",
+      "Menggabungkan experiential learning, cultural immersion, dan nature-based activities.",
+      "Mendorong penguatan komunikasi, kepemimpinan, kolaborasi, dan kesadaran akan dampak sosial serta lingkungan.",
+      "Melibatkan komunitas lokal dan memberikan manfaat ekonomi bagi masyarakat setempat."
+    ],
+    "included": [
+      "Licensed Facilitator & Team Building Instructor, Team Building Equipment & Game Materials, Seluruh Aktivitas dan Tantangan Program, Penggunaan Area Desa Wisata Petang, Transportasi PP menuju lokasi kegiatan, Akomodasi 1 Malam Menginap di Tenda (Camping Experience), Makan dan Coffee Break selama program berlangsung, Air Mineral selama kegiatan, Dokumentasi Foto Kegiatan, First Aid Kit & Safety Support, Sertifikat."
+    ],
+    "excluded": [
+      "Tiket Pesawat, Asuransi"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "palembang-journey-in-1-hour-lrt-palembang-challenge-alt",
+    "name": "Journey in 1 Hour: LRT Palembang Challenge",
+    "slug": "journey-in-1-hour-lrt-palembang-challenge",
+    "destinationId": "palembang",
+    "attractionId": "lrt-palembang",
+    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+    "description": "Harga:** Rp. 787.500,-/pax",
+    "duration": "4 jam",
+    "price": 787500,
+    "rating": 4.7,
+    "reviewsCount": 66,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Petualangan seru dan menantang berbatas waktu dengan menggunakan moda LRT di kota Palembang"
+    ],
+    "included": [
+      "Fasilitator, program, air mineral, kartu pass LRT, sertifikat peserta, makan siang, dokumentasi foto, tiket masuk area"
+    ],
+    "excluded": [
+      "Snack dan keperluan pribadi"
+    ],
+    "meetingPoint": "Stasiun SMB 2",
+    "itinerary": [
+      {
+        "title": "08.30 / 30 menit",
+        "activities": [
+          "Pembukaan dan Ice Breaking",
+          "Stasiun SMB 2",
+          "Buat semangat, happy dan jelas Rules kegiatannya"
+        ]
+      },
+      {
+        "title": "09.00 / 150 menit",
+        "activities": [
+          "Adventure Program",
+          "Seluruh Stasiun LRT",
+          "Aman dalam kegiatan"
+        ]
+      },
+      {
+        "title": "11.30 / 30 menit",
+        "activities": [
+          "Debrief",
+          "Jakabaring Sport City",
+          "Refleksi dan Feedback"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "toba-batak-journey-alt",
+    "name": "BATAK JOURNEY",
+    "slug": "batak-journey",
+    "destinationId": "toba",
+    "attractionId": "danau-toba",
+    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "description": "Danau Toba banyak cerita klasik rakyat Sumatera Utara Juga banyak versi maka dijadikan produk program EL dengan latar belakang budaya dan kultur serta keindahan seperti kepingan surga. aneka ragam marga yang ada di kawasan danau toba.",
+    "duration": "Full Day",
+    "price": 1200000,
+    "rating": 4.9,
+    "reviewsCount": 72,
+    "category": "Cultural Immersion",
+    "highlights": [
+      "Mengenal Budaya Batak yang sangat banyak turunan MARGA",
+      "Khas kuliner yang sangat spesial",
+      "Tempat penuh sejarah",
+      "Destinasi wisata seperti kepingan surga"
+    ],
+    "included": [
+      "Suvenir ulos wisata..Sor Tali/Topi Tali",
+      "Kapal Wisata",
+      "Program",
+      "Tiketing Venue",
+      "Air Mineral",
+      "Back up Sound",
+      "Property Memasak",
+      "Fasilitator",
+      "Lunch 1x prasmanan",
+      "Dokumentasi foto dan video berupa file soft copy"
+    ],
+    "excluded": [
+      "Saweran tor tor",
+      "Cofee Break."
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.45 / 15 menit",
+        "activities": [
+          "seremonii",
+          "Lapangan hotel",
+          "fasilitor"
+        ]
+      },
+      {
+        "title": "09.00 / 30 menit",
+        "activities": [
+          "Ice breking",
+          "Lapangan hotel",
+          "fasilitator"
+        ]
+      },
+      {
+        "title": "09.30 / 30 menit",
+        "activities": []
+      },
+      {
+        "title": "10.00/ 120 menit",
+        "activities": []
+      },
+      {
+        "title": "12.00/ 60 menit",
+        "activities": []
+      },
+      {
+        "title": "13.00/ 60 menit",
+        "activities": []
+      },
+      {
+        "title": "14.00/ 60 menit",
+        "activities": [
+          "Pembagian grub",
+          "Setiap kelompok akan  Melakukan perjalanan Meneju pasar",
+          "tradisional,persanggrahan  bung karno dan sejarah  batu gantung dengan",
+          "mengunakan kapal wisata  danu toba.",
+          "Lunch",
+          "Peserta akan melakukan  perjalana ke desa sialagan  dengan menggunakan  kapal wisata sekaligus  memasak masakan khas  tanah batak yaitu ikan mas  arsik di atas kapal wisata  danau toba",
+          "Peserta di haruskan break  memasak ikan arsik yang  memakan waktu yang  lama dan menuju desa  sialagan untuk melakukan  tari tor tor khas tanah",
+          "batak sebagai",
+          "penghormatan kepada  peserta yang di berikan  oleh ketua adat di desa",
+          "tersebut,setelah menortor  peserta akan melanjutkan  memasak ikan arsik dan  menghias masakan yang  telah selesai di masak.",
+          "Lapangan hotel",
+          "Persanggrahan bung  karno,pasar",
+          "tradisionil,batu gantung",
+          "Hotel",
+          "Kapal Wisata Danau  Toba",
+          "Desa sialagan",
+          "fasilitator akan",
+          "mendampingi setiap  kelompok dan selama  menjalani program",
+          "fasilitator isoma",
+          "Fasilitator",
+          "mendampingi",
+          "selama di kapal dan  di desa sialagan."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "semarang-the-bamboo-scroll-secrets-of-the-perfect-fold-alt",
+    "name": "THE BAMBOO SCROLL: SECRETS OF THE PERFECT FOLD",
+    "slug": "the-bamboo-scroll-secrets-of-the-perfect-fold",
+    "destinationId": "semarang",
+    "attractionId": "pecinan-semarang",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "Rahasia cita rasa yang abadi tidak terletak pada ketatnya takaran resep, melainkan pada konsistensi nilai yang dijaga lintas generasi.",
+    "duration": "3,5 Jam (210 Menit)",
+    "price": 280000,
+    "rating": 4.5,
+    "reviewsCount": 25,
+    "category": "Culinary Journey",
+    "highlights": [
+      "Fisik: Mengaktifkan indra taktil saat menguleni kulit lumpia, serta indra gustatori dan olfaktori saat pematangan.",
+      "Pengetahuan: Memahami asimilasi sosiologis Tionghoa-Jawa lewat jalur kuliner",
+      "perdagangan Semarang.",
+      "Emosional: Menyadari nilai ketekunan, integritas terhadap kualitas proses, dan",
+      "kebanggaan atas sebuah karya tangan."
+    ],
+    "included": [
+      "Customize Games Challenge Activity, Master Games"
+    ],
+    "excluded": [
+      "Ice Breaker, Fasilitator Experiential Learning 1:10-12 peserta, Tim Logistic Support, EL Program Design, Standard First Aid Kit, Program Leader, Tim Advance, Alat Games, Profesional Fotografer, Short Video, Ijin pemakaian lokasi, BONUS 1 Box Lunpia"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "semarang-the-javanese-alchemy-from-the-shamans-mortar-to-the-alt",
+    "name": "THE JAVANESE ALCHEMY: FROM THE SHAMAN’S MORTAR TO THE",
+    "slug": "the-javanese-alchemy-from-the-shamans-mortar-to-the",
+    "destinationId": "semarang",
+    "attractionId": "pasar-ambarawa",
+    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "description": "Kekuatan sejati seringkali disarikan dari komponen-komponen yang terasa paling pahit  saat pertama kali diekstraksi.",
+    "duration": "3,5 Jam (210 Menit)",
+    "price": 250000,
+    "rating": 4.8,
+    "reviewsCount": 64,
+    "category": "Culinary Journey",
+    "highlights": [
+      "Fisik: Menggunakan lumpang dan alu kayu untuk mengekstrak konsentrat rimpang mentah  serta mengaktifkan indra gustatori.",
+      "Pengetahuan: Memahami ilmu etnobotani tradisional Jawa (Jamu) yang diakui UNESCO  sebagai warisan budaya tak benda.",
+      "Emosional: Membina mentalitas tangguh dalam menerima proses yang berat demi hasil  akhir yang menyehatkan organisasi."
+    ],
+    "included": [
+      "Customize Games Challenge Activity, Master Games"
+    ],
+    "excluded": [
+      "Ice Breaker, Fasilitator Experiential Learning 1:10-12 peserta, Tim Logistic Support, EL Program Design, Standard First Aid Kit, Program Leader, Tim Advance, Alat Games, Profesional Fotografer, Short Video, Ijin pemakaian lokasi , Alat Bahan Membuat Jamu"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [],
+    "gallery": [
+      "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "lampung-sasmita-rimba-ritual-utusan-datuk-tnbbs-alt",
+    "name": "SASMITA RIMBA: RITUAL UTUSAN DATUK TNBBS",
+    "slug": "sasmita-rimba-ritual-utusan-datuk-tnbbs",
+    "destinationId": "lampung",
+    "attractionId": "rhino-camp-tanggamus",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "description": "Sebuah ekspedisi imersif selama 4 jam di jantung Taman Nasional Bukit Barisan Selatan, di mana peserta bertransformasi menjadi \"Utusan Datuk\" yang menjalankan misi konservasi melalui river trekking, jungle tracking, pelacakan jejak Gajah Sumatra, dan pencarian habitat Rafflesia arnoldii. Program ini dirancang untuk meluruhkan ego, membangun resiliensi, serta memperkuat kolaborasi tim melalui pengalaman alam yang autentik dan penuh makna.",
+    "duration": "4 Jam",
+    "price": 750000,
+    "rating": 4.6,
+    "reviewsCount": 82,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Di dalam jantung TNBBS, keajaiban terbesar tidak lahir dari kekuatan untuk berdiri sendiri, melainkan dari keberanian untuk saling terhubung dan bersandar. Program ini dikemas sebagai sebuah simulasi peran (role-play expedition) intensif selama 4 jam yang menantang resiliensi (daya juang) fisik dan mental peserta. Di sini, keberhasilan tidak dinilai dari siapa yang tercepat, melainkan bagaimana setiap individu mampu menekan ego mereka untuk saling bersandar, berkolaborasi, dan menjaga keselarasan dengan tim serta alam demi menyelesaikan misi konservasi"
+    ],
+    "included": [
+      "SIMAKSI",
+      "Pemandu lokal",
+      "air mineral",
+      "expedition kit",
+      "fasilitator",
+      "Makan siang",
+      "Dokumentasi ( foto & video )"
+    ],
+    "excluded": [
+      "Penginapan",
+      "Transportasi ke Krui"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00 / 20’",
+        "activities": [
+          "Peserta tiba di Gerbang Batas TNBBS.",
+          "Pembukaan oleh Pemandu lokal sebagai Tetua Adat dengan membacakan narasi \"Perjanjian Lama\".",
+          "Pembagian kelompok (5-7 orang) dan pembagian peran sakral secara mandiri (Sang Malim, Pawang Jejak, Bujang Penjaga, Tabib Rimba, Pewarta Rimba).",
+          "Pendistribusian Kit Utusan (Peta Buta, Kompas, Logbook, P3K",
+          "Peserta tiba di Gerbang Batas TNBBS"
+        ]
+      },
+      {
+        "title": "08.20 / 60’",
+        "activities": [
+          "Perjalanan dimulai dengan memasuki jalur aliran sungai TNBBS.",
+          "The Challenge: Berjalan menyusuri arus air dan batuan licin. Sang Malim menavigasi arah, Bujang Penjaga mengatur keselamatan barisan.",
+          "Ultimate Team Challenge (Menit ke-08.50): Tim harus menyeberangi area sungai terdalam menggunakan formasi rantai manusia tanpa tali (Rope-less Chain) untuk menjaga agar Logbook Ekspedisi tidak basah.",
+          "Perjalanan dimulai dengan memasuki jalur aliran sungai TNBBS."
+        ]
+      },
+      {
+        "title": "09.20 / 60’",
+        "activities": [
+          "Tim keluar dari sungai dan masuk ke vegetasi hutan hujan tropis yang rapat dan lembap.",
+          "Stamina mulai terkuras, medan mulai menanjak.",
+          "The Challenge: Pawang Jejak memimpin tim merunduk di lantai hutan untuk mencari dan mengidentifikasi minimal 3 bukti autentik jejak Gajah Sumatra (Datuk). Pewarta Rimba mencatat koordinat dan menggambarnya di logbook. Tabib Rimba mencari vegetasi obat tradisional di sekitar jalur",
+          "Tim keluar dari sungai dan masuk ke vegetasi hutan hujan tropis yang rapat dan lembap."
+        ]
+      },
+      {
+        "title": "10.20 / 40’",
+        "activities": [
+          "Tim bergerak cepat di bawah tekanan batas waktu menuju koordinat habitat Rafflesia arnoldii.",
+          "The Challenge: Menemukan inang tanaman merambat (liana) tempat bunga raksasa tersebut tumbuh. Ketelitian diuji di tengah kelelahan fisik puncak.",
+          "Begitu bunga/kuncup ditemukan, seluruh anggota tim wajib meletakkan perlengkapan dan berdiri melingkar",
+          "Koordinat habitat Rafflesia arnoldii."
+        ]
+      },
+      {
+        "title": "11.00 / 30’",
+        "activities": [
+          "Aktivitas: Duduk melingkar di bawah kanopi hutan purba di dekat area habitat.",
+          "Memulai Ritual Hening Rimba selama 3 menit (mata terpejam, gawai mati).",
+          "Fasilitasi Debrief: The Mentor mengumpulkan logbook dan memimpin diskusi reflektif (What & So What?) mengenai peluruhan ego, arti penting saling bersandar dalam tim, serta filosofi ketangguhan hidup dari bunga Rafflesia",
+          "Vegetasi Lembap & Habitat Rafflesia"
+        ]
+      },
+      {
+        "title": "11.30 / 30",
+        "activities": [
+          "Perjalanan keluar dari kawasan hutan menuju kebun masyarakat penyangga TNBBS.",
+          "Aktivitas: Peserta menuliskan satu komitmen aksi nyata tanpa ego (Sumpah Utusan) di selembar kertas.",
+          "Kertas diserahkan secara simbolis kepada perwakilan warga sebagai tiket masuk perjamuan.",
+          "Selebrasi: Menikmati makan siang bersama dengan menu kuliner tradisional khas lokal yang disiapkan oleh warga desa penyangga. Program selesai.",
+          "Kebun Masyarakat Penyangga"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "yogyakarta-jogja-heritage-quest-alt",
+    "name": "Jogja Heritage Quest",
+    "slug": "jogja-heritage-quest",
+    "destinationId": "yogyakarta",
+    "attractionId": "alun-alun-yogyakarta",
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80",
+    "description": "Peserta akan menjelajahi berbagai ikon budaya Jogja melalui serangkaian tantangan yang menguji kerja sama, kreativitas, dan strategi. Di setiap lokasi, tim akan mengumpulkan atribut serta petunjuk yang menjadi bagian dari perjalanan mereka hingga akhirnya disatukan dalam Solving The Big Puzzle, sebagai simbol bahwa setiap pengalaman dan kontribusi individu memiliki peran penting dalam mencapai tujuan bersama.",
+    "duration": "4 – 8 Jam",
+    "price": 1550000,
+    "rating": 4.9,
+    "reviewsCount": 91,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Jogja Heritage Quest hadir sebagai program Indonesia Destination-Based Exploration untuk mengungkap seluk-beluk sejarah dan kearifan lokal Yogyakarta melalui petualangan interaktif."
+    ],
+    "included": [
+      "Program, Property Games, Sound System, Crowd Permit, Banner Photo, Bajaj & Becak Transport, Best Team Prize 1, 2, 3, Dokumentasi Highlight, Man. Power, Jas Hujan bila hujan, P3K"
+    ],
+    "excluded": [
+      "Venue",
+      "Food & Drink",
+      "Ppn",
+      "Insurance"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.00 / 45’",
+        "activities": [
+          "Ice Breaking &",
+          "Grouping serta",
+          "Briefing",
+          "Hotel / Venue Awal",
+          "Kondisioning",
+          "peserta,",
+          "pembagian",
+          "kelompok,",
+          "pembagian Mission  Sheet dan atribut."
+        ]
+      },
+      {
+        "title": "08.45 / 15’",
+        "activities": [
+          "Mobilisasi ke",
+          "Lapangan",
+          "Menuju Titik Nol  KM",
+          "Drop peserta di",
+          "area Titik Nol KM  menggunakan",
+          "transportasi yang  disiapkan."
+        ]
+      },
+      {
+        "title": "09.00 / 30’",
+        "activities": [
+          "1st Mission: Break  the Code",
+          "POS 1: Titik Nol",
+          "KM",
+          "Pemecahan teka teki visual arsitektur  kolonial. Kelompok  langsung jalan kaki  ke Pos 2 (~400m)."
+        ]
+      },
+      {
+        "title": "09.30 / 30’",
+        "activities": [
+          "2nd Mission:",
+          "Transaksi Budaya",
+          "POS 2: Pasar",
+          "Beringharjo",
+          "Berburu Aksesoris  Jogja asli. Refleksi  singkat 5 menit",
+          "dilakukan di akhir  pos ini."
+        ]
+      },
+      {
+        "title": "10.00 / 30’",
+        "activities": [
+          "3rd Mission: Aksara  Jawa & Becak",
+          "POS 3: Selasar",
+          "Malioboro",
+          "Misi",
+          "menerjemahkan  petunjuk Aksara  Jawa & steel tower,  dilanjutkan naik",
+          "Becak menuju post  4 dengan becak",
+          "(1,2 km)."
+        ]
+      },
+      {
+        "title": "10.30 / 30’",
+        "activities": [
+          "4th Mission:",
+          "Membuat video",
+          "POS 4 : Gapura",
+          "Utara alun-alun",
+          "Misi membuat",
+          "video kearifan jogja  dengan team"
+        ]
+      },
+      {
+        "title": "11.00 / 15’",
+        "activities": [
+          "Mobilisasi ke",
+          "Venue Akhir",
+          "Menuju Final Pos",
+          "Menggunakan bajaj"
+        ]
+      },
+      {
+        "title": "11.15 / 15’",
+        "activities": [
+          "Final Mission: Big  Puzzle",
+          "Collaboration",
+          "Venue Final",
+          "Semua kelompok  menyatukan",
+          "potongan misi.",
+          "Refleksi singkat 5  menit dilakukan setelah rakitan",
+          "selesai."
+        ]
+      },
+      {
+        "title": "11.30 / 30’",
+        "activities": [
+          "Debrief Mendalam  & Foto Bersama",
+          "Venue Final",
+          "Debrief 20 menit  mengaitkan filosofi  program dengan  dunia kerja,",
+          "pengumuman",
+          "pemenang, dan",
+          "foto bersama."
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "bromo-bromo-expedition-guardians-of-the-bromo-caldera-alt",
+    "name": "Bromo Expedition: Guardians of The Bromo Caldera",
+    "slug": "bromo-expedition-guardians-of-the-bromo-caldera",
+    "destinationId": "bromo",
+    "attractionId": "mount-bromo",
+    "image": "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80",
+    "description": "Kabut Bromo menyimpan sebuah misi. Hanya tim yang bersatu yang mampu menuntaskannya. Bromo Expedition: Guardians of The Caldera adalah program destination-based exploration yang menggabungkan petualangan alam, experiential learning, dan kearifan lokal Suku Tengger dalam sebuah misi epik penyelamatan harmoni Kaldera Bromo.\nPeserta berperan sebagai \"Guardians of The Caldera\", tim terpilih yang ditugaskan untuk mengumpulkan Fragments of Harmony yang tersebar di berbagai titik ikonik Bromo. Dalam perjalanan, peserta akan menghadapi tantangan navigasi, pemecahan masalah, pengambilan keputusan di bawah tekanan, serta refleksi mendalam mengenai kepemimpinan, komunikasi, dan kolaborasi.\nProgram ini dirancang untuk menghadirkan pengalaman yang tidak hanya menyenangkan dan penuh petualangan, tetapi juga menghasilkan pembelajaran nyata yang dapat diterapkan dalam kehidupan dan dunia kerja.",
+    "duration": "Full day (00.00-12.00)",
+    "price": 595000,
+    "rating": 4.7,
+    "reviewsCount": 27,
+    "category": "Nature and Eco-Tourism",
+    "highlights": [
+      "Program ini hadir untuk mentransformasi pengembangan tim menjadi misi epik penyelamatan harmoni alam, di mana peserta akan merasakan kombinasi menegangkan antara taktik kolaborasi di medan ekstrem dan koneksi magis dengan kearifan lokal suku Tengger. Pengalaman ini sepenuhnya tidak dapat direplikasi di tempat lain karena memanfaatkan lanskap geografis unik lautan pasir aktif dan spiritualitas hidup Sang Kaldera secara langsung sebagai ruang bermain sekaligus refleksi dinamika kelompok."
+    ],
+    "included": [
+      "✓ Transportasi shuttle start Malang Kota",
+      "✓ Transportasi jip 4x4 meeting point rest area Tumpang / Wringinanom",
+      "✓ Driver, BBM, Parkir",
+      "✓ Retribusi kendaraan Jip Paguyuban",
+      "✓ Tiket masuk kawasan TNBTS",
+      "✓ Asuransi lokasi wisata Kawasan TNBTS",
+      "✓ Tour guide yang ramah dan berpengalaman",
+      "✓ 7 Destinasi wisata di Bromo:",
+      "• Sunrise view point",
+      "• Widodaren",
+      "• Kawah Bromo",
+      "• Pura Luhur Poten",
+      "• Pasir berbisik",
+      "• Savana",
+      "• Lembah Watangan",
+      "✓ Medical kit/P3K Standar"
+    ],
+    "excluded": [
+      "Hotel,",
+      "makan peserta,",
+      "video,",
+      "perizinan drone di bromo,",
+      "transportasi luar kota malang"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "00.00 – 00.30",
+        "activities": [
+          "Penjemputan peserta",
+          "Kota Malang",
+          "Koordinasi kehadiran  peserta, pengecekan  jumlah dan kondisi fisik  awal, briefing singkat  perjalanan dan",
+          "keselamatan."
+        ]
+      },
+      {
+        "title": "00.30 – 01.30",
+        "activities": [
+          "Perjalanan ke rest area",
+          "Rest area Tumpang /  Wringinanom",
+          "Shuttle jip, penggunaan  toilet & pastikan",
+          "kesiapan sebelum",
+          "berangkat. pengingat  pakaian hangat"
+        ]
+      },
+      {
+        "title": "01.30 – 03.30",
+        "activities": [
+          "Perjalanan menuju",
+          "Bromo",
+          "Bromo",
+          "Monitoring kondisi",
+          "peserta selama",
+          "perjalanan malam dan  menjaga ketertiban di  kendaraan. Pastikan  peserta istirahat."
+        ]
+      },
+      {
+        "title": "03.30 – 05.30",
+        "activities": [
+          "Sunrise Time",
+          "Bukit Kingkong",
+          "Atur posisi peserta,",
+          "briefing keamanan area tebing, dokumentasi,",
+          "dan pengelolaan waktu",
+          "sunrise. pastikan",
+          "peserta tidak terpencar"
+        ]
+      },
+      {
+        "title": "05.30 – 06.30",
+        "activities": [
+          "Perjalanan menuju Bukit  Widodaren",
+          "Bromo",
+          "Transisi kegiatan,",
+          "memastikan peserta  tetap hangat dan aman,  persiapan aktivitas",
+          "reflektif di Widodaren"
+        ]
+      },
+      {
+        "title": "06.30 – 07.00",
+        "activities": [
+          "Explore Wisata",
+          "Widodaren",
+          "Fasilitasi journaling",
+          "alam, piknik ringan, dan  fun games, menjaga  suasana kondusif serta  kebersihan area"
+        ]
+      },
+      {
+        "title": "07.00 – 08.00",
+        "activities": [
+          "Explore Wisata",
+          "Kawah Gunung Bromo &  Pura Luhur Poten",
+          "Briefing etika budaya  dan keselamatan,",
+          "pengaturan alur",
+          "kunjungan, pengawasan  di area kawah"
+        ]
+      },
+      {
+        "title": "08.00 – 09.00",
+        "activities": [
+          "Explore wisata",
+          "Pasir Berbisik",
+          "Arahkan aktivitas",
+          "eksplorasi dan foto, jaga  jarak aman, serta",
+          "pastikan peserta tidak  terpencar"
+        ]
+      },
+      {
+        "title": "09.00 – 10.00",
+        "activities": [
+          "Explore WIsata",
+          "Savana & Lembah",
+          "Watangan",
+          "Pengelolaan waktu",
+          "eksplorasi dan foto,",
+          "penggunaan toilet"
+        ]
+      },
+      {
+        "title": "10.00 – 11.00",
+        "activities": [
+          "Perjalanan kembali ke  rest area & shuttle jip",
+          "Rest area Tumpang /  Wringinanom",
+          "koordinasi transportasi,  dan memastikan tidak  ada peserta tertinggal"
+        ]
+      },
+      {
+        "title": "11.00 – 12.00",
+        "activities": [
+          "Perjalanan kembali ke  dropping point",
+          "Kota Malang",
+          "koordinasi transportasi,  dan memastikan tidak  ada peserta tertinggal"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1602183188581-9b165d4b5683?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "bogor-surviving-in-the-analog-age-alt",
+    "name": "SURVIVING IN THE ANALOG AGE",
+    "slug": "surviving-in-the-analog-age",
+    "destinationId": "bogor",
+    "attractionId": "kebun-raya-bogor",
+    "image": "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80",
+    "description": "Program Team Building ini dirancang sebagai simulasi kolaboratif yang mengajak peserta kembali pada kekuatan fundamental manusia: berpikir strategis, bertindak adaptif, dan bekerja bersama secara efektif. Melalui pengalaman tersebut, peserta diharapkan semakin menyadari bahwa teknologi mendukung kinerja, tetapi ketangguhan manusialah yang menjaga sistem tetap berjalan. Namun di balik kecanggihan teknologi, faktor paling menentukan tetaplah manusia — kemampuan berpikir, beradaptasi, dan berkolaborasi saat menghadapi situasi yang tidak terduga.",
+    "duration": "4 s/d 6 jam",
+    "price": 55000000,
+    "rating": 4.8,
+    "reviewsCount": 77,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Peserta akan mendapatkan experience Dimana system yang serba digital saat ini, tiba2 down (rekayasa tidak boleh menggunakan gadget), menentukan arah yang biasanya menggunakan aplikasi map, dalam program ini harus menggunakan Kompas (kemampuan tambahan bagi peserta)"
+    ],
+    "included": [
+      "Tiket masuk Kebun Raya Bogor, Design program, Atribut Bandana"
+    ],
+    "excluded": [
+      "Slayer, Rain Coat, Banner Event, Asuransi, Peralatan & pendukung (games dll), SDM, Air minum selama kegiatan berlangsung, Dokumentasi (video & fhoto)"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "07.30 – 08.00",
+        "activities": [
+          "Opening & Conditionong",
+          "Main area",
+          "Treasury hunt Framing"
+        ]
+      },
+      {
+        "title": "08.00 – 10.00",
+        "activities": [
+          "Finding The Treasury",
+          "KBR",
+          "Gamess & Reward"
+        ]
+      },
+      {
+        "title": "10.00 – 10.30",
+        "activities": [
+          "We Are One",
+          "Main area",
+          "Final Project"
+        ]
+      },
+      {
+        "title": "10.30 – 11.00",
+        "activities": [
+          "Wrap up & Conculsion",
+          "Main area",
+          "Sharing experience"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1590564313998-f58448839002?auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "jakarta-capital-quest-the-nation-builders-alt",
+    "name": "Capital Quest: The Nation Builders",
+    "slug": "capital-quest-the-nation-builders",
+    "destinationId": "jakarta",
+    "attractionId": "monas",
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80",
+    "description": "Peserta berperan sebagai Nation Builders: tim yang ditugaskan menelusuri jejak  keputusan-keputusan besar yang membentuk Indonesia, dari Monas, Museum Nasional, Istiqlal-Katedral,  hingga Lapangan Banteng. Di setiap titik, tim memecahkan tantangan yang mengungkap hidden connection  antara sejarah dan kepemimpinan modern. Puncaknya: menyusun Blueprint Bangsa, dokumen nilai-nilai tim yang  terinspirasi dari perjalanan Nation Builders dan dibawa pulang sebagai kompas kerja",
+    "duration": "3-4 jam",
+    "price": 350000,
+    "rating": 4.6,
+    "reviewsCount": 89,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Capital Quest hadir untuk membuktikan bahwa nilai-nilai terbaik sebuah tim sudah  pernah diwujudkan dalam skala bangsa, dan jejaknya masih bisa ditemukan di kawasan Monas hingga  Lapangan Banteng. Seluruh tantangan dirancang dari karakter nyata lokasi: arsitektur Monas yang  monumental, koleksi 140.000+ artefak Museum Nasional, dialog toleransi Istiqlal-Katedral, dan sejarah  Lapangan Banteng. Pengalaman ini tidak bisa direplikasi di ruangan mana pun."
+    ],
+    "included": [
+      "Fasilitator dan Game Master Marshal di setiap titik, tiket masuk monas, mission kit  (peta custom, mission sheet, kartu clue), briefing dan debriefing, dokumentasi foto,  air minum peserta, Blueprint Bangsa (lembar nilai tim)"
+    ],
+    "excluded": [
+      "Transportasi peserta, makan dan minum peserta, kostum tematik (lanyard dan ID  card Nation Builders), videografi dan highlight reel, merchandise"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "08.30 / 30 menit",
+        "activities": [
+          "Registrasi dan briefing  umum",
+          "Area parkir Monas / titik  kumpul",
+          "Distribusikan mission kit,  otoped/sepeda listrik  disiapkan"
+        ]
+      },
+      {
+        "title": "09.00 / 15 menit",
+        "activities": [
+          "Character reveal dan  mission briefing: Nation  Builders",
+          "Kaki Monas",
+          "Bacakan narasi",
+          "pembuka. Peserta",
+          "menerima identitas",
+          "Nation Builders dan misi  pertama"
+        ]
+      },
+      {
+        "title": "09.15 / 165 menit",
+        "activities": [
+          "Eksplorasi 4 titik, final  mission Blueprint",
+          "Bangsa, debrief, dan",
+          "penutupan",
+          "Monas, Museum  Nasional, Istiqlal Katedral, Lapangan  Banteng",
+          "Game Master Marshal  standby di setiap titik.  Blueprint Bangsa",
+          "disusun di Lapangan  Banteng. Selesai pukul  12.00"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
+    ]
+  },
+  {
+    "id": "makassar-malino-amazing-journey-alt",
+    "name": "MALINO AMAZING JOURNEY",
+    "slug": "malino-amazing-journey",
+    "destinationId": "makassar",
+    "attractionId": "kota-malino",
+    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
+    "description": "Malino Amazing Journey adalah sebuah program perjalanan ke destinasi-destinasi yang khas dan unik yang dapat memberikan pengalaman yang berkesan bagi yang mengalaminya. Dikemas dengan konsep Eksperiential Learning, peserta akan merasakan pengalaman berpetualang sambil belajar bekerja sama dalam satu tim. Peserta akan melakukan perjalanan ke destinasi yang mewakili unsur culture, kuliner dan heritage di sekitar lokasi kegiatan. Di setiap lokasi, peserta akan dihadapkan kepada tantangan yang harus diselesaikan untuk memperoleh petunjuk menuju perjalanan berikutnya sampai ke garis finish.",
+    "duration": "3 – 4 jam",
+    "price": 450000,
+    "rating": 5,
+    "reviewsCount": 81,
+    "category": "Adventure and Challenge",
+    "highlights": [
+      "Peserta melakukan perjalanan ke beberapa destinasi khas di Malino yang mewakili unsur wisata alam (Air Terjun Takapala), kuliner (Cendol Malino/Tenteng Malino/Kopi Luwak Malino) dan heritage (Balla Lompoa)."
+    ],
+    "included": [
+      "Mission Kit, Media Transportasi, Dokumentasi, Snack, Sertifikat, HTM Destinasi"
+    ],
+    "excluded": [
+      "Biaya perjalanan Makassar - Malino, Hotel"
+    ],
+    "meetingPoint": "Lokasi Kegiatan",
+    "itinerary": [
+      {
+        "title": "09.00 – 09.30 / 30 menit",
+        "activities": [
+          "Penjelasan Program",
+          "Start Point",
+          "Scan QR Code"
+        ]
+      },
+      {
+        "title": "09.30 – 11.30 /120 menit",
+        "activities": [
+          "Perjalanan (Journey) Peserta",
+          "Semua destinasi",
+          "Ikuti instruksi yang telah disiapkan"
+        ]
+      },
+      {
+        "title": "11.30 – 12.00 / 30 menit",
+        "activities": [
+          "Penyelesaian tugas (upload video)",
+          "Finish Point",
+          "Ikuti instruksi yang telah disiapkan"
+        ]
+      }
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
+    ]
   }
 ];
 
 export const reviews: Review[] = [
   {
-    id: '1',
-    name: 'Chloe Tremblay',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80',
-    country: 'Canada',
-    rating: 5,
-    text: 'INDEX-AELI made our honeymoon in Bali and Labuan Bajo absolutely flawless. The luxury Phinisi cruise was the highlight of our life. Breathtaking scenes!'
+    "id": "1",
+    "name": "Chloe Tremblay",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Canada",
+    "rating": 5,
+    "text": "INDEX-AELI made our honeymoon in Bali and Labuan Bajo absolutely flawless. The luxury Phinisi cruise was the highlight of our life. Breathtaking scenes!"
   },
   {
-    id: '2',
-    name: 'Yuki Tanaka',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80',
-    country: 'Japan',
-    rating: 5,
-    text: 'The Borobudur sunrise program was majestic. The guide spoke perfect Japanese and took us to spots away from the crowd. 10/10 highly recommend!'
+    "id": "2",
+    "name": "Yuki Tanaka",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Japan",
+    "rating": 5,
+    "text": "The Borobudur sunrise program was majestic. The guide spoke perfect Japanese and took us to spots away from the crowd. 10/10 highly recommend!"
   },
   {
-    id: '3',
-    name: 'Marcus Vance',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80',
-    country: 'Australia',
-    rating: 5,
-    text: 'Fascinating local culture, amazing food, and incredible scenery. The booking process was super simple, and the support was extremely fast.'
+    "id": "3",
+    "name": "Marcus Vance",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "Australia",
+    "rating": 5,
+    "text": "Fascinating local culture, amazing food, and incredible scenery. The booking process was super simple, and the support was extremely fast."
   },
   {
-    id: '4',
-    name: 'Amara Diop',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80',
-    country: 'France',
-    rating: 4,
-    text: 'Gili islands snorkeling was stunning, we swam alongside three huge sea turtles! The only minor issue was high waves on the fast boat, but the crew handled it well.'
+    "id": "4",
+    "name": "Amara Diop",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80",
+    "country": "France",
+    "rating": 4,
+    "text": "Gili islands snorkeling was stunning, we swam alongside three huge sea turtles! The only minor issue was high waves on the fast boat, but the crew handled it well."
   }
 ];
