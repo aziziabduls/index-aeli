@@ -35,7 +35,7 @@ export function Navbar() {
     { label: 'Attractions', path: '/#attractions' },
     { label: 'Programs', path: '/#program' },
     { label: 'About', path: '/#about' },
-    { label: 'Contact', path: '/#contact' }
+    { label: 'Contact', path: '/contact' }
   ];
 
   return (
@@ -60,7 +60,7 @@ export function Navbar() {
               <img src="/logo_index.png" alt="logo" width={100} height={100} className={isScrolled ? 'text-zinc-900' : 'text-white'} />
             </div>
             {/* hide on mobile view */}
-            <div className="flex flex-col hidden md:block">
+            {/* <div className="flex flex-col hidden md:block">
               <span className={`font-display font-bold text-lg md:text-xl tracking-tight leading-none transition-colors duration-300 ${isScrolled ? 'text-zinc-900' : 'text-white'
                 }`}>
                 INDEX
@@ -71,7 +71,7 @@ export function Navbar() {
                 }`}>
                 Indonesia Destination-Based Exploration
               </span>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}

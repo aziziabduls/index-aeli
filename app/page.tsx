@@ -5,13 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Compass, MapPin, Calendar, Star, Search, Clock, Award, ShieldCheck,
-  ChevronLeft, ChevronRight, CheckCircle, ArrowRight, Sparkles,
+  Compass, MapPin, Calendar, Star, Search, Clock, ChevronLeft,
+  ChevronRight,
+  ArrowRight,
   Map,
-  Group,
-  GroupIcon,
   Users,
-  LucideLeafyGreen
+  MapPinned,
+  CompassIcon,
+  Trees
 } from 'lucide-react';
 import { destinations, attractions, programs, reviews } from '@/data/tourismData';
 import { GlassCard } from '@/components/ui/GlassCard';
@@ -22,7 +23,6 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Calendar as CalendarComponent } from '@/components/ui/calendar';
 import { useCurrency } from '@/lib/CurrencyContext';
-import { Autocomplete, AutocompleteContent, AutocompleteEmpty, AutocompleteInput, AutocompleteItem, AutocompleteList } from '@/components/ui/autocomplete';
 
 export default function Home() {
   const { formatPrice } = useCurrency();
@@ -31,7 +31,7 @@ export default function Home() {
   const [searchAttr, setSearchAttr] = useState('');
   const [searchDate, setSearchDate] = useState('');
   const [filteredTours, setFilteredTours] = useState(programs.slice(0, 6));
-  const [hasSearched, setHasSearched] = useState(false);
+  const [setHasSearched] = useState(false);
 
   // Category State
   const [activeCategory, setActiveCategory] = useState('All');
@@ -57,10 +57,9 @@ export default function Home() {
     }
 
     setFilteredTours(results);
-    setHasSearched(true);
 
     // Smooth scroll down to programs section
-    const toursSection = document.getElementById('programs');
+    const toursSection = document.getElementById('program');
     if (toursSection) {
       toursSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -68,7 +67,6 @@ export default function Home() {
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
-    setHasSearched(false);
     if (cat === 'All') {
       setFilteredTours(programs.slice(0, 6));
     } else {
@@ -87,52 +85,42 @@ export default function Home() {
   return (
     <div className="w-full relative overflow-hidden">
       {/* 1. HERO SECTION */}
-      <section className="relative h-[90vh] md:h-screen w-full flex items-center justify-center overflow-hidden">
+      <section className="relative h-[100vh] md:h-screen w-full flex items-center justify-center overflow-hidden">
         {/* Background Image Parallax */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80"
+            // src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80"
+            src={'/hero_banner.png'}
             alt="Beautiful Indonesian Tropical Shoreline"
             fill
             priority
             className="object-cover"
           />
-          {/* Elegant Dark Tropical Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/80 via-primary-dark/30 to-luxury-bg" />
+          {/* Elegant Dark Tropical Gradient Overlay color primary-dark/10 via primary-dark/40 to luxury-bg */}
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/10 via-primary-dark/10 to-black" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white flex flex-col items-center pt-16 sm:pt-0">
-          {/* <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 text-sm font-semibold tracking-wider text-secondary-light uppercase"
-          >
-            <Sparkles className="w-4 h-4 text-accent" />
-            <span>Indonesia Program & Attraction Landing Platform</span>
-          </motion.div> */}
-
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white flex flex-col items-center pt-16 pb-16 sm:-pb-16 sm:pt-20 sm:pb-32">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-display font-extrabold text-4xl sm:text-6xl md:text-7xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
+            className="font-display italic font-extrabold text-4xl sm:text-4xl md:text-5xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
           >
             EXPLORE EVERY DESTINATION
             <br />
-            <span className="text-secondary-light bg-gradient-to-r from-secondary-light to-accent bg-clip-text">
-              EXPERIENCE THE REAL INDONESIA!
-            </span>
+            {/* larger than font-extrabold */}
+            <span className="text-4xl sm:text-6xl md:text-7xl">EXPERIENCE THE REAL</span> <br />
+            <p className="text-5xl sm:text-7xl md:text-8xl">INDONESIA!</p>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-zinc-300 text-[13px] sm:text-xl max-w-2xl mb-4 sm:mb-16 font-medium leading-relaxed"
+            className="font-display italic text-2 xl sm:text-2xl md:text-2xl leading-tight sm:leading-none tracking-tight mb-6 sm:mb-8"
           >
-            {/* Explore breathtaking destinations, unforgettable attractions, and curated premium programs. Your luxury tropical gateway awaits. */}
             Bukan Sekadar Perjalanan. Ini Adalah Petualangan Bermakna.
           </motion.p>
 
@@ -141,7 +129,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-full max-w-4xl glass-effect p-6 rounded-[30px] shadow-2xl text-zinc-800"
+            className="w-full max-w-4xl glass-effect p-6 rounded-[50px] shadow-2xl text-zinc-800 backdrop-blur-sm"
           >
             <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
               {/* Destination Dropdown */}
@@ -167,28 +155,6 @@ export default function Home() {
                     ))}
                   </SelectContent>
                 </Select>
-
-                {/* <Autocomplete items={destinations.map((d) => ({
-                  id: d.id,
-                  value: d.name,
-                }))}>
-                  <div className='flex flex-col items-start gap-2'>
-                    <label className="text-xs uppercase tracking-widest font-bold text-zinc-500 flex items-center gap-1.5 mb-1.5">
-                      <Compass className="w-3.5 h-3.5 text-primary" /> Destination
-                    </label>
-                    <AutocompleteInput id={'destination'} placeholder='Search Destination' showClear />
-                  </div>
-                  <AutocompleteContent>
-                    <AutocompleteEmpty>No items found.</AutocompleteEmpty>
-                    <AutocompleteList>
-                      {item => (
-                        <AutocompleteItem key={item.id} value={item.value}>
-                          {item.value}
-                        </AutocompleteItem>
-                      )}
-                    </AutocompleteList>
-                  </AutocompleteContent>
-                </Autocomplete> */}
               </div>
 
               {/* Attraction Dropdown */}
@@ -246,6 +212,47 @@ export default function Home() {
                 </Button>
               </div>
             </form>
+          </motion.div>
+
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="w-full max-w-4xl"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mt-24 hidden md:grid">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-16 h-16 bg-blue-600/80 text-white backdrop-blur-xl rounded-full mb-3 border-2 border-white">
+                  <MapPinned className="w-10 h-10" />
+                </div>
+                <h3 className="text-[32px] font-extrabold mb-2 text-blue-600/80 uppercase">Discover</h3>
+                <p className="text-center text-md">Hidden Gems Across Indonesia</p>
+              </div>
+
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-16 h-16 bg-primary-dark backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
+                  <CompassIcon className="w-10 h-10" />
+                </div>
+                <h3 className="text-[32px] font-extrabold mb-2 text-primary-dark/90 uppercase">Explore</h3>
+                <p className="text-center text-md">Hidden Gems Across Indonesia</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-16 h-16 bg-blue-600/80 backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
+                  <Users className="w-10 h-10" />
+                </div>
+                <h3 className="text-[32px] font-extrabold mb-2 text-blue-600/80 uppercase">Connect</h3>
+                <p className="text-center text-md">Local Culture and Community</p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="flex items-center justify-center w-16 h-16 bg-green-700/80 backdrop-blur-xl rounded-full mb-3 border-2 border-zinc-200">
+                  <Trees className="w-10 h-10" />
+                </div>
+                <h3 className="text-[32px] font-extrabold mb-2 text-green-700/80 uppercase">Sustain</h3>
+                <p className="text-center text-md">For a Better Future Together</p>
+              </div>
+
+            </div>
           </motion.div>
         </div>
       </section>
@@ -516,7 +523,7 @@ export default function Home() {
                 desc: 'Support local communities through tourism. We champion homestays, local guides, and community-based enterprises to ensure your trip gives back directly to the people and places you visit. Experience genuine hospitality and preserve Indonesia’s cultural heritage together.'
               },
               {
-                icon: LucideLeafyGreen,
+                icon: Trees,
                 title: 'Sustain For Better Future',
                 desc: 'Protect the environment and support local communities through responsible tourism. We partner with eco-conscious operators, minimize waste, and promote conservation efforts to ensure your journey contributes to a sustainable future for Indonesia’s natural treasures.'
               }

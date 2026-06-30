@@ -19,7 +19,7 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
     { label: 'Attractions', path: '/#attractions', icon: Map },
     { label: 'Programs', path: '/#program', icon: BookOpen },
     { label: 'About', path: '/#about', icon: BookOpen },
-    { label: 'Contact', path: '/#contact', icon: Phone }
+    { label: 'Contact', path: '/contact', icon: Phone }
   ];
 
   return (

@@ -75,7 +75,7 @@ export default function TourDetail({ params }: PageProps) {
         <div className={tourImages.length > 1 ? "grid grid-cols-1 lg:grid-cols-3 gap-6" : "w-full"}>
           {/* Main Large Image */}
           <div className={`${tourImages.length > 1 ? "lg:col-span-2" : "w-full"
-            } relative aspect-[16/10] md:aspect-[21/9] rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
+            } relative rounded-[24px] overflow-hidden shadow-luxury border border-zinc-200/50`}>
             <Image
               src={tourImages[activeImageIdx]}
               alt={program.name}
