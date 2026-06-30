@@ -16,7 +16,7 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
   const menuItems = [
     { label: 'Home', path: '/', icon: Home },
     { label: 'Destinations', path: '/#destinations', icon: Compass },
-    { label: 'Attractions', path: '/#attractions', icon: Map },
+    { label: 'Experiences', path: '/#experience', icon: Map },
     { label: 'Programs', path: '/#program', icon: BookOpen },
     { label: 'About', path: '/#about', icon: BookOpen },
     { label: 'Contact', path: '/contact', icon: Phone }
@@ -72,8 +72,8 @@ export function MobileNav({ isOpen, onClose, activePath }: MobileNavProps) {
                       href={item.path}
                       onClick={onClose}
                       className={`flex items-center justify-between p-4 rounded-2xl transition-all ${isActive
-                          ? 'bg-primary/10 text-primary font-semibold'
-                          : 'text-zinc-600 hover:bg-zinc-50'
+                        ? 'bg-primary/10 text-primary font-semibold'
+                        : 'text-zinc-600 hover:bg-zinc-50'
                         }`}
                     >
                       <div className="flex items-center gap-3.5">
