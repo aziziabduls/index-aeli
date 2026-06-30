@@ -327,7 +327,7 @@ export const attractions: Attraction[] = [
     "name": "National Monument (Monas)",
     "slug": "monas",
     "destinationId": "jakarta",
-    "image": "https://images.unsplash.com/photo-1782332327995-3b62b61dc511?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEd1YXJkaWFucyUyMG9mJTIwVGhlJTIwQnJvbW8lMjBDYWxkZXJhfGVufDB8fDB8fHww",
+    "image": "https://images.unsplash.com/photo-1740500892840-c6f243e2c71e?q=80&w=2352&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "A 132-meter tower in the center of Merdeka Square, symbolizing the struggle for Indonesian Independence.",
     "location": "Central Jakarta",
     "rating": 4.5,
@@ -349,7 +349,7 @@ export const attractions: Attraction[] = [
     "name": "Old Batavia (Kota Tua)",
     "slug": "kota-tua",
     "destinationId": "jakarta",
-    "image": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1695444297748-7da0c8dac186?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "The historic core of Jakarta, boasting 17th-century Dutch colonial buildings centered around Fatahillah Square.",
     "location": "West Jakarta",
     "rating": 4.4,
@@ -394,7 +394,7 @@ export const attractions: Attraction[] = [
     "name": "Omah Tabon Heritage",
     "slug": "omah-tabon",
     "destinationId": "yogyakarta",
-    "image": "https://images.unsplash.com/photo-1579294819770-5b1285074b62?auto=format&fit=crop&w=800&q=80",
+    "image": "/omah.webp",
     "description": "A beautiful traditional Javanese wooden house and cultural space located in Bantul, Yogyakarta.",
     "location": "Bantul, Yogyakarta",
     "rating": 4.7,
@@ -416,7 +416,7 @@ export const attractions: Attraction[] = [
     "name": "Kepulauan Seribu Bahari",
     "slug": "kepulauan-seribu",
     "destinationId": "jakarta",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "image": "/bahari.webp",
     "description": "A chain of islands north of Jakarta's coast, offering snorkeling, diving, Stand Up Paddleboarding, and historical fort ruins.",
     "location": "Kepulauan Seribu, DKI Jakarta",
     "rating": 4.6,
@@ -438,7 +438,7 @@ export const attractions: Attraction[] = [
     "name": "Dieng Temple & Lakes",
     "slug": "dieng-plateau",
     "destinationId": "dieng",
-    "image": "https://images.unsplash.com/photo-1597050519391-7667d0256860?auto=format&fit=crop&w=800&q=80",
+    "image": "/dieng.jpg",
     "description": "A historical active volcanic field in Central Java, boasting 8th-century Hindu temples and the stunning multi-colored Telaga Warna lake.",
     "location": "Wonosobo, Jawa Tengah",
     "rating": 4.8,
@@ -506,7 +506,7 @@ export const attractions: Attraction[] = [
     "name": "Kintamani Batur Volcano",
     "slug": "kintamani",
     "destinationId": "bali",
-    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "image": "/kintamani.jpg",
     "description": "A spectacular highland region overlooking the active volcano Mount Batur and its crater lake.",
     "location": "Kintamani, Bangli, Bali",
     "rating": 4.8,
@@ -620,7 +620,7 @@ export const attractions: Attraction[] = [
     "name": "Pulau Samosir",
     "slug": "pulau-samosir",
     "destinationId": "toba",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1601058497548-f247dfe349d6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "description": "A large volcanic island in the center of Lake Toba, the cultural heart of the Batak Toba people.",
     "location": "Samosir Regency, Sumatera Utara",
     "rating": 4.9,
@@ -798,7 +798,7 @@ export const attractions: Attraction[] = [
     "name": "Desa Wisata Petang",
     "slug": "desa-wisata-petang",
     "destinationId": "bali",
-    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+    "image": "/petang.webp",
     "description": "An eco-cultural tourist village in Badung, Bali, showcasing authentic rural Balinese farming, bamboo crafts, and river adventures.",
     "location": "Badung, Bali",
     "rating": 4.7,
@@ -1848,7 +1848,7 @@ export const programs: Program[] = [
     "slug": "samosir-journey-kayu-pun-bisa-menari",
     "destinationId": "toba",
     "attractionId": "pulau-samosir",
-    "image": "https://images.unsplash.com/photo-1623692333663-c2d4aeb14b83?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "image": "/samosir.jpeg",
     "description": "program destination-based exploration yang mengajak peserta menyelami filosofi dan kisah budaya Batak melalui legenda Sigale-gale. Peserta diajak menjadi keturunan terakhir Batak Toba yang bertugas menemukan Sigale-gale dan mempelajari tiga tarian Tor-tor melalui serangkaian tantangan berupa mystery box, trekking, bersepeda, hingga eksplorasi Desa Tomok. Program ini menggabungkan petualangan, budaya, dan pembelajaran tentang makna kerja, kolaborasi, serta warisan yang melampaui diri sendiri.",
     "duration": "3 – 4 Jam",
     "price": 1650000,
@@ -1890,7 +1890,7 @@ export const programs: Program[] = [
     "slug": "journey-in-1-hour-lrt-palembang-challenge",
     "destinationId": "palembang",
     "attractionId": "lrt-palembang",
-    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
+    "image": "/palembang.jpeg",
     "description": "Program eksplorasi kota berbasis petualangan yang mengajak peserta menjelajahi Palembang menggunakan moda transportasi LRT pertama di luar Pulau Jawa. Peserta ditantang menyelesaikan berbagai misi di sejumlah stasiun, mengungkap sejarah, budaya, kuliner, dan transformasi Kota Palembang melalui pengalaman belajar yang interaktif, kompetitif, dan menyenangkan.",
     "duration": "4 jam",
     "price": 787500,
@@ -2095,7 +2095,7 @@ export const programs: Program[] = [
     "slug": "malino-amazing-journey",
     "destinationId": "makassar",
     "attractionId": "kota-malino",
-    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
+    "image": "/malino.jpeg",
     "description": "Malino Amazing Journey adalah sebuah program perjalanan ke destinasi-destinasi yang khas dan unik yang dapat memberikan pengalaman yang berkesan bagi yang mengalaminya. Dikemas dengan konsep Eksperiential Learning, peserta akan merasakan pengalaman berpetualang sambil belajar bekerja sama dalam satu tim. Peserta akan melakukan perjalanan ke destinasi yang mewakili unsur culture, kuliner dan heritage di sekitar lokasi kegiatan. Di setiap lokasi, peserta akan dihadapkan kepada tantangan yang harus diselesaikan untuk memperoleh petunjuk menuju perjalanan berikutnya sampai ke garis finish.",
     "duration": "3 – 4 jam",
     "price": 450000,
@@ -2477,7 +2477,7 @@ export const programs: Program[] = [
     "slug": "roots-and-reefs",
     "destinationId": "lampung",
     "attractionId": "pulau-pahawang",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+    "image": "/suhita.jpeg",
     "description": "program eksplorasi alam selama 2 hari 1 malam yang mengajak peserta memahami hubungan antara daratan, laut, dan manusia melalui pengalaman langsung bersama ekosistem lebah madu dan konservasi terumbu karang. Peserta akan memanen madu, membuat eco printing, menyelami kehidupan bawah laut, serta terlibat dalam transplantasi terumbu karang sebagai bentuk nyata kepedulian terhadap lingkungan.",
     "duration": "2 hari 1 malam",
     "price": 2000000,
@@ -2535,160 +2535,6 @@ export const programs: Program[] = [
     "itinerary": [],
     "gallery": [
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    "id": "palembang-journey-in-1-hour-lrt-palembang-challenge-alt",
-    "name": "Journey in 1 Hour: LRT Palembang Challenge",
-    "slug": "journey-in-1-hour-lrt-palembang-challenge",
-    "destinationId": "palembang",
-    "attractionId": "lrt-palembang",
-    "image": "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80",
-    "description": "Harga:** Rp. 787.500,-/pax",
-    "duration": "4 jam",
-    "price": 787500,
-    "rating": 4.7,
-    "reviewsCount": 66,
-    "category": "Adventure and Challenge",
-    "highlights": [
-      "Petualangan seru dan menantang berbatas waktu dengan menggunakan moda LRT di kota Palembang"
-    ],
-    "included": [
-      "Fasilitator, program, air mineral, kartu pass LRT, sertifikat peserta, makan siang, dokumentasi foto, tiket masuk area"
-    ],
-    "excluded": [
-      "Snack dan keperluan pribadi"
-    ],
-    "meetingPoint": "Stasiun SMB 2",
-    "itinerary": [
-      {
-        "title": "08.30 / 30 menit",
-        "activities": [
-          "Pembukaan dan Ice Breaking",
-          "Stasiun SMB 2",
-          "Buat semangat, happy dan jelas Rules kegiatannya"
-        ]
-      },
-      {
-        "title": "09.00 / 150 menit",
-        "activities": [
-          "Adventure Program",
-          "Seluruh Stasiun LRT",
-          "Aman dalam kegiatan"
-        ]
-      },
-      {
-        "title": "11.30 / 30 menit",
-        "activities": [
-          "Debrief",
-          "Jakabaring Sport City",
-          "Refleksi dan Feedback"
-        ]
-      }
-    ],
-    "gallery": [
-      "https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=800&q=80"
-    ]
-  },
-  {
-    "id": "toba-batak-journey-alt",
-    "name": "BATAK JOURNEY",
-    "slug": "batak-journey",
-    "destinationId": "toba",
-    "attractionId": "danau-toba",
-    "image": "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80",
-    "description": "Danau Toba banyak cerita klasik rakyat Sumatera Utara Juga banyak versi maka dijadikan produk program EL dengan latar belakang budaya dan kultur serta keindahan seperti kepingan surga. aneka ragam marga yang ada di kawasan danau toba.",
-    "duration": "Full Day",
-    "price": 1200000,
-    "rating": 4.9,
-    "reviewsCount": 72,
-    "category": "Cultural Immersion",
-    "highlights": [
-      "Mengenal Budaya Batak yang sangat banyak turunan MARGA",
-      "Khas kuliner yang sangat spesial",
-      "Tempat penuh sejarah",
-      "Destinasi wisata seperti kepingan surga"
-    ],
-    "included": [
-      "Suvenir ulos wisata..Sor Tali/Topi Tali",
-      "Kapal Wisata",
-      "Program",
-      "Tiketing Venue",
-      "Air Mineral",
-      "Back up Sound",
-      "Property Memasak",
-      "Fasilitator",
-      "Lunch 1x prasmanan",
-      "Dokumentasi foto dan video berupa file soft copy"
-    ],
-    "excluded": [
-      "Saweran tor tor",
-      "Cofee Break."
-    ],
-    "meetingPoint": "Lokasi Kegiatan",
-    "itinerary": [
-      {
-        "title": "08.45 / 15 menit",
-        "activities": [
-          "seremonii",
-          "Lapangan hotel",
-          "fasilitor"
-        ]
-      },
-      {
-        "title": "09.00 / 30 menit",
-        "activities": [
-          "Ice breking",
-          "Lapangan hotel",
-          "fasilitator"
-        ]
-      },
-      {
-        "title": "09.30 / 30 menit",
-        "activities": []
-      },
-      {
-        "title": "10.00/ 120 menit",
-        "activities": []
-      },
-      {
-        "title": "12.00/ 60 menit",
-        "activities": []
-      },
-      {
-        "title": "13.00/ 60 menit",
-        "activities": []
-      },
-      {
-        "title": "14.00/ 60 menit",
-        "activities": [
-          "Pembagian grub",
-          "Setiap kelompok akan  Melakukan perjalanan Meneju pasar",
-          "tradisional,persanggrahan  bung karno dan sejarah  batu gantung dengan",
-          "mengunakan kapal wisata  danu toba.",
-          "Lunch",
-          "Peserta akan melakukan  perjalana ke desa sialagan  dengan menggunakan  kapal wisata sekaligus  memasak masakan khas  tanah batak yaitu ikan mas  arsik di atas kapal wisata  danau toba",
-          "Peserta di haruskan break  memasak ikan arsik yang  memakan waktu yang  lama dan menuju desa  sialagan untuk melakukan  tari tor tor khas tanah",
-          "batak sebagai",
-          "penghormatan kepada  peserta yang di berikan  oleh ketua adat di desa",
-          "tersebut,setelah menortor  peserta akan melanjutkan  memasak ikan arsik dan  menghias masakan yang  telah selesai di masak.",
-          "Lapangan hotel",
-          "Persanggrahan bung  karno,pasar",
-          "tradisionil,batu gantung",
-          "Hotel",
-          "Kapal Wisata Danau  Toba",
-          "Desa sialagan",
-          "fasilitator akan",
-          "mendampingi setiap  kelompok dan selama  menjalani program",
-          "fasilitator isoma",
-          "Fasilitator",
-          "mendampingi",
-          "selama di kapal dan  di desa sialagan."
-        ]
-      }
-    ],
-    "gallery": [
-      "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=800&q=80"
     ]
   },
   {
@@ -3034,59 +2880,6 @@ export const programs: Program[] = [
     ],
     "gallery": [
       "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=500&q=80"
-    ]
-  },
-  {
-    "id": "makassar-malino-amazing-journey-alt",
-    "name": "MALINO AMAZING JOURNEY",
-    "slug": "malino-amazing-journey",
-    "destinationId": "makassar",
-    "attractionId": "kota-malino",
-    "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80",
-    "description": "Malino Amazing Journey adalah sebuah program perjalanan ke destinasi-destinasi yang khas dan unik yang dapat memberikan pengalaman yang berkesan bagi yang mengalaminya. Dikemas dengan konsep Eksperiential Learning, peserta akan merasakan pengalaman berpetualang sambil belajar bekerja sama dalam satu tim. Peserta akan melakukan perjalanan ke destinasi yang mewakili unsur culture, kuliner dan heritage di sekitar lokasi kegiatan. Di setiap lokasi, peserta akan dihadapkan kepada tantangan yang harus diselesaikan untuk memperoleh petunjuk menuju perjalanan berikutnya sampai ke garis finish.",
-    "duration": "3 – 4 jam",
-    "price": 450000,
-    "rating": 5,
-    "reviewsCount": 81,
-    "category": "Adventure and Challenge",
-    "highlights": [
-      "Peserta melakukan perjalanan ke beberapa destinasi khas di Malino yang mewakili unsur wisata alam (Air Terjun Takapala), kuliner (Cendol Malino/Tenteng Malino/Kopi Luwak Malino) dan heritage (Balla Lompoa)."
-    ],
-    "included": [
-      "Mission Kit, Media Transportasi, Dokumentasi, Snack, Sertifikat, HTM Destinasi"
-    ],
-    "excluded": [
-      "Biaya perjalanan Makassar - Malino, Hotel"
-    ],
-    "meetingPoint": "Lokasi Kegiatan",
-    "itinerary": [
-      {
-        "title": "09.00 – 09.30 / 30 menit",
-        "activities": [
-          "Penjelasan Program",
-          "Start Point",
-          "Scan QR Code"
-        ]
-      },
-      {
-        "title": "09.30 – 11.30 /120 menit",
-        "activities": [
-          "Perjalanan (Journey) Peserta",
-          "Semua destinasi",
-          "Ikuti instruksi yang telah disiapkan"
-        ]
-      },
-      {
-        "title": "11.30 – 12.00 / 30 menit",
-        "activities": [
-          "Penyelesaian tugas (upload video)",
-          "Finish Point",
-          "Ikuti instruksi yang telah disiapkan"
-        ]
-      }
-    ],
-    "gallery": [
-      "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=800&q=80"
     ]
   }
 ];

@@ -283,7 +283,7 @@ export default function AttractionDetail({ params }: PageProps) {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {nearbyAttractions.map((nearby) => (
-              <Link href={`/attractions/${nearby.id}`} key={nearby.id} className="block group">
+              <Link href={`/experience/${nearby.id}`} key={nearby.id} className="block group">
                 <div className="relative aspect-video rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all">
                   <Image
                     src={nearby.image}
